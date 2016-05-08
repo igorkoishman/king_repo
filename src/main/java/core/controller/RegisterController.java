@@ -1,5 +1,7 @@
 package core.controller;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,8 +14,11 @@ import core.model.Player;
 public class RegisterController {
 
 	@RequestMapping(value = "/register", method = RequestMethod.POST, produces = "application/json", consumes = "application/json")
-	protected @ResponseBody Player deleteNodes(@RequestBody Player player) {
-		return player;
+	protected @ResponseBody  ResponseEntity<?> deleteNodes(@RequestBody Player player) {
+		if(player.getUserName().equals("igor")){
+			return new ResponseEntity<>(new Player(), HttpStatus.BAD_REQUEST);
+		}
+		 return new ResponseEntity<>(player, HttpStatus.OK);
 	}
 
 }
