@@ -1,0 +1,18 @@
+app.bn.url = https://10.224.176.109:8443
+########### localhost Database connection ###############
+db.driver = com.mysql.jdbc.Driver
+db.url = jdbc:mysql://10.224.176.109/metador?autoReconnect=true&autoReconnectForPools=true&useUnicode=true&characterEncoding=utf8&connectionCollation=utf8_bin&rewriteBatchedStatements=true
+db.username = root
+db.password = root
+db.oracle.driver = oracle.jdbc.OracleDriver
+db.oracle.url = jdbc:oracle:thin:@localhost:1521:DEVDB
+db.oracle.username = system
+db.oracle.password = manager
+enviroment = local
+isLocal = true
+batch.run = D:\\git\\browse-nodes\\browsenodes-batch\\src\\main\\resources\\run.bat D:\\git\\browse-nodes C:\\Temp\\ D
+currapted.data.configuration.db = "á|â|ã|ä|å|æ|ç|è|é|ê|ë|ì|í|î|ï|ð|ñ|ò|ó|ô|õ|ö|ø|ù|ú|û|ü|ý|þ|ÿ|�\u0178|�\u0152|�\u0153|�\u0160|�\u0161|�\u017D|�\u017E|�\u0192|�\u02C6|�\u02DC|�\u2013|�\u2018|�\u2019|�\u201A|�\u201C|�\u201D|�\u201E|�\u2020|�\u2021|�\u2022|�\u2026|�\u2030|�\u2039|�\u203A|�\u20AC|�\u2122|ġ|Ģ|ģ|Ĥ|ĥ|Ħ|ħ|Ĩ|ĩ|Ī|ī|Ĭ|ĭ|Į|į|İ|ı|Ĳ|ĳ|Ĵ|ĵ|Ķ|ķ|ĸ|Ĺ|ĺ|Ļ|ļ|Ľ|ľ|Ŀ|�\u0178|�\u0152|�\u0153|�\u0160|�\u0161|�\u017D|�\u017E|�\u0192|�\u02C6|�\u02DC|�\u2013|�\u2014|�\u2018|�\u2019|�\u201A|�\u201C|�\u201D|�\u201E|�\u2020|�\u2021|�\u2022|�\u2026|�\u2030|�\u2039|�\u203A|�\u20AC|�\u2122|š|Ţ|ţ|Ť|ť|Ŧ|ŧ|Ũ|ũ|Ū|ū|Ŭ|ŭ|Ů|ů|Ű|ű|Ų|ų|Ŵ|ŵ|Ŷ|ŷ|Ÿ|Ź|ź|Ż|ż|Ž|ž|ſ|�\u0178|�\u0152|�\u0153|�\u0160|�\u0161|�\u017D|�\u017E|�\u0192|�\u02C6|�\u02DC|�\u2013|�\u2014|�\u2018|�\u2019|�\u201A|�\u201C|�\u201D|�\u201E|�\u2020|�\u2021|�\u2022|�\u2026|�\u2030|�\u2039|�\u203A|�\u20AC|�\u2122|�\u0081|�\u0152|�\u0160|�\u0192|�\u02C6|�\u201A|�\u201E|�\u2020|�\u2021|�\u2026|�\u2030|�\u2039|�\u20AC|ǡ|Ǣ|ǣ|Ǥ|ǥ|Ǧ|ǧ|Ǩ|ǩ|Ǫ|ǫ|Ǭ|ǭ|ǰ|Ǳ|ǲ|ǳ|Ǵ|ǵ|Ƕ|Ƿ|Ǹ|ǹ|Ǻ|ǻ|Ǽ|ǽ|Ǿ|ǿ|�\u0178|�\u0153|�\u0161|�\u017D|�\u017E|�\u02DC|�\u2013|�\u2014|�\u2018|�\u2019|�\u201C|�\u201D|�\u2022|�\u203A|�\u2122|ȡ|Ȣ|ȣ|Ȥ|ȥ|Ȧ|ȧ|Ȩ|ȩ|Ȫ|ȫ|Ȭ|ȭ|Ȯ|ȯ|Ȱ|ȱ|Ȳ|ȳ|Ⱥ|Ȼ|ȼ|�\u0178|�\u0152|�\u0153|�\u0160|�\u0161|�\u017D|�\u017E|�\u0192|�\u02C6|�\u02DC|�\u2013|�\u2014|�\u2018|�\u2019|�\u201A|�\u201C|�\u201D|�\u201E|�\u2020|�\u2021|�\u2022|�\u2026|�\u2030|�\u2039|�\u203A|�\u20AC|�\u2122"
+elastic.search.qa.host = http://pronto-es-brnodes-3109.slc01.dev.ebayc3.com:9200
+elastic.search.run.command = C:\\Program Files\\Java\\jdk1.8.0_20\\bin\\java -cp C:\\jdbcEsDriver\\elasticsearch-jdbc-1.7.3.0\\lib\\elasticsearch-jdbc-1.7.3.0-uberjar.jar;C:\\jdbcEsDriver\\elasticsearch-jdbc-1.7.3.0\\lib\\mysql-connector-java-5.1.33.jar -Dlog4j.configurationFile=C:\\jdbcEsDriver\\elasticsearch-jdbc-1.7.3.0\\bin\\log4j2.xml org.xbib.tools.Runner org.xbib.tools.JDBCImporter C:\\jdbcEsDriver\\elasticsearch-jdbc-1.7.3.0\\bin\\qa.json
+elastic.search.type = sdo
+elastic.search.index = brnodes

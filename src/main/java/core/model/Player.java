@@ -1,4 +1,4 @@
-package kings;
+package core.model;
 
 public class Player {
 
