@@ -1,9 +1,13 @@
 package core.model;
 
+import java.util.Date;
+
 public class Player {
 
 	private String userName;
 	private String password;
+	private Date registrationDate;
+	private Date lastEnterence;
 
 	public Player() {
 		// TODO Auto-generated constructor stub
@@ -29,6 +33,22 @@ public class Player {
 		super();
 		this.userName = userName;
 		this.password = password;
+	}
+
+	public Date getRegistrationDate() {
+		return registrationDate;
+	}
+
+	public void setRegistrationDate(Date registrationDate) {
+		this.registrationDate = registrationDate;
+	}
+
+	public Date getLastEnterence() {
+		return lastEnterence;
+	}
+
+	public void setLastEnterence(Date lastEnterence) {
+		this.lastEnterence = lastEnterence;
 	}
 
 }
