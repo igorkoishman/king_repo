@@ -9,6 +9,6 @@ public interface Phelper {
 	public boolean isPlayerExistingInDb(String userName, String Password)throws RuntimeException;
 
 	
-	public boolean insertNewPlayer(Player player) throws PlayerException, RuntimeException;
+	public void insertNewPlayer(Player player) throws PlayerException, RuntimeException;
 
 }

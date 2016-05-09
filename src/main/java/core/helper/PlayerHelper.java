@@ -38,15 +38,15 @@ public class PlayerHelper implements Phelper {
 	}
 
 	@Override
-	public boolean insertNewPlayer(Player player) throws PlayerException, RuntimeException {
+	public void insertNewPlayer(Player player) throws PlayerException, RuntimeException {
 		Date currentDate = DateUtils.getCurrentDate();
 		player.setLastEnterence(currentDate);
 		player.setRegistrationDate(currentDate);
-		if (isPlayerValidForRegistration(player)) {
+		if (!isPlayerValidForRegistration(player)) {
 			throw new PlayerException("the data is not valid for registration");
+		} else {
+			playerDao.insertPlayer(player);
 		}
-		playerDao.insertPlayer(player);
-		return false;
 	}
 
 }
