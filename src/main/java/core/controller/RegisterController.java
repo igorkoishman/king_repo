@@ -38,7 +38,8 @@ public class RegisterController {
 //			String currentDate = DateUtils.getCurrentDateFormatdB();
 //			playerDao.insertRow(player.getUserName(),player.getPassword(),currentDate,currentDate);
 			List<Player> getObjects = playerDao.GetObjects();
-			System.out.println();
+			getObjects.forEach((arg0)->System.out.println(arg0));
+			
 		}
 		return new ResponseEntity<>(HttpStatus.OK);
 	}

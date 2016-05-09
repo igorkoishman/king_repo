@@ -43,6 +43,12 @@ public class Player {
 		this.registrationDate = registrationDate;
 	}
 
+	@Override
+	public String toString() {
+		return "Player [userName=" + userName + ", password=" + password + ", registrationDate=" + registrationDate
+				+ ", lastEnterence=" + lastEnterence + "]";
+	}
+
 	public Date getLastEnterence() {
 		return lastEnterence;
 	}
