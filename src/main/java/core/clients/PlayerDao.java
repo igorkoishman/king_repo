@@ -32,7 +32,7 @@ public class PlayerDao implements PlayerDaointerface {
 	public void insertPlayer(Player player) throws RuntimeException {
 		 String sql = "insert into players (user_name, password,registration_date,last_enterence) values (?,?,?,?)";
 		 try {
-			 jdbcOperations.update(sql,player.getUserName(),player.getPassword(),player.getRegistrationDate(),player.getLastEnterence());
+			 jdbcOperations.update(sql,player.getUsername(),player.getPassword(),player.getRegistrationDate(),player.getLastEnterence());
 		} catch (DataAccessException e) {
 			throw new RuntimeException(e.getMessage());
 		}
@@ -43,7 +43,7 @@ public class PlayerDao implements PlayerDaointerface {
 	@Override
 	public void updatePlayer(Player player) {
 		String sql="UPDATE players SET last_enterence = ? WHERE user_name = ?";
-				jdbcOperations.update(sql, player.getLastEnterence(),player.getUserName());
+				jdbcOperations.update(sql, player.getLastEnterence(),player.getUsername());
 		
 	}
 

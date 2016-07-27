@@ -19,7 +19,7 @@ public class PlayerHelper implements Phelper {
 	private PlayerDaointerface playerDao;
 
 	private boolean isPlayerValidForRegistration(Player player) {
-		if (isNull(player.getUserName()) || isNull(player.getPassword()) || isEmpty(player.getUserName())
+		if (isNull(player.getUsername()) || isNull(player.getPassword()) || isEmpty(player.getUsername())
 				|| isEmpty(player.getPassword())) {
 			return false;
 		}

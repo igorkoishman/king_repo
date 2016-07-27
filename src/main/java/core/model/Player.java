@@ -2,23 +2,31 @@ package core.model;
 
 import java.util.Date;
 
-public class Player {
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
-	private String userName;
+public class Player {
+	private String username;
 	private String password;
+	@JsonIgnore
 	private Date registrationDate;
+	@JsonIgnore
 	private Date lastEnterence;
 
 	public Player() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public String getUserName() {
-		return userName;
+	public Player(String username, String password) {
+		this.username = username;
+		this.password = password;
 	}
 
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
 	}
 
 	public String getPassword() {
@@ -26,12 +34,6 @@ public class Player {
 	}
 
 	public void setPassword(String password) {
-		this.password = password;
-	}
-
-	public Player(String userName, String password) {
-		super();
-		this.userName = userName;
 		this.password = password;
 	}
 
@@ -45,7 +47,7 @@ public class Player {
 
 	@Override
 	public String toString() {
-		return "Player [userName=" + userName + ", password=" + password + ", registrationDate=" + registrationDate
+		return "Player [userName=" + username + ", password=" + password + ", registrationDate=" + registrationDate
 				+ ", lastEnterence=" + lastEnterence + "]";
 	}
 

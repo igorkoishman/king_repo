@@ -22,7 +22,7 @@ public class RegisterController {
 	private static Logger logger = Logger.getLogger(RegisterController.class);
 
 	@RequestMapping(value = "/register", method = RequestMethod.POST, produces = "application/json", consumes = "application/json")
-	protected @ResponseBody ResponseEntity<?> deleteNodes(@RequestBody Player player) {
+	protected @ResponseBody ResponseEntity<?> registerPlayer(@RequestBody Player player) {
 		logger.info("get into register method");
 			try {
 				playerHelper.insertNewPlayer(player);
@@ -31,7 +31,7 @@ public class RegisterController {
 				return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 			}
 		
-		return new ResponseEntity<>(HttpStatus.OK);
+		return new ResponseEntity<>(HttpStatus.CREATED);
 	}
 
 	
