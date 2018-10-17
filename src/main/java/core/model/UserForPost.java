@@ -9,11 +9,16 @@ import java.io.Serializable;
 @Embeddable // This tells Hibernate to make a table out of this class
 public class UserForPost implements Serializable{
 
-
-	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
 	private Long post;
 
+	public UserForPost() {
+	}
+
+	public UserForPost(Integer id, Long post) {
+		this.id = id;
+		this.post = post;
+	}
 
 	public Integer getId() {
 		return id;
@@ -31,6 +36,9 @@ public class UserForPost implements Serializable{
 		this.post = post;
 	}
 
-
+	@Override
+	public String toString() {
+		return "UserForPost{" + "id=" + id + ", post=" + post + '}';
+	}
 }
 

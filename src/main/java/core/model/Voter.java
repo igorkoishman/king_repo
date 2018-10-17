@@ -12,6 +12,14 @@ public class Voter implements Serializable {
 	private UserForPost userForPost;
 	private Integer vote;
 
+	public Voter() {
+	}
+
+	public Voter(int userId,Long postId , Integer vote) {
+		this.userForPost=new UserForPost(userId, postId );
+		this.vote = vote;
+	}
+
 	public Integer getVote() {
 		return vote;
 	}
@@ -26,5 +34,10 @@ public class Voter implements Serializable {
 
 	public void setUserForPost(UserForPost userForPost) {
 		this.userForPost = userForPost;
+	}
+
+	@Override
+	public String toString() {
+		return "Voter{" + "userForPost=" + userForPost + ", vote=" + vote + '}';
 	}
 }

@@ -7,7 +7,6 @@ import java.io.Serializable;
 public class Vote implements Serializable {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
 	Long id;
 	@Id
 	Long pass;
