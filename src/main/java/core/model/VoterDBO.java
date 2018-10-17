@@ -3,19 +3,21 @@ package core.model;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import java.io.Serializable;
 
 @Entity
-public class Voter implements Serializable {
+@Table(name = "votes")
+public class VoterDBO implements Serializable {
 
 	@EmbeddedId
 	private UserForPost userForPost;
 	private Integer vote;
 
-	public Voter() {
+	public VoterDBO() {
 	}
 
-	public Voter(int userId,Long postId , Integer vote) {
+	public VoterDBO(int userId,Long postId , Integer vote) {
 		this.userForPost=new UserForPost(userId, postId );
 		this.vote = vote;
 	}
@@ -38,6 +40,6 @@ public class Voter implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Voter{" + "userForPost=" + userForPost + ", vote=" + vote + '}';
+		return "VoterDBO{" + "userForPost=" + userForPost + ", vote=" + vote + '}';
 	}
 }

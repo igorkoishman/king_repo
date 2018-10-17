@@ -6,7 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.io.Serializable;
 
-@Embeddable // This tells Hibernate to make a table out of this class
+@Embeddable
 public class UserForPost implements Serializable{
 
 	private Integer id;

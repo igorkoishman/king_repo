@@ -1,8 +1,7 @@
 package core.clients;
 
 import core.model.UserForPost;
-import core.model.Voter;
-import org.assertj.core.util.Lists;
+import core.model.VoterDBO;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,22 +23,22 @@ public class VoterRepositoryIntegrationTest {
 	private TestEntityManager entityManager;
 
 	@Autowired
-	private VoterRepository voterRepository;
+	private VoteRepository voterRepository;
 
 	@Test
-	public void whenFindByName_thenReturnEmployee() {
+	public void find_By_User_And_post_Id() {
 		// given
-		Voter alex = new Voter(123,2l,1);
+		VoterDBO alex = new VoterDBO(123,2l,1);
 		entityManager.persist(alex);
 		entityManager.flush();
 
 		// when
-		Iterable<Voter> all = voterRepository.findAll();
+		Iterable<VoterDBO> all = voterRepository.findAll();
 
 		// then
 		assertTrue(all.iterator().next().getUserForPost().getId()==alex.getUserForPost().getId());
 		System.out.println(all.iterator().next());
-		Optional<Voter> byId = voterRepository.findById(new UserForPost(123, 2l));
+		Optional<VoterDBO> byId = voterRepository.findById(new UserForPost(123, 2l));
 		System.out.printf(byId.get().toString());
 	}
 

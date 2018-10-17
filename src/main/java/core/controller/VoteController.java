@@ -1,7 +1,7 @@
 package core.controller;
 
-import core.clients.VoterRepository;
-import core.model.Voter;
+import core.clients.VoteRepository;
+import core.model.VoterDBO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,18 +14,19 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-public class RegisterController {
+
+public class VoteController {
 
 	@Autowired
-	private VoterRepository playerHelper;
-	private static Logger logger = LoggerFactory.getLogger(RegisterController.class);
+	private VoteRepository voteRepository;
+	private static Logger logger = LoggerFactory.getLogger(VoteController.class);
 
 	@RequestMapping(value = "/register", method = RequestMethod.POST, produces = "application/json", consumes = "application/json")
 	protected @ResponseBody
-	ResponseEntity<?> registerPlayer(@RequestBody Voter user) {
+	ResponseEntity<?> voting(@RequestBody VoterDBO voterDBO) {
 		logger.info("get into register method");
 		try {
-			playerHelper.save(user);
+			voteRepository.save(voterDBO);
 		} catch (Exception e) {
 			logger.error(e.getMessage());
 			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
