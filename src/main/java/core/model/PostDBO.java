@@ -1,9 +1,8 @@
 package core.model;
 
-import org.apache.commons.lang3.builder.ToStringBuilder;
-
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 import java.util.Objects;
 
 @Entity
@@ -18,8 +17,9 @@ public class PostDBO implements Serializable {
 
 	public PostDBO() {
 	}
+
 	public PostDBO(String post) {
-		this.post=post;
+		this.post = post;
 	}
 
 	public PostDBO(Long postId, String post) {
@@ -61,6 +61,10 @@ public class PostDBO implements Serializable {
 
 	@Override
 	public String toString() {
-		return new ToStringBuilder(this).append("postId", postId).append("post", post).toString();
+		final StringBuilder sb = new StringBuilder("PostDBO{");
+		sb.append("postId=").append(postId);
+		sb.append(", post='").append(post).append('\'');
+		sb.append('}');
+		return sb.toString();
 	}
 }

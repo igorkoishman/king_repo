@@ -1,22 +1,22 @@
 package core.service;
 
-import org.apache.commons.lang3.builder.ToStringBuilder;
+import core.model.Comment;
 
+import java.io.Serializable;
+import java.util.List;
 import java.util.Objects;
 
-public class PostDTO {
-
+public class PostDTO implements Serializable {
 
 	Long postId;
-	String post;
+	List<Comment> comments;
 
-	public PostDTO(String post) {
-		this.post = post;
+	public PostDTO() {
 	}
 
-	public PostDTO(Long postId, String post) {
+	public PostDTO(Long postId, List<Comment> comments) {
 		this.postId = postId;
-		this.post = post;
+		this.comments = comments;
 	}
 
 	public Long getPostId() {
@@ -27,12 +27,12 @@ public class PostDTO {
 		this.postId = postId;
 	}
 
-	public String getPost() {
-		return post;
+	public List<Comment> getComments() {
+		return comments;
 	}
 
-	public void setPost(String post) {
-		this.post = post;
+	public void setComments(List<Comment> comments) {
+		this.comments = comments;
 	}
 
 	@Override
@@ -42,17 +42,21 @@ public class PostDTO {
 		if (o == null || getClass() != o.getClass())
 			return false;
 		PostDTO postDTO = (PostDTO) o;
-		return Objects.equals(postId, postDTO.postId) && Objects.equals(post, postDTO.post);
+		return Objects.equals(postId, postDTO.postId) && Objects.equals(comments, postDTO.comments);
 	}
 
 	@Override
 	public int hashCode() {
 
-		return Objects.hash(postId, post);
+		return Objects.hash(postId, comments);
 	}
 
 	@Override
 	public String toString() {
-		return new ToStringBuilder(this).append("postId", postId).append("post", post).toString();
+		final StringBuilder sb = new StringBuilder("PostDTO{");
+		sb.append("postId=").append(postId);
+		sb.append(", comments=").append(comments);
+		sb.append('}');
+		return sb.toString();
 	}
 }
