@@ -1,7 +1,10 @@
 package core.service;
 
+import java.util.List;
+
 public interface VoteService {
 
-	void inserVote(VoteDTO voteDto);
+	boolean insertVote(VoteDTO voteDto);
 
+	List<Long> getTopPostsIds(int count);
 }

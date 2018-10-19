@@ -10,8 +10,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Component;
+import org.springframework.util.CollectionUtils;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -22,28 +24,33 @@ public class PostServiceImpl implements PostService {
 
 	private ObjectMapper objectMapper;
 
+	private static final TypeReference<List<Comment>> typeRef = new TypeReference<List<Comment>>() {
+
+	};
+
 	@Override
-	@CachePut(value = "posts", key = "#postDTO.postId")
-	public PostDTO addPost(PostDTO post) {
+	public PostDTO addPost(PostDTO postDTO) {
+		PostDBO postDBO = null;
 		try {
-			postRepository.save(new PostDBO(objectMapper.writeValueAsString(post.getComments())));
-		} catch (JsonProcessingException e) {
+			postDBO = postRepository.save(new PostDBO(objectMapper.writeValueAsString(postDTO.getComments())));
+			return new PostDTO(postDBO.getPostId(), objectMapper.readValue(postDBO.getPost(), typeRef));
+		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		return post;
+		return null;
 	}
 
 	@Override
 	@CachePut(value = "posts", key = "#postDTO.postId")
-	public PostDTO updatePost(PostDTO post) {
-		PostDTO postFromRepo = findById(post);
+	public PostDTO updatePost(PostDTO postDTO) {
+		PostDTO postFromRepo = findById(postDTO.getPostId());
 		List<Comment> comments = postFromRepo.getComments();
-		Comment newComment = post.getComments().get(0);
+		Comment newComment = postDTO.getComments().get(0);
 		long nextCommentID = comments.size() + 1L;
 		newComment.setCommentId(nextCommentID);
 		comments.add(newComment);
 		try {
-			PostDBO postDBO = new PostDBO(post.getPostId(), objectMapper.writeValueAsString(postFromRepo.getComments()));
+			PostDBO postDBO = new PostDBO(postDTO.getPostId(), objectMapper.writeValueAsString(postFromRepo.getComments()));
 			postRepository.save(postDBO);
 		} catch (JsonProcessingException e) {
 			e.printStackTrace();
@@ -52,14 +59,15 @@ public class PostServiceImpl implements PostService {
 	}
 
 	@Override
-	@Cacheable(value = "posts", key = "#postDTO.postId")
-	public PostDTO findById(PostDTO postDTO) {
+	@Cacheable(value = "posts", key = "#postId")
+	public PostDTO findById(long postId) {
 		try {
+			System.out.println("sleeping");
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		Optional<PostDBO> byId = postRepository.findById(postDTO.getPostId());
+		Optional<PostDBO> byId = postRepository.findById(postId);
 		if (byId.isPresent()) {
 			try {
 				List<Comment> comments = objectMapper.readValue(byId.get().getPost(), new TypeReference<List<Comment>>() {
@@ -72,6 +80,32 @@ public class PostServiceImpl implements PostService {
 			}
 		}
 		return null;
+	}
+
+	@Override
+	public List<PostDTO> findByIds(List<Long> postIds) {
+		List<PostDBO> postDBOs = (List<PostDBO>) postRepository.findPosts(postIds);
+		List<PostDTO> response = new ArrayList<>();
+		if (!CollectionUtils.isEmpty(postDBOs)) {
+			for (PostDBO postDBO : postDBOs) {
+				response.add(createDTO(postDBO));
+			}
+
+		}
+		return response;
+
+	}
+
+	private PostDTO createDTO(PostDBO postDBO) {
+		List<Comment> comments = null;
+		try {
+			comments = objectMapper.readValue(postDBO.getPost(), new TypeReference<List<Comment>>() {
+
+			});
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return new PostDTO(postDBO.getPostId(), comments);
 	}
 
 	public PostRepository getPostRepository() {

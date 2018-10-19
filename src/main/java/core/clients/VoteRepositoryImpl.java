@@ -7,6 +7,7 @@ import org.springframework.transaction.annotation.Transactional;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
+import java.util.List;
 
 /**
  * Created by gkatzioura on 6/3/16.
@@ -26,5 +27,15 @@ public class VoteRepositoryImpl implements VoteRepositoryCustom {
 		query.setParameter(3, voteDTO.getVote());
 		return query.executeUpdate();
 	}
+
+	@Override
+	public List<Long> getTopVotedPostsIds(int count) {
+		Query nativeQuery = entityManager.createNativeQuery(
+				"SELECT post FROM `votes` vo WHERE vo.`vote` > 0   GROUP BY(Post) ORDER BY vo.`post` DESC limit ?");
+		nativeQuery.setParameter(1, count);
+		return nativeQuery.getResultList();
+	}
+
+
 
 }

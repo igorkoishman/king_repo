@@ -1,20 +1,21 @@
 package core.model;
 
 import java.io.Serializable;
+import java.util.Date;
 
 public class Comment implements Serializable {
 
 	Long commentId;
 	String commentContent;
-	Long commentDate;
+	Date commentDate;
 
 	public Comment() {
 	}
 
 	public Comment(String commentContent) {
-		this.commentId = 0l;
+		this.commentId = 1l;
 		this.commentContent = commentContent;
-		this.commentDate = System.currentTimeMillis();
+		this.commentDate = new Date();
 	}
 
 	public Long getCommentId() {
@@ -33,11 +34,11 @@ public class Comment implements Serializable {
 		this.commentContent = commentContent;
 	}
 
-	public Long getCommentDate() {
+	public Date getCommentDate() {
 		return commentDate;
 	}
 
-	public void setCommentDate(Long commentDate) {
+	public void setCommentDate(Date commentDate) {
 		this.commentDate = commentDate;
 	}
 }

@@ -3,6 +3,7 @@ package core.controller;
 import core.model.Comment;
 import core.service.PostDTO;
 import core.service.PostService;
+import core.service.VoteService;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.util.CollectionUtils;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -22,14 +24,16 @@ public class PostController {
 	private static Logger logger = LoggerFactory.getLogger(PostController.class);
 
 	private PostService postService;
+	private VoteService voteService;
 
 	public PostService getPostService() {
 		return postService;
 	}
 
 	@Autowired
-	public void setPostService(PostService postService) {
+	public void setPostService(PostService postService, VoteService voteService) {
 		this.postService = postService;
+		this.voteService = voteService;
 	}
 
 	@RequestMapping(method = RequestMethod.POST, produces = "application/json", consumes = "application/json")
@@ -67,12 +71,30 @@ public class PostController {
 
 	@RequestMapping(value = "/{postId}", method = RequestMethod.GET, produces = "application/json", consumes = "application/json")
 	@ResponseBody
-	protected ResponseEntity getBiId(@PathVariable("postId") Long postId) {
+	protected ResponseEntity getById(@PathVariable("postId") Long postId) {
 		logger.info("get into register method");
 		try {
-			PostDTO postDTO = postService.findById(new PostDTO(postId, null));
+			PostDTO postDTO = postService.findById(postId);
 			if (null != postDTO) {
 				return new ResponseEntity(postDTO, HttpStatus.OK);
+			} else {
+				return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+			}
+		} catch (Exception e) {
+			logger.error(e.getMessage());
+			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+		}
+	}
+
+	@RequestMapping(value = "/top/{count}", method = RequestMethod.GET, produces = "application/json", consumes = "application/json")
+	@ResponseBody
+	protected ResponseEntity getTopPosts(@PathVariable("count") int count) {
+		logger.info("get into register method");
+		try {
+			List<Long> topPostsIds = voteService.getTopPostsIds(count);
+			List<PostDTO> postDTOs = postService.findByIds(topPostsIds);
+			if (CollectionUtils.isEmpty(postDTOs)) {
+				return new ResponseEntity(postDTOs, HttpStatus.OK);
 			} else {
 				return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 			}

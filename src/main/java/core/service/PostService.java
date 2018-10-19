@@ -1,6 +1,6 @@
 package core.service;
 
-import org.springframework.cache.annotation.CachePut;
+import java.util.List;
 
 public interface PostService {
 
@@ -8,6 +8,8 @@ public interface PostService {
 
 	PostDTO updatePost(PostDTO post);
 
-	PostDTO findById(PostDTO postDTO);
+	PostDTO findById(long postId);
+
+	List<PostDTO> findByIds(List<Long> ids);
 
 }

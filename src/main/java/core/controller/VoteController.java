@@ -2,7 +2,6 @@ package core.controller;
 
 import core.service.VoteDTO;
 import core.service.VoteService;
-import org.hibernate.exception.ConstraintViolationException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,7 +32,7 @@ public class VoteController {
 		}
 		try {
 			VoteDTO voteDTO = convertToVoteDTO(voteRequest);
-			voteService.inserVote(voteDTO);
+			voteService.insertVote(voteDTO);
 			return new ResponseEntity<>(HttpStatus.CREATED);
 		} catch (DataIntegrityViolationException constraintViolationException) {
 			logger.error(constraintViolationException.getMessage());

@@ -26,7 +26,7 @@ public class VoterRepositoryIntegrationTest {
 	private VoteRepository voterRepository;
 
 	@Test
-	public void find_By_User_And_post_Id() {
+	public void find_By_User_And_postId() {
 		// given
 		VoterDBO alex = new VoterDBO(123,2l,1);
 		entityManager.persist(alex);
