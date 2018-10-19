@@ -1,10 +1,12 @@
 package core.controller;
 
-import core.clients.VoteRepository;
-import core.model.VoterDBO;
+import core.service.VoteDTO;
+import core.service.VoteService;
+import org.hibernate.exception.ConstraintViolationException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -14,25 +16,40 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-
+@RequestMapping("vote")
 public class VoteController {
 
 	@Autowired
-	private VoteRepository voteRepository;
+	private VoteService voteService;
+
 	private static Logger logger = LoggerFactory.getLogger(VoteController.class);
 
-	@RequestMapping(value = "/register", method = RequestMethod.POST, produces = "application/json", consumes = "application/json")
+	@RequestMapping(method = RequestMethod.POST, produces = "application/json", consumes = "application/json")
 	protected @ResponseBody
-	ResponseEntity<?> voting(@RequestBody VoterDBO voterDBO) {
-		logger.info("get into register method");
+	ResponseEntity<?> addVote(@RequestBody VoteRequest voteRequest) {
+		logger.info("get into add method");
+		if ((voteRequest.getVote() != -1 && voteRequest.getVote() != 1)) {
+			return ResponseEntity.badRequest().body(new Response("vote have to be -1/1"));
+		}
 		try {
-			voteRepository.save(voterDBO);
+			VoteDTO voteDTO = convertToVoteDTO(voteRequest);
+			voteService.inserVote(voteDTO);
+			return new ResponseEntity<>(HttpStatus.CREATED);
+		} catch (DataIntegrityViolationException constraintViolationException) {
+			logger.error(constraintViolationException.getMessage());
+			return ResponseEntity.status(HttpStatus.CONFLICT).body(new Response("You already voted for that post"));
 		} catch (Exception e) {
 			logger.error(e.getMessage());
-			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
 		}
+	}
 
-		return new ResponseEntity<>(HttpStatus.CREATED);
+	private VoteDTO convertToVoteDTO(@RequestBody VoteRequest voteRequest) {
+		VoteDTO voteDTO = new VoteDTO();
+		voteDTO.setPostId(voteRequest.getPostId());
+		voteDTO.setUserId(voteRequest.getVoterId());
+		voteDTO.setVote(voteRequest.getVote());
+		return voteDTO;
 	}
 
 }

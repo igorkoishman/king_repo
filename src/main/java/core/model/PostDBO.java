@@ -27,11 +27,11 @@ public class PostDBO implements Serializable {
 		this.post = post;
 	}
 
-	public Long getPostId() {
+	public long getPostId() {
 		return postId;
 	}
 
-	public void setPostId(Long postId) {
+	public void setPostId(long postId) {
 		this.postId = postId;
 	}
 
