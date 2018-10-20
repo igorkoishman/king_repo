@@ -3,7 +3,6 @@ package core.controller;
 import core.model.Comment;
 import core.service.PostDTO;
 import core.service.PostService;
-import core.service.VoteService;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,16 +23,10 @@ public class PostController {
 	private static Logger logger = LoggerFactory.getLogger(PostController.class);
 
 	private PostService postService;
-	private VoteService voteService;
-
-	public PostService getPostService() {
-		return postService;
-	}
 
 	@Autowired
-	public void setPostService(PostService postService, VoteService voteService) {
+	public void setPostService(PostService postService) {
 		this.postService = postService;
-		this.voteService = voteService;
 	}
 
 	@RequestMapping(method = RequestMethod.POST, produces = "application/json", consumes = "application/json")
@@ -91,10 +84,11 @@ public class PostController {
 	protected ResponseEntity getTopPosts(@PathVariable("count") int count) {
 		logger.info("get into register method");
 		try {
-			List<Long> topPostsIds = voteService.getTopPostsIds(count);
-			List<PostDTO> postDTOs = postService.findByIds(topPostsIds);
-			if (CollectionUtils.isEmpty(postDTOs)) {
-				return new ResponseEntity(postDTOs, HttpStatus.OK);
+			//			List<Long> topPostsIds = voteService.getTopPostsIds(count);
+			//			List<PostDTO> postDTOs = postService.findByIds(topPostsIds);
+			List<PostDTO> topList = postService.getTopPosts();
+			if (!CollectionUtils.isEmpty(topList)) {
+				return new ResponseEntity(topList, HttpStatus.OK);
 			} else {
 				return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 			}

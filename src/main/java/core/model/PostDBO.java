@@ -10,7 +10,7 @@ public class PostDBO implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "postId", updatable = false, nullable = false)
+	@Column(name = "post_id", updatable = false, nullable = false)
 	private Long postId;
 	private String post;
 

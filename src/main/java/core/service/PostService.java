@@ -12,4 +12,6 @@ public interface PostService {
 
 	List<PostDTO> findByIds(List<Long> ids);
 
+	List<PostDTO> getTopPosts();
+
 }

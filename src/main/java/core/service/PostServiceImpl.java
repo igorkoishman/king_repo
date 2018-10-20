@@ -24,6 +24,8 @@ public class PostServiceImpl implements PostService {
 
 	private ObjectMapper objectMapper;
 
+	private Context context;
+
 	private static final TypeReference<List<Comment>> typeRef = new TypeReference<List<Comment>>() {
 
 	};
@@ -96,6 +98,11 @@ public class PostServiceImpl implements PostService {
 
 	}
 
+	@Override
+	public List<PostDTO> getTopPosts() {
+		return context.getTopList();
+	}
+
 	private PostDTO createDTO(PostDBO postDBO) {
 		List<Comment> comments = null;
 		try {
@@ -124,6 +131,11 @@ public class PostServiceImpl implements PostService {
 	@Autowired
 	public void setObjectMapper(ObjectMapper objectMapper) {
 		this.objectMapper = objectMapper;
+	}
+
+	@Autowired
+	public void setContext(Context context) {
+		this.context = context;
 	}
 
 }

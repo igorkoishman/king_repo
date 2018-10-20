@@ -21,7 +21,7 @@ public class PostRepositoryImpl implements PostRepositoryCustom {
 
 	@Override
 	public Iterable<PostDBO> findPosts(List<Long> postIds) {
-		Query nativeQuery = entityManager.createNativeQuery("SELECT * FROM `post` p WHERE p.`postId` IN (?1) ;");
+		Query nativeQuery = entityManager.createNativeQuery("SELECT `post_id`,`post` FROM `post` p WHERE p.`post_id` IN (?1) ;", PostDBO.class);
 		nativeQuery.setParameter(1, postIds);
 		return nativeQuery.getResultList();
 	}
