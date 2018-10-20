@@ -1,6 +1,6 @@
-package core.clients;
+package core.repository;
 
-import core.service.VoteDTO;
+import core.repository.model.VoterDBO;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -20,22 +20,20 @@ public class VoteRepositoryImpl implements VoteRepositoryCustom {
 	EntityManager entityManager;
 
 	@Override
-	public int insertVote(VoteDTO voteDTO) {
+	public int insertVote(VoterDBO voterDBO) {
 		Query query = entityManager.createNativeQuery("insert into `votes` (id, post,vote) VALUES (?,?,?)");
-		query.setParameter(1, voteDTO.getUserId());
-		query.setParameter(2, voteDTO.getPostId());
-		query.setParameter(3, voteDTO.getVote());
+		query.setParameter(1, voterDBO.getUserForPost().getId());
+		query.setParameter(2, voterDBO.getUserForPost().getPost());
+		query.setParameter(3, voterDBO.getVote());
 		return query.executeUpdate();
 	}
 
 	@Override
 	public List<Long> getTopVotedPostsIds(int count) {
 		Query nativeQuery = entityManager.createNativeQuery(
-				"SELECT post FROM `votes` vo WHERE vo.`vote` > 0   GROUP BY(Post) ORDER BY vo.`post` DESC limit ?");
+				"SELECT post FROM `votes` vo WHERE vo.`vote` > 0   GROUP BY(post) ORDER BY vo.`post` DESC limit ?");
 		nativeQuery.setParameter(1, count);
 		return nativeQuery.getResultList();
 	}
-
-
 
 }

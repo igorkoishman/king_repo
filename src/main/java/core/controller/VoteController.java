@@ -1,6 +1,8 @@
 package core.controller;
 
-import core.service.VoteDTO;
+import core.controller.apimodel.Response;
+import core.controller.apimodel.VoteRequest;
+import core.model.VoteDTO;
 import core.service.VoteService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

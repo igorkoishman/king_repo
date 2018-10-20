@@ -1,5 +1,7 @@
 package core.service;
 
+import core.model.VoteDTO;
+
 import java.util.List;
 
 public interface VoteService {

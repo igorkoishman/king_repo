@@ -1,4 +1,4 @@
-package core.controller;
+package core.controller.apimodel;
 
 import java.util.Objects;
 

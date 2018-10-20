@@ -1,4 +1,4 @@
-package core.model;
+package core.repository.model;
 
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;

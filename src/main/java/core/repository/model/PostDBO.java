@@ -1,4 +1,4 @@
-package core.model;
+package core.repository.model;
 
 import javax.persistence.*;
 import java.io.Serializable;

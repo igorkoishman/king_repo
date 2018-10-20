@@ -1,6 +1,6 @@
-package core.clients;
+package core.repository;
 
-import core.model.PostDBO;
+import core.repository.model.PostDBO;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 

@@ -1,6 +1,6 @@
-package core.clients;
+package core.repository;
 
-import core.model.PostDBO;
+import core.repository.model.PostDBO;
 
 import java.util.List;
 

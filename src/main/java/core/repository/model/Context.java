@@ -1,5 +1,6 @@
-package core.service;
+package core.repository.model;
 
+import core.model.PostDTO;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

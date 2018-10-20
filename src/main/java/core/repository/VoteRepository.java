@@ -1,7 +1,7 @@
-package core.clients;
+package core.repository;
 
-import core.model.UserForPost;
-import core.model.VoterDBO;
+import core.repository.model.UserForPost;
+import core.repository.model.VoterDBO;
 import org.springframework.data.repository.CrudRepository;
 
 // This will be AUTO IMPLEMENTED by Spring into a Bean called userRepository

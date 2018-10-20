@@ -1,6 +1,4 @@
-package core.controller;
-
-import org.springframework.lang.NonNull;
+package core.controller.apimodel;
 
 import java.util.Objects;
 

@@ -1,5 +1,7 @@
 package core.service;
 
+import core.model.PostDTO;
+
 import java.util.List;
 
 public interface PostService {

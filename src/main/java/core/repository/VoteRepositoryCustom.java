@@ -1,11 +1,12 @@
-package core.clients;
+package core.repository;
 
-import core.service.VoteDTO;
+import core.repository.model.VoterDBO;
 
 import java.util.List;
 
 public interface VoteRepositoryCustom {
-	int insertVote(VoteDTO voteDTO);
+
+	int insertVote(VoterDBO voterDBO);
 
 	List<Long> getTopVotedPostsIds(int count);
 }

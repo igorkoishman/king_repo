@@ -1,4 +1,4 @@
-package core.model;
+package core.repository.model;
 
 import javax.persistence.Embeddable;
 import java.io.Serializable;

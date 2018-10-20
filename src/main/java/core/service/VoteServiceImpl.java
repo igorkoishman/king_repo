@@ -1,6 +1,9 @@
 package core.service;
 
-import core.clients.VoteRepository;
+import core.model.PostDTO;
+import core.model.VoteDTO;
+import core.repository.VoteRepository;
+import core.repository.model.VoterDBO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -21,7 +24,8 @@ public class VoteServiceImpl implements VoteService {
 		if (postDTO == null) {
 			return false;
 		}
-		voteRepository.insertVote(voteDto);
+		VoterDBO voterDBO = new VoterDBO(voteDto.getUserId(), voteDto.getPostId(), voteDto.getVote());
+		voteRepository.insertVote(voterDBO);
 		return true;
 	}
 
