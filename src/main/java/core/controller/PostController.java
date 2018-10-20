@@ -79,9 +79,9 @@ public class PostController {
 		}
 	}
 
-	@RequestMapping(value = "/top/{count}", method = RequestMethod.GET, produces = "application/json", consumes = "application/json")
+	@RequestMapping(value = "/top", method = RequestMethod.GET, produces = "application/json", consumes = "application/json")
 	@ResponseBody
-	protected ResponseEntity getTopPosts(@PathVariable("count") int count) {
+	protected ResponseEntity getTopPosts() {
 		logger.info("get into register method");
 		try {
 			System.out.println("controller " + Thread.currentThread().getId());
