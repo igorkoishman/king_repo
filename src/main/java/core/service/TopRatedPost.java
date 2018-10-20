@@ -7,6 +7,9 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 @Component
 public class TopRatedPost {
@@ -18,7 +21,21 @@ public class TopRatedPost {
 	private Context context;
 
 	@Scheduled(fixedRate = 5000)
-	public void recalculateTopPost() {
+	public void async() {
+		log.info("running async task");
+		quickService.schedule(new Runnable() {
+
+			@Override
+			public void run() {
+				try {
+					recalculateTopPost();
+				} catch (Exception e) {
+				}
+			}
+		}, 5000, TimeUnit.MILLISECONDS);
+	}
+
+	private void recalculateTopPost() {
 		List<Long> topPostsIds = voteService.getTopPostsIds(10);
 		List<PostDTO> postDTOs = postService.findByIds(topPostsIds);
 		context.setTopList(postDTOs);
@@ -46,5 +63,8 @@ public class TopRatedPost {
 	public void setContext(Context context) {
 		this.context = context;
 	}
+
+	private ScheduledExecutorService quickService = Executors.newScheduledThreadPool(
+			1); // Creates a thread pool that reuses fixed number of threads(as specified by noOfThreads in this case).
 
 }

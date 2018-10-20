@@ -84,8 +84,7 @@ public class PostController {
 	protected ResponseEntity getTopPosts(@PathVariable("count") int count) {
 		logger.info("get into register method");
 		try {
-			//			List<Long> topPostsIds = voteService.getTopPostsIds(count);
-			//			List<PostDTO> postDTOs = postService.findByIds(topPostsIds);
+			System.out.println("controller " + Thread.currentThread().getId());
 			List<PostDTO> topList = postService.getTopPosts();
 			if (!CollectionUtils.isEmpty(topList)) {
 				return new ResponseEntity(topList, HttpStatus.OK);

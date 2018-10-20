@@ -63,18 +63,10 @@ public class PostServiceImpl implements PostService {
 	@Override
 	@Cacheable(value = "posts", key = "#postId")
 	public PostDTO findById(long postId) {
-		try {
-			System.out.println("sleeping");
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
 		Optional<PostDBO> byId = postRepository.findById(postId);
 		if (byId.isPresent()) {
 			try {
-				List<Comment> comments = objectMapper.readValue(byId.get().getPost(), new TypeReference<List<Comment>>() {
-
-				});
+				List<Comment> comments = objectMapper.readValue(byId.get().getPost(), typeRef);
 				return new PostDTO(byId.get().getPostId(), comments);
 
 			} catch (IOException e) {
