@@ -31,7 +31,7 @@ public class VoteRepositoryImpl implements VoteRepositoryCustom {
 	@Override
 	public List<Long> getTopVotedPostsIds(int count) {
 		Query nativeQuery = entityManager.createNativeQuery(
-				"SELECT post FROM `votes` vo WHERE vo.`vote` > 0   GROUP BY(post) ORDER BY vo.`post` DESC limit ?");
+				"SELECT post FROM `votes` vo WHERE vo.`vote` > 0   GROUP BY(post) ORDER BY SUM(vote) DESC limit ?");
 		nativeQuery.setParameter(1, count);
 		return nativeQuery.getResultList();
 	}

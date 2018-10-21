@@ -3,10 +3,9 @@ package core.service;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import core.model.Comment;
 import core.model.PostDTO;
 import core.repository.PostRepository;
-import core.model.Comment;
-import core.repository.model.Context;
 import core.repository.model.PostDBO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CachePut;
@@ -26,17 +25,14 @@ public class PostServiceImpl implements PostService {
 
 	private ObjectMapper objectMapper;
 
-	private Context context;
+	private TopRatedPost topRatedPost;
 
-	private static final TypeReference<List<Comment>> typeRef = new TypeReference<List<Comment>>() {
-
-	};
+	private static final TypeReference<List<Comment>> typeRef = new TypeReference<List<Comment>>() {};
 
 	@Override
 	public PostDTO addPost(PostDTO postDTO) {
-		PostDBO postDBO = null;
 		try {
-			postDBO = postRepository.save(new PostDBO(objectMapper.writeValueAsString(postDTO.getComments())));
+			PostDBO postDBO = postRepository.save(new PostDBO(objectMapper.writeValueAsString(postDTO.getComments())));
 			return new PostDTO(postDBO.getPostId(), objectMapper.readValue(postDBO.getPost(), typeRef));
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -93,8 +89,9 @@ public class PostServiceImpl implements PostService {
 	}
 
 	@Override
+	@Cacheable("top-posts")
 	public List<PostDTO> getTopPosts() {
-		return context.getTopList();
+		return topRatedPost.recalculateTopPost();
 	}
 
 	private PostDTO createDTO(PostDBO postDBO) {
@@ -118,18 +115,13 @@ public class PostServiceImpl implements PostService {
 		this.postRepository = postRepository;
 	}
 
-	public ObjectMapper getObjectMapper() {
-		return objectMapper;
-	}
-
 	@Autowired
 	public void setObjectMapper(ObjectMapper objectMapper) {
 		this.objectMapper = objectMapper;
 	}
 
 	@Autowired
-	public void setContext(Context context) {
-		this.context = context;
+	public void setTopRatedPost(TopRatedPost topRatedPost) {
+		this.topRatedPost = topRatedPost;
 	}
-
 }

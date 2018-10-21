@@ -35,17 +35,17 @@ public class PostController {
 	protected @ResponseBody
 	ResponseEntity<?> addPost(@RequestBody Request request) {
 		logger.info("get into add method");
+		PostDTO postDTO;
 		if (StringUtils.isBlank(request.getMessage())) {
 			return ResponseEntity.badRequest().body(new Response("The message cannot be empty"));
 		}
 		try {
-			PostDTO postDTO = fromRequestToDTO(request);
-			postService.addPost(postDTO);
+			postDTO = postService.addPost(fromRequestToDTO(request));
 		} catch (Exception e) {
 			logger.error(e.getMessage());
 			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
 		}
-		return new ResponseEntity<>(HttpStatus.CREATED);
+		return new ResponseEntity<>(postDTO, HttpStatus.CREATED);
 	}
 
 	@RequestMapping(method = RequestMethod.PUT, produces = "application/json", consumes = "application/json")
@@ -67,7 +67,7 @@ public class PostController {
 	@RequestMapping(value = "/{postId}", method = RequestMethod.GET, produces = "application/json", consumes = "application/json")
 	@ResponseBody
 	protected ResponseEntity getById(@PathVariable("postId") Long postId) {
-		logger.info("get into register method");
+		logger.info("get into getById method");
 		try {
 			PostDTO postDTO = postService.findById(postId);
 			if (null != postDTO) {
@@ -84,7 +84,7 @@ public class PostController {
 	@RequestMapping(value = "/top", method = RequestMethod.GET, produces = "application/json", consumes = "application/json")
 	@ResponseBody
 	protected ResponseEntity getTopPosts() {
-		logger.info("get into register method");
+		logger.info("get into top-posts method");
 		try {
 			System.out.println("controller " + Thread.currentThread().getId());
 			List<PostDTO> topList = postService.getTopPosts();
