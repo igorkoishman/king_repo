@@ -1,8 +1,5 @@
 package core.service;
 
-import core.service.PostService;
-import core.service.TopRatedPost;
-import core.service.VoteService;
 import core.model.Comment;
 import core.model.PostDTO;
 import org.junit.Assert;
