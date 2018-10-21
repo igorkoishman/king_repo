@@ -12,11 +12,19 @@ import java.util.List;
 @Component
 public class VoteServiceImpl implements VoteService {
 
-	@Autowired
 	private VoteRepository voteRepository;
 
-	@Autowired
 	private PostService postService;
+
+	@Autowired
+	public void setVoteRepository(VoteRepository voteRepository) {
+		this.voteRepository = voteRepository;
+	}
+
+	@Autowired
+	public void setPostService(PostService postService) {
+		this.postService = postService;
+	}
 
 	@Override
 	public boolean insertVote(VoteDTO voteDto) {

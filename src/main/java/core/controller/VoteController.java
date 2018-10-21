@@ -2,8 +2,8 @@ package core.controller;
 
 import core.controller.apimodel.Response;
 import core.controller.apimodel.VoteRequest;
-import core.model.VoteDTO;
 import core.service.VoteService;
+import core.model.VoteDTO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,10 +20,14 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping("vote")
 public class VoteController {
 
-	@Autowired
+	private static Logger logger = LoggerFactory.getLogger(VoteController.class);
+
 	private VoteService voteService;
 
-	private static Logger logger = LoggerFactory.getLogger(VoteController.class);
+	@Autowired
+	public void setVoteService(VoteService voteService) {
+		this.voteService = voteService;
+	}
 
 	@RequestMapping(method = RequestMethod.POST, produces = "application/json", consumes = "application/json")
 	protected @ResponseBody

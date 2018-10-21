@@ -24,38 +24,24 @@ public class PostServiceImpl implements PostService {
 	private PostRepository postRepository;
 
 	private ObjectMapper objectMapper;
-
 	private TopRatedPost topRatedPost;
+	private static final TypeReference<List<Comment>> typeRef = new TypeReference<List<Comment>>() {
 
-	private static final TypeReference<List<Comment>> typeRef = new TypeReference<List<Comment>>() {};
+	};
 
-	@Override
-	public PostDTO addPost(PostDTO postDTO) {
-		try {
-			PostDBO postDBO = postRepository.save(new PostDBO(objectMapper.writeValueAsString(postDTO.getComments())));
-			return new PostDTO(postDBO.getPostId(), objectMapper.readValue(postDBO.getPost(), typeRef));
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		return null;
+	@Autowired
+	public void setTopRatedPost(TopRatedPost topRatedPost) {
+		this.topRatedPost = topRatedPost;
 	}
 
-	@Override
-	@CachePut(value = "posts", key = "#postDTO.postId")
-	public PostDTO updatePost(PostDTO postDTO) {
-		PostDTO postFromRepo = findById(postDTO.getPostId());
-		List<Comment> comments = postFromRepo.getComments();
-		Comment newComment = postDTO.getComments().get(0);
-		long nextCommentID = comments.size() + 1L;
-		newComment.setCommentId(nextCommentID);
-		comments.add(newComment);
-		try {
-			PostDBO postDBO = new PostDBO(postDTO.getPostId(), objectMapper.writeValueAsString(postFromRepo.getComments()));
-			postRepository.save(postDBO);
-		} catch (JsonProcessingException e) {
-			e.printStackTrace();
-		}
-		return postFromRepo;
+	@Autowired
+	public void setPostRepository(PostRepository postRepository) {
+		this.postRepository = postRepository;
+	}
+
+	@Autowired
+	public void setObjectMapper(ObjectMapper objectMapper) {
+		this.objectMapper = objectMapper;
 	}
 
 	@Override
@@ -89,6 +75,35 @@ public class PostServiceImpl implements PostService {
 	}
 
 	@Override
+	public PostDTO addPost(PostDTO postDTO) {
+		try {
+			PostDBO postDBO = postRepository.save(new PostDBO(objectMapper.writeValueAsString(postDTO.getComments())));
+			return new PostDTO(postDBO.getPostId(), objectMapper.readValue(postDBO.getPost(), typeRef));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	@Override
+	@CachePut(value = "posts", key = "#postDTO.postId")
+	public PostDTO updatePost(PostDTO postDTO) {
+		PostDTO postFromRepo = findById(postDTO.getPostId());
+		List<Comment> comments = postFromRepo.getComments();
+		Comment newComment = postDTO.getComments().get(0);
+		long nextCommentID = comments.size() + 1L;
+		newComment.setCommentId(nextCommentID);
+		comments.add(newComment);
+		try {
+			PostDBO postDBO = new PostDBO(postDTO.getPostId(), objectMapper.writeValueAsString(postFromRepo.getComments()));
+			postRepository.save(postDBO);
+		} catch (JsonProcessingException e) {
+			e.printStackTrace();
+		}
+		return postFromRepo;
+	}
+
+	@Override
 	@Cacheable("top-posts")
 	public List<PostDTO> getTopPosts() {
 		return topRatedPost.recalculateTopPost();
@@ -106,22 +121,4 @@ public class PostServiceImpl implements PostService {
 		return new PostDTO(postDBO.getPostId(), comments);
 	}
 
-	public PostRepository getPostRepository() {
-		return postRepository;
-	}
-
-	@Autowired
-	public void setPostRepository(PostRepository postRepository) {
-		this.postRepository = postRepository;
-	}
-
-	@Autowired
-	public void setObjectMapper(ObjectMapper objectMapper) {
-		this.objectMapper = objectMapper;
-	}
-
-	@Autowired
-	public void setTopRatedPost(TopRatedPost topRatedPost) {
-		this.topRatedPost = topRatedPost;
-	}
 }

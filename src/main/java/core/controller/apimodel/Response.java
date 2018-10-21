@@ -6,6 +6,9 @@ public class Response {
 
 	String errorMessage;
 
+	public Response() {
+	}
+
 	public Response(String errorMessage) {
 		this.errorMessage = errorMessage;
 	}

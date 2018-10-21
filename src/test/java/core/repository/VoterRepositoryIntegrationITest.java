@@ -1,6 +1,5 @@
-package core.clients;
+package core.repository;
 
-import core.repository.VoteRepository;
 import core.repository.model.UserForPost;
 import core.repository.model.VoterDBO;
 import org.junit.Assert;
@@ -20,13 +19,13 @@ import static org.junit.Assert.assertTrue;
 
 @RunWith(SpringRunner.class)
 @DataJpaTest
-public class VoterRepositoryIntegrationTest {
+public class VoterRepositoryIntegrationITest {
 
 	@Autowired
 	private TestEntityManager entityManager;
 
 	@Autowired
-	private VoteRepository voterRepository;
+	private VoteRepository voteRepository;
 
 	@Test
 	public void find_By_UserForPost() {
@@ -35,7 +34,7 @@ public class VoterRepositoryIntegrationTest {
 		entityManager.persist(alex);
 		entityManager.flush();
 
-		Optional<VoterDBO> byId = voterRepository.findById(new UserForPost(123, 2l));
+		Optional<VoterDBO> byId = voteRepository.findById(new UserForPost(123, 2l));
 		assertTrue("the resault is not as expected", byId.get().getUserForPost().getId() == alex.getUserForPost().getId());
 	}
 
@@ -46,7 +45,7 @@ public class VoterRepositoryIntegrationTest {
 		entityManager.persist(alex);
 		entityManager.flush();
 
-		List<VoterDBO> all = (List<VoterDBO>) voterRepository.findAll();
+		List<VoterDBO> all = (List<VoterDBO>) voteRepository.findAll();
 
 		Assert.assertEquals("the size not as expected", 1, all.size());
 		assertTrue("the resault is not as expected", all.iterator().next().getUserForPost().getId() == alex.getUserForPost().getId());
@@ -65,7 +64,7 @@ public class VoterRepositoryIntegrationTest {
 		entityManager.persistAndFlush(alex2);
 		entityManager.persistAndFlush(alex3);
 
-		List<VoterDBO> all = (List<VoterDBO>) voterRepository.findAll();
+		List<VoterDBO> all = (List<VoterDBO>) voteRepository.findAll();
 		all.sort(new Comparator<VoterDBO>() {
 
 			@Override
@@ -99,26 +98,26 @@ public class VoterRepositoryIntegrationTest {
 		entityManager.persistAndFlush(voter7);
 		entityManager.persistAndFlush(voter8);
 
-		List<Long> topVotedPostsIds = voterRepository.getTopVotedPostsIds(3);
+		List<Long> topVotedPostsIds = voteRepository.getTopVotedPostsIds(3);
 		Assert.assertEquals(3, topVotedPostsIds.size());
-//		long value1 = topVotedPostsIds.get(0).longValue();
-//		long value2 = topVotedPostsIds.get(1).longValue();
-//		long value3 = topVotedPostsIds.get(2).longValue();
-//		Assert.assertEquals(6, value1);
+		//		long value1 = topVotedPostsIds.get(0).longValue();
+		//		long value2 = topVotedPostsIds.get(1).longValue();
+		//		long value3 = topVotedPostsIds.get(2).longValue();
+		//		Assert.assertEquals(6, value1);
 
 	}
 
 	@Test
 	public void getTopVotedPostsIdsNoEntityInRepoTest() {
-		List<Long> topVotedPostsIds = voterRepository.getTopVotedPostsIds(3);
+		List<Long> topVotedPostsIds = voteRepository.getTopVotedPostsIds(3);
 		Assert.assertTrue("the result set is not empty", topVotedPostsIds.isEmpty());
 	}
 
 	@Test
 	public void insertVote() {
 		VoterDBO expected = new VoterDBO(1l, 2l, 1);
-		Assert.assertEquals(1, voterRepository.insertVote(expected));
-		Optional<VoterDBO> fromRepo = voterRepository.findById(new UserForPost(1l, 2l));
+		Assert.assertEquals(1, voteRepository.insertVote(expected));
+		Optional<VoterDBO> fromRepo = voteRepository.findById(new UserForPost(1l, 2l));
 		Assert.assertEquals("the DBOs is not equals", expected, fromRepo.get());
 	}
 

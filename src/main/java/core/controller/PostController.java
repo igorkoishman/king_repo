@@ -2,9 +2,9 @@ package core.controller;
 
 import core.controller.apimodel.Request;
 import core.controller.apimodel.Response;
+import core.service.PostService;
 import core.model.Comment;
 import core.model.PostDTO;
-import core.service.PostService;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
