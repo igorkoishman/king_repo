@@ -80,34 +80,6 @@ public class VoterRepositoryIntegrationITest {
 	}
 
 	@Test
-	public void getTopVotedPostsIdsTest() {
-		VoterDBO voter1 = new VoterDBO(11, 2l, 1);
-		VoterDBO voter2 = new VoterDBO(21, 2l, 1);
-		VoterDBO voter3 = new VoterDBO(31, 3l, 1);
-		VoterDBO voter4 = new VoterDBO(41, 3l, 1);
-		VoterDBO voter5 = new VoterDBO(51, 4l, 1);
-		VoterDBO voter6 = new VoterDBO(61, 4l, -1);
-		VoterDBO voter7 = new VoterDBO(71, 5l, 1);
-		VoterDBO voter8 = new VoterDBO(81, 6l, 1);
-		entityManager.persistAndFlush(voter1);
-		entityManager.persistAndFlush(voter2);
-		entityManager.persistAndFlush(voter3);
-		entityManager.persistAndFlush(voter4);
-		entityManager.persistAndFlush(voter5);
-		entityManager.persistAndFlush(voter6);
-		entityManager.persistAndFlush(voter7);
-		entityManager.persistAndFlush(voter8);
-
-		List<Long> topVotedPostsIds = voteRepository.getTopVotedPostsIds(3);
-		Assert.assertEquals(3, topVotedPostsIds.size());
-		//		long value1 = topVotedPostsIds.get(0).longValue();
-		//		long value2 = topVotedPostsIds.get(1).longValue();
-		//		long value3 = topVotedPostsIds.get(2).longValue();
-		//		Assert.assertEquals(6, value1);
-
-	}
-
-	@Test
 	public void getTopVotedPostsIdsNoEntityInRepoTest() {
 		List<Long> topVotedPostsIds = voteRepository.getTopVotedPostsIds(3);
 		Assert.assertTrue("the result set is not empty", topVotedPostsIds.isEmpty());
