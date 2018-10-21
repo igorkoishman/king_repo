@@ -74,7 +74,7 @@ public class VoterRepositoryIntegrationITest {
 		});
 		Assert.assertEquals("the size not as expected", posters.size(), all.size());
 		for (int i = 0; i < posters.size(); i++) {
-			Assert.assertEquals("the resault is not as expected", posters.get(i), posters.get(i));
+			Assert.assertEquals("the result is not as expected", posters.get(i), posters.get(i));
 
 		}
 	}
