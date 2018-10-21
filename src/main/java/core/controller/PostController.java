@@ -86,7 +86,6 @@ public class PostController {
 	protected ResponseEntity getTopPosts() {
 		logger.info("get into top-posts method");
 		try {
-			System.out.println("controller " + Thread.currentThread().getId());
 			List<PostDTO> topList = postService.getTopPosts();
 			if (!CollectionUtils.isEmpty(topList)) {
 				return new ResponseEntity(topList, HttpStatus.OK);

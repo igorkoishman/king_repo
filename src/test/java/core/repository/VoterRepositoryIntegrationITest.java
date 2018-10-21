@@ -29,7 +29,6 @@ public class VoterRepositoryIntegrationITest {
 
 	@Test
 	public void find_By_UserForPost() {
-		// given
 		VoterDBO alex = new VoterDBO(123, 2l, 1);
 		entityManager.persist(alex);
 		entityManager.flush();
@@ -40,7 +39,6 @@ public class VoterRepositoryIntegrationITest {
 
 	@Test
 	public void find_all_only_one_in_db() {
-		// given
 		VoterDBO alex = new VoterDBO(123, 2l, 1);
 		entityManager.persist(alex);
 		entityManager.flush();

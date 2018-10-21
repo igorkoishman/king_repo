@@ -4,6 +4,8 @@ import core.model.PostDTO;
 import core.model.VoteDTO;
 import core.repository.VoteRepository;
 import core.repository.model.VoterDBO;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -11,6 +13,8 @@ import java.util.List;
 
 @Component
 public class VoteServiceImpl implements VoteService {
+
+	private static Logger logger = LoggerFactory.getLogger(VoteServiceImpl.class);
 
 	private VoteRepository voteRepository;
 
@@ -28,6 +32,7 @@ public class VoteServiceImpl implements VoteService {
 
 	@Override
 	public boolean insertVote(VoteDTO voteDto) {
+		logger.debug("run service method insert vote");
 		PostDTO postDTO = postService.findById(voteDto.getPostId());
 		if (postDTO == null) {
 			return false;
@@ -39,6 +44,7 @@ public class VoteServiceImpl implements VoteService {
 
 	@Override
 	public List<Long> getTopPostsIds(int count) {
+		logger.debug("run service method getTopVotedPostsIds");
 		return voteRepository.getTopVotedPostsIds(count);
 	}
 }
