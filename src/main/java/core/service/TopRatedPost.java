@@ -23,7 +23,7 @@ public class TopRatedPost {
 	@CachePut(value = "top-posts")
 	@Async
 	public List<PostDTO> recalculateTopPost() {
-		log.debug("running async task to recalculate top posts on thread id {}", Thread.currentThread().getId());
+		log.info("running async task to recalculate top posts on thread id {}", Thread.currentThread().getId());
 		List<Long> topPostsIds = voteService.getTopPostsIds(10);
 		List<PostDTO> postDTOs = postService.findByIds(topPostsIds);
 		return postDTOs;
