@@ -2,10 +2,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.koishman</groupId>
-    <artifactId>kings</artifactId>
+    <artifactId>posts</artifactId>
     <packaging>jar</packaging>
-    <version>0.0.2-SNAPSHOT</version>
-    <name>kings</name>
+    <version>1.0.0-rc1</version>
+    <name>posts</name>
     <url>http://maven.apache.org</url>
 
     <parent>
@@ -61,10 +61,10 @@
             <artifactId>commons-lang3</artifactId>
             <version>3.1</version>
         </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-cache</artifactId>
-            </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-cache</artifactId>
+        </dependency>
         <dependency>
             <groupId>net.sf.ehcache</groupId>
             <artifactId>ehcache-core</artifactId>
