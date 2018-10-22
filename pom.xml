@@ -1,12 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.koishman</groupId>
-    <artifactId>kings</artifactId>
+    <groupId>com.github.igorkoishman</groupId>
+    <artifactId>posts-app</artifactId>
     <packaging>jar</packaging>
     <version>1.0.0-rc1</version>
-    <name>posts</name>
-    <url>http://maven.apache.org</url>
+    <name>posts-app</name>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -82,13 +81,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <fork>true</fork>
-                    <executable>C:\Users\ikoishman\.sdkman\candidates\java\current\bin\javac.exe</executable>
-                </configuration>
             </plugin>
         </plugins>
     </build>
