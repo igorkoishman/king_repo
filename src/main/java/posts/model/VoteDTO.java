@@ -5,7 +5,7 @@ import java.util.Objects;
 public class VoteDTO {
 
 	private long userId;
-	private long PostId;
+	private long postId;
 	int vote;
 
 	public VoteDTO() {
@@ -13,7 +13,7 @@ public class VoteDTO {
 
 	public VoteDTO(long userId, long postId, int vote) {
 		this.userId = userId;
-		PostId = postId;
+		this.postId = postId;
 		this.vote = vote;
 	}
 
@@ -26,11 +26,11 @@ public class VoteDTO {
 	}
 
 	public long getPostId() {
-		return PostId;
+		return postId;
 	}
 
 	public void setPostId(long postId) {
-		PostId = postId;
+		this.postId = postId;
 	}
 
 	public int getVote() {
@@ -48,20 +48,20 @@ public class VoteDTO {
 		if (o == null || getClass() != o.getClass())
 			return false;
 		VoteDTO voteDTO = (VoteDTO) o;
-		return userId == voteDTO.userId && PostId == voteDTO.PostId && vote == voteDTO.vote;
+		return userId == voteDTO.userId && postId == voteDTO.postId && vote == voteDTO.vote;
 	}
 
 	@Override
 	public int hashCode() {
 
-		return Objects.hash(userId, PostId, vote);
+		return Objects.hash(userId, postId, vote);
 	}
 
 	@Override
 	public String toString() {
 		final StringBuilder sb = new StringBuilder("VoteDTO{");
 		sb.append("userId=").append(userId);
-		sb.append(", PostId=").append(PostId);
+		sb.append(", postId=").append(postId);
 		sb.append(", vote=").append(vote);
 		sb.append('}');
 		return sb.toString();

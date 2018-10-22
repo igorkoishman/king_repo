@@ -92,16 +92,18 @@ public class PostServiceImpl implements PostService {
   public PostDTO updatePost(PostDTO postDTO) {
     logger.debug("run service method update post");
     PostDTO postFromRepo = findById(postDTO.getPostId());
-    List<Comment> comments = postFromRepo.getComments();
-    Comment newComment = postDTO.getComments().get(0);
-    long nextCommentID = comments.size() + 1L;
-    newComment.setCommentId(nextCommentID);
-    comments.add(newComment);
-    try {
-      PostDBO postDBO = new PostDBO(postDTO.getPostId(), objectMapper.writeValueAsString(postFromRepo.getComments()));
-      postRepository.save(postDBO);
-    } catch (JsonProcessingException e) {
-      e.printStackTrace();
+    if (null != postFromRepo) {
+      List<Comment> comments = postFromRepo.getComments();
+      Comment newComment = postDTO.getComments().get(0);
+      long nextCommentID = comments.size() + 1L;
+      newComment.setCommentId(nextCommentID);
+      comments.add(newComment);
+      try {
+        PostDBO postDBO = new PostDBO(postDTO.getPostId(), objectMapper.writeValueAsString(postFromRepo.getComments()));
+        postRepository.save(postDBO);
+      } catch (JsonProcessingException e) {
+        e.printStackTrace();
+      }
     }
     return postFromRepo;
   }

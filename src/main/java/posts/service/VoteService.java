@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface VoteService {
 
-	boolean insertVote(VoteDTO voteDto);
+	VoteDTO insertVote(VoteDTO voteDto);
 
 	List<Long> getTopPostsIds(int count);
 }
