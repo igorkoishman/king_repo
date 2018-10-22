@@ -54,7 +54,7 @@ public class PostServiceImpl implements PostService {
         List<Comment> comments = objectMapper.readValue(byId.get().getPost(), typeRef);
         return new PostDTO(byId.get().getPostId(), comments);
       } catch (IOException e) {
-        e.printStackTrace();
+        logger.error(e.getMessage());
       }
     }
     return null;
@@ -82,7 +82,7 @@ public class PostServiceImpl implements PostService {
       PostDBO postDBO = postRepository.save(new PostDBO(objectMapper.writeValueAsString(postDTO.getComments())));
       return new PostDTO(postDBO.getPostId(), objectMapper.readValue(postDBO.getPost(), typeRef));
     } catch (IOException e) {
-      e.printStackTrace();
+      logger.error(e.getMessage());
     }
     return null;
   }
@@ -102,7 +102,7 @@ public class PostServiceImpl implements PostService {
         PostDBO postDBO = new PostDBO(postDTO.getPostId(), objectMapper.writeValueAsString(postFromRepo.getComments()));
         postRepository.save(postDBO);
       } catch (JsonProcessingException e) {
-        e.printStackTrace();
+        logger.error(e.getMessage());
       }
     }
     return postFromRepo;
@@ -121,7 +121,7 @@ public class PostServiceImpl implements PostService {
       comments = objectMapper.readValue(postDBO.getPost(), new TypeReference<List<Comment>>() {
       });
     } catch (IOException e) {
-      e.printStackTrace();
+      logger.error(e.getMessage());
     }
     return new PostDTO(postDBO.getPostId(), comments);
   }
