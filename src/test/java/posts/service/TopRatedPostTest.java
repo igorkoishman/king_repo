@@ -1,13 +1,13 @@
 package posts.service;
 
-import posts.model.Comment;
-import posts.model.PostDTO;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
+import posts.model.Comment;
+import posts.model.PostDTO;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,7 +36,7 @@ public class TopRatedPostTest {
 	@Test
 	public void singleResultFromTheCalculation() {
 		when(voteService.getTopPostsIds(10)).thenReturn(new ArrayList<>(1));
-		List<PostDTO> postDTOs = generatePostDtosResult(1, 1);
+		List<PostDTO> postDTOs = generatePostDTOsResult(1, 1);
 		when(postService.findByIds(new ArrayList<>())).thenReturn(postDTOs);
 		List<PostDTO> postDTOS = topRatedPost.recalculateTopPost();
 		Assert.assertNotNull("Return value is not as expected ", postDTOS);
@@ -44,7 +44,17 @@ public class TopRatedPostTest {
 		Assert.assertEquals("List size is not as expected ", postDTOS, postDTOS);
 	}
 
-	private List<PostDTO> generatePostDtosResult(int numberOfPostsDTOs, int commentsPerPostsDTO) {
+	@Test
+	public void verifyTopXTopFromVotesAndFetchFromDB() {
+
+	}
+
+	@Test
+	public void checkRunTimeExceptionOnServiceResponse() {
+
+	}
+
+	private List<PostDTO> generatePostDTOsResult(int numberOfPostsDTOs, int commentsPerPostsDTO) {
 		List<PostDTO> postDTOs = new ArrayList<>();
 		for (long i = 0; i < numberOfPostsDTOs; i++) {
 			List<Comment> comments = generateComments(commentsPerPostsDTO);

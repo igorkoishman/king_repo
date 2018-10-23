@@ -1,6 +1,5 @@
 package posts.controller;
 
-import java.util.HashMap;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -20,28 +19,42 @@ import posts.Application;
 import posts.controller.apimodel.Response;
 import posts.controller.apimodel.VoteRequest;
 
+import java.util.HashMap;
+
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = Application.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class VoteControllerITest {
 
-  @LocalServerPort
-  private int port;
-  @Autowired
-  private TestRestTemplate restTemplate;
+	@LocalServerPort
+	private int port;
+	@Autowired
+	private TestRestTemplate restTemplate;
 
-  @Test
-  public void addVoteTest() {
-    VoteRequest voteRequest = new VoteRequest(1l, 1l, 1);
-    HttpHeaders headers = new HttpHeaders();
-    headers.setContentType(MediaType.APPLICATION_JSON);
+	@Test
+	public void addVoteTest() {
+		VoteRequest voteRequest = new VoteRequest(1l, 1l, 1);
+		HttpHeaders headers = new HttpHeaders();
+		headers.setContentType(MediaType.APPLICATION_JSON);
 
-    MultiValueMap<String, String> map = new LinkedMultiValueMap<String, String>();
+		MultiValueMap<String, String> map = new LinkedMultiValueMap<String, String>();
 
-    HttpEntity<VoteRequest> entity = new HttpEntity<>(voteRequest, headers);
-    ParameterizedTypeReference<HashMap<String, String>> responseType = new ParameterizedTypeReference<HashMap<String, String>>() {
-    };
-    ResponseEntity<Response> responseResponseEntity = restTemplate
-        .postForEntity("http://localhost:" + port + "/vote", entity, Response.class);
-    Assert.assertNotNull(responseResponseEntity.getStatusCode());
-  }
+		HttpEntity<VoteRequest> entity = new HttpEntity<>(voteRequest, headers);
+		ParameterizedTypeReference<HashMap<String, String>> responseType = new ParameterizedTypeReference<HashMap<String, String>>() {
+
+		};
+		ResponseEntity<Response> responseResponseEntity = restTemplate.postForEntity("http://localhost:" + port + "/vote", entity, Response.class);
+		Assert.assertNotNull(responseResponseEntity.getStatusCode());
+	}
+
+	@Test
+	public void addVoteWithNotValidVoteValueTest() {
+	}
+
+	@Test
+	public void duplicateVoteVerify409() {
+	}
+
+	@Test
+	public void votingOnNotExistingPost() {
+	}
 }

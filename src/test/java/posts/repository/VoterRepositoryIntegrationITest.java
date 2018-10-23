@@ -1,7 +1,5 @@
 package posts.repository;
 
-import posts.repository.model.UserForPost;
-import posts.repository.model.VoterDBO;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -9,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
 import org.springframework.test.context.junit4.SpringRunner;
+import posts.repository.model.UserForPost;
+import posts.repository.model.VoterDBO;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -84,11 +84,15 @@ public class VoterRepositoryIntegrationITest {
 	}
 
 	@Test
-	public void insertVote() {
+	public void successInsertVote() {
 		VoterDBO expected = new VoterDBO(1l, 2l, 1);
 		Assert.assertEquals(1, voteRepository.insertVote(expected));
 		Optional<VoterDBO> fromRepo = voteRepository.findById(new UserForPost(1l, 2l));
 		Assert.assertEquals("the DBOs is not equals", expected, fromRepo.get());
+	}
+
+	@Test
+	public void failedOnDataIntegrityUniqueViolationInsertVote() {
 	}
 
 }
