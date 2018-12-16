@@ -6,6 +6,7 @@ import org.springframework.cache.ehcache.EhCacheManagerFactoryBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
+import org.springframework.web.client.RestTemplate;
 
 @Configuration
 @EnableCaching
@@ -25,5 +26,10 @@ public class CacheConfiguration {
 		cacheManager.setCacheManager(ehCacheManagerFactory().getObject());
 		cacheManager.setTransactionAware(true);
 		return cacheManager;
+	}
+
+	@Bean
+	public RestTemplate restTemplate() {
+		return new RestTemplate();
 	}
 }
