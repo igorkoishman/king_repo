@@ -112,7 +112,7 @@ public class PostServiceImpl implements PostService {
   @Cacheable("top-posts")
   public List<PostDTO> getTopPosts() {
     logger.debug("run service method get top rated posts");
-    return topRatedPost.recalculateTopPost();
+    return null;
   }
 
   private PostDTO createDTO(PostDBO postDBO) {

@@ -24,25 +24,25 @@ public class TopRatedPostTest {
 	@Mock
 	private PostService postService;
 
-	@Test
-	public void emptyResultFromVotes() {
-		when(voteService.getTopPostsIds(10)).thenReturn(new ArrayList<>());
-		when(postService.findByIds(new ArrayList<>())).thenReturn(new ArrayList<>());
-		List<PostDTO> postDTOS = topRatedPost.recalculateTopPost();
-		Assert.assertNotNull("Return value is not as expected ", postDTOS);
-		Assert.assertEquals("List size is not as expected ", 0, postDTOS.size());
-	}
-
-	@Test
-	public void singleResultFromTheCalculation() {
-		when(voteService.getTopPostsIds(10)).thenReturn(new ArrayList<>(1));
-		List<PostDTO> postDTOs = generatePostDTOsResult(1, 1);
-		when(postService.findByIds(new ArrayList<>())).thenReturn(postDTOs);
-		List<PostDTO> postDTOS = topRatedPost.recalculateTopPost();
-		Assert.assertNotNull("Return value is not as expected ", postDTOS);
-		Assert.assertEquals("List size is not as expected ", 1, postDTOS.size());
-		Assert.assertEquals("List size is not as expected ", postDTOS, postDTOS);
-	}
+//	@Test
+//	public void emptyResultFromVotes() {
+//		when(voteService.getTopPostsIds(10)).thenReturn(new ArrayList<>());
+//		when(postService.findByIds(new ArrayList<>())).thenReturn(new ArrayList<>());
+//		List<PostDTO> postDTOS = topRatedPost.recalculateTopPost();
+//		Assert.assertNotNull("Return value is not as expected ", postDTOS);
+//		Assert.assertEquals("List size is not as expected ", 0, postDTOS.size());
+//	}
+//
+//	@Test
+//	public void singleResultFromTheCalculation() {
+//		when(voteService.getTopPostsIds(10)).thenReturn(new ArrayList<>(1));
+//		List<PostDTO> postDTOs = generatePostDTOsResult(1, 1);
+//		when(postService.findByIds(new ArrayList<>())).thenReturn(postDTOs);
+//		List<PostDTO> postDTOS = topRatedPost.recalculateTopPost();
+//		Assert.assertNotNull("Return value is not as expected ", postDTOS);
+//		Assert.assertEquals("List size is not as expected ", 1, postDTOS.size());
+//		Assert.assertEquals("List size is not as expected ", postDTOS, postDTOS);
+//	}
 
 	@Test
 	public void verifyTopXTopFromVotesAndFetchFromDB() {
