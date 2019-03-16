@@ -5162,131 +5162,131 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 2019-03-10 21:52:48,671 INFO org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor [main] No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
 2019-03-10 21:52:48,688 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
 2019-03-10 21:52:48,688 INFO org.springframework.aop.interceptor.AsyncExecutionAspectSupport [pool-1-thread-1] No task executor bean found for async processing: no bean of type TaskExecutor and no bean named 'taskExecutor' either
-2019-03-10 21:52:48,696 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-1] running async task to recalculate top posts on thread id 54
+2019-03-10 21:52:48,696 INFO TopRatedPost [SimpleAsyncTaskExecutor-1] running async task to recalculate top posts on thread id 54
 2019-03-10 21:52:48,700 INFO org.apache.juli.logging.DirectJDKLog [main] Using a shared selector for servlet write/read
 2019-03-10 21:52:48,762 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
 2019-03-10 21:52:48,769 INFO org.springframework.boot.StartupInfoLogger [main] Started Application in 10.682 seconds (JVM running for 16.625)
 2019-03-10 21:52:48,775 INFO posts.Application [main] READY TO USE
-2019-03-10 21:52:53,681 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-2] running async task to recalculate top posts on thread id 79
-2019-03-10 21:52:58,682 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-3] running async task to recalculate top posts on thread id 80
-2019-03-10 21:53:03,678 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-4] running async task to recalculate top posts on thread id 81
-2019-03-10 21:53:08,679 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-5] running async task to recalculate top posts on thread id 82
-2019-03-10 21:53:13,680 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-6] running async task to recalculate top posts on thread id 83
-2019-03-10 21:53:18,679 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-7] running async task to recalculate top posts on thread id 84
-2019-03-10 21:53:23,680 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-8] running async task to recalculate top posts on thread id 85
-2019-03-10 21:53:28,680 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-9] running async task to recalculate top posts on thread id 86
-2019-03-10 21:53:33,678 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-10] running async task to recalculate top posts on thread id 87
-2019-03-10 21:53:38,682 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-11] running async task to recalculate top posts on thread id 88
-2019-03-10 21:53:43,678 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-12] running async task to recalculate top posts on thread id 89
-2019-03-10 21:53:48,678 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-13] running async task to recalculate top posts on thread id 90
-2019-03-10 21:53:53,682 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-14] running async task to recalculate top posts on thread id 91
-2019-03-10 21:53:58,681 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-15] running async task to recalculate top posts on thread id 92
-2019-03-10 21:54:03,680 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-16] running async task to recalculate top posts on thread id 93
-2019-03-10 21:54:08,680 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-17] running async task to recalculate top posts on thread id 94
-2019-03-10 21:54:13,681 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-18] running async task to recalculate top posts on thread id 96
-2019-03-10 21:54:18,680 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-19] running async task to recalculate top posts on thread id 97
-2019-03-10 21:54:23,680 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-20] running async task to recalculate top posts on thread id 98
-2019-03-10 21:54:28,681 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-21] running async task to recalculate top posts on thread id 99
-2019-03-10 21:54:33,679 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-22] running async task to recalculate top posts on thread id 100
-2019-03-10 21:54:38,683 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-23] running async task to recalculate top posts on thread id 101
-2019-03-10 21:54:43,680 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-24] running async task to recalculate top posts on thread id 102
-2019-03-10 21:54:48,679 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-25] running async task to recalculate top posts on thread id 103
-2019-03-10 21:54:53,679 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-26] running async task to recalculate top posts on thread id 104
-2019-03-10 21:54:58,678 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-27] running async task to recalculate top posts on thread id 105
-2019-03-10 21:55:03,680 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-28] running async task to recalculate top posts on thread id 106
-2019-03-10 21:55:08,680 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-29] running async task to recalculate top posts on thread id 107
-2019-03-10 21:55:13,682 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-30] running async task to recalculate top posts on thread id 108
-2019-03-10 21:55:18,777 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-31] running async task to recalculate top posts on thread id 109
-2019-03-10 21:55:23,681 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-32] running async task to recalculate top posts on thread id 110
-2019-03-10 21:55:28,678 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-33] running async task to recalculate top posts on thread id 111
-2019-03-10 21:55:33,680 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-34] running async task to recalculate top posts on thread id 112
-2019-03-10 21:55:38,681 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-35] running async task to recalculate top posts on thread id 113
-2019-03-10 21:55:43,681 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-36] running async task to recalculate top posts on thread id 114
-2019-03-10 21:55:48,681 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-37] running async task to recalculate top posts on thread id 115
-2019-03-10 21:55:53,679 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-38] running async task to recalculate top posts on thread id 116
-2019-03-10 21:55:58,681 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-39] running async task to recalculate top posts on thread id 117
-2019-03-10 21:56:03,679 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-40] running async task to recalculate top posts on thread id 118
-2019-03-10 21:56:08,677 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-41] running async task to recalculate top posts on thread id 119
-2019-03-10 21:56:13,681 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-42] running async task to recalculate top posts on thread id 120
-2019-03-10 21:56:18,680 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-43] running async task to recalculate top posts on thread id 121
-2019-03-10 21:56:23,712 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-44] running async task to recalculate top posts on thread id 122
-2019-03-10 21:56:28,681 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-45] running async task to recalculate top posts on thread id 123
-2019-03-10 21:56:33,681 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-46] running async task to recalculate top posts on thread id 124
-2019-03-10 21:56:38,681 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-47] running async task to recalculate top posts on thread id 125
-2019-03-10 21:56:43,680 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-48] running async task to recalculate top posts on thread id 126
-2019-03-10 21:56:48,680 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-49] running async task to recalculate top posts on thread id 127
-2019-03-10 21:56:53,717 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-50] running async task to recalculate top posts on thread id 128
-2019-03-10 21:56:58,681 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-51] running async task to recalculate top posts on thread id 129
-2019-03-10 21:57:03,679 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-52] running async task to recalculate top posts on thread id 130
-2019-03-10 21:57:08,696 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-53] running async task to recalculate top posts on thread id 131
-2019-03-10 21:57:13,681 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-54] running async task to recalculate top posts on thread id 132
-2019-03-10 21:57:18,679 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-55] running async task to recalculate top posts on thread id 133
-2019-03-10 21:57:23,681 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-56] running async task to recalculate top posts on thread id 134
-2019-03-10 21:57:28,680 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-57] running async task to recalculate top posts on thread id 135
-2019-03-10 21:57:33,684 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-58] running async task to recalculate top posts on thread id 136
-2019-03-10 21:57:38,684 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-59] running async task to recalculate top posts on thread id 137
-2019-03-10 21:57:43,680 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-60] running async task to recalculate top posts on thread id 138
-2019-03-10 21:57:48,682 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-61] running async task to recalculate top posts on thread id 139
-2019-03-10 21:57:53,682 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-62] running async task to recalculate top posts on thread id 141
-2019-03-10 21:57:58,678 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-63] running async task to recalculate top posts on thread id 142
-2019-03-10 21:58:03,681 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-64] running async task to recalculate top posts on thread id 143
-2019-03-10 21:58:08,712 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-65] running async task to recalculate top posts on thread id 144
-2019-03-10 21:58:13,684 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-66] running async task to recalculate top posts on thread id 145
-2019-03-10 21:58:18,681 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-67] running async task to recalculate top posts on thread id 146
-2019-03-10 21:58:23,681 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-68] running async task to recalculate top posts on thread id 147
-2019-03-10 21:58:28,678 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-69] running async task to recalculate top posts on thread id 148
-2019-03-10 21:58:33,680 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-70] running async task to recalculate top posts on thread id 149
-2019-03-10 21:58:38,679 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-71] running async task to recalculate top posts on thread id 150
-2019-03-10 21:58:43,678 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-72] running async task to recalculate top posts on thread id 151
-2019-03-10 21:58:48,683 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-73] running async task to recalculate top posts on thread id 152
-2019-03-10 21:58:53,683 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-74] running async task to recalculate top posts on thread id 153
-2019-03-10 21:58:58,678 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-75] running async task to recalculate top posts on thread id 154
-2019-03-10 21:59:03,679 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-76] running async task to recalculate top posts on thread id 155
-2019-03-10 21:59:08,683 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-77] running async task to recalculate top posts on thread id 156
-2019-03-10 21:59:13,679 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-78] running async task to recalculate top posts on thread id 157
-2019-03-10 21:59:18,678 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-79] running async task to recalculate top posts on thread id 158
-2019-03-10 21:59:23,682 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-80] running async task to recalculate top posts on thread id 159
-2019-03-10 21:59:28,681 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-81] running async task to recalculate top posts on thread id 160
-2019-03-10 21:59:33,685 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-82] running async task to recalculate top posts on thread id 161
-2019-03-10 21:59:38,680 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-83] running async task to recalculate top posts on thread id 162
-2019-03-10 21:59:43,681 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-84] running async task to recalculate top posts on thread id 163
-2019-03-10 21:59:48,680 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-85] running async task to recalculate top posts on thread id 164
-2019-03-10 21:59:53,683 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-86] running async task to recalculate top posts on thread id 165
-2019-03-10 21:59:58,688 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-87] running async task to recalculate top posts on thread id 166
-2019-03-10 22:00:03,679 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-88] running async task to recalculate top posts on thread id 167
-2019-03-10 22:00:08,682 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-89] running async task to recalculate top posts on thread id 168
-2019-03-10 22:00:13,679 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-90] running async task to recalculate top posts on thread id 169
-2019-03-10 22:00:18,680 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-91] running async task to recalculate top posts on thread id 170
-2019-03-10 22:00:23,678 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-92] running async task to recalculate top posts on thread id 171
-2019-03-10 22:00:28,683 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-93] running async task to recalculate top posts on thread id 172
-2019-03-10 22:00:33,679 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-94] running async task to recalculate top posts on thread id 173
-2019-03-10 22:00:38,680 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-95] running async task to recalculate top posts on thread id 174
-2019-03-10 22:00:43,681 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-96] running async task to recalculate top posts on thread id 175
-2019-03-10 22:00:48,683 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-97] running async task to recalculate top posts on thread id 176
-2019-03-10 22:00:53,682 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-98] running async task to recalculate top posts on thread id 177
-2019-03-10 22:00:58,681 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-99] running async task to recalculate top posts on thread id 178
-2019-03-10 22:01:03,680 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-100] running async task to recalculate top posts on thread id 179
-2019-03-10 22:01:08,679 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-101] running async task to recalculate top posts on thread id 180
-2019-03-10 22:01:13,680 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-102] running async task to recalculate top posts on thread id 181
-2019-03-10 22:01:18,680 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-103] running async task to recalculate top posts on thread id 182
-2019-03-10 22:01:23,680 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-104] running async task to recalculate top posts on thread id 183
-2019-03-10 22:01:28,678 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-105] running async task to recalculate top posts on thread id 184
-2019-03-10 22:01:33,682 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-106] running async task to recalculate top posts on thread id 185
-2019-03-10 22:01:38,679 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-107] running async task to recalculate top posts on thread id 186
-2019-03-10 22:01:43,679 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-108] running async task to recalculate top posts on thread id 187
-2019-03-10 22:01:48,682 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-109] running async task to recalculate top posts on thread id 188
-2019-03-10 22:01:53,685 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-110] running async task to recalculate top posts on thread id 189
-2019-03-10 22:01:58,761 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-111] running async task to recalculate top posts on thread id 190
-2019-03-10 22:02:03,697 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-112] running async task to recalculate top posts on thread id 191
-2019-03-10 22:02:08,726 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-113] running async task to recalculate top posts on thread id 192
-2019-03-10 22:02:13,690 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-114] running async task to recalculate top posts on thread id 193
-2019-03-10 22:02:18,679 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-115] running async task to recalculate top posts on thread id 194
-2019-03-10 22:02:23,683 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-116] running async task to recalculate top posts on thread id 195
-2019-03-10 22:02:28,678 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-117] running async task to recalculate top posts on thread id 196
-2019-03-10 22:02:33,681 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-118] running async task to recalculate top posts on thread id 197
-2019-03-10 22:02:38,683 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-119] running async task to recalculate top posts on thread id 198
-2019-03-10 22:02:43,679 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-120] running async task to recalculate top posts on thread id 199
-2019-03-10 22:02:48,678 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-121] running async task to recalculate top posts on thread id 200
+2019-03-10 21:52:53,681 INFO TopRatedPost [SimpleAsyncTaskExecutor-2] running async task to recalculate top posts on thread id 79
+2019-03-10 21:52:58,682 INFO TopRatedPost [SimpleAsyncTaskExecutor-3] running async task to recalculate top posts on thread id 80
+2019-03-10 21:53:03,678 INFO TopRatedPost [SimpleAsyncTaskExecutor-4] running async task to recalculate top posts on thread id 81
+2019-03-10 21:53:08,679 INFO TopRatedPost [SimpleAsyncTaskExecutor-5] running async task to recalculate top posts on thread id 82
+2019-03-10 21:53:13,680 INFO TopRatedPost [SimpleAsyncTaskExecutor-6] running async task to recalculate top posts on thread id 83
+2019-03-10 21:53:18,679 INFO TopRatedPost [SimpleAsyncTaskExecutor-7] running async task to recalculate top posts on thread id 84
+2019-03-10 21:53:23,680 INFO TopRatedPost [SimpleAsyncTaskExecutor-8] running async task to recalculate top posts on thread id 85
+2019-03-10 21:53:28,680 INFO TopRatedPost [SimpleAsyncTaskExecutor-9] running async task to recalculate top posts on thread id 86
+2019-03-10 21:53:33,678 INFO TopRatedPost [SimpleAsyncTaskExecutor-10] running async task to recalculate top posts on thread id 87
+2019-03-10 21:53:38,682 INFO TopRatedPost [SimpleAsyncTaskExecutor-11] running async task to recalculate top posts on thread id 88
+2019-03-10 21:53:43,678 INFO TopRatedPost [SimpleAsyncTaskExecutor-12] running async task to recalculate top posts on thread id 89
+2019-03-10 21:53:48,678 INFO TopRatedPost [SimpleAsyncTaskExecutor-13] running async task to recalculate top posts on thread id 90
+2019-03-10 21:53:53,682 INFO TopRatedPost [SimpleAsyncTaskExecutor-14] running async task to recalculate top posts on thread id 91
+2019-03-10 21:53:58,681 INFO TopRatedPost [SimpleAsyncTaskExecutor-15] running async task to recalculate top posts on thread id 92
+2019-03-10 21:54:03,680 INFO TopRatedPost [SimpleAsyncTaskExecutor-16] running async task to recalculate top posts on thread id 93
+2019-03-10 21:54:08,680 INFO TopRatedPost [SimpleAsyncTaskExecutor-17] running async task to recalculate top posts on thread id 94
+2019-03-10 21:54:13,681 INFO TopRatedPost [SimpleAsyncTaskExecutor-18] running async task to recalculate top posts on thread id 96
+2019-03-10 21:54:18,680 INFO TopRatedPost [SimpleAsyncTaskExecutor-19] running async task to recalculate top posts on thread id 97
+2019-03-10 21:54:23,680 INFO TopRatedPost [SimpleAsyncTaskExecutor-20] running async task to recalculate top posts on thread id 98
+2019-03-10 21:54:28,681 INFO TopRatedPost [SimpleAsyncTaskExecutor-21] running async task to recalculate top posts on thread id 99
+2019-03-10 21:54:33,679 INFO TopRatedPost [SimpleAsyncTaskExecutor-22] running async task to recalculate top posts on thread id 100
+2019-03-10 21:54:38,683 INFO TopRatedPost [SimpleAsyncTaskExecutor-23] running async task to recalculate top posts on thread id 101
+2019-03-10 21:54:43,680 INFO TopRatedPost [SimpleAsyncTaskExecutor-24] running async task to recalculate top posts on thread id 102
+2019-03-10 21:54:48,679 INFO TopRatedPost [SimpleAsyncTaskExecutor-25] running async task to recalculate top posts on thread id 103
+2019-03-10 21:54:53,679 INFO TopRatedPost [SimpleAsyncTaskExecutor-26] running async task to recalculate top posts on thread id 104
+2019-03-10 21:54:58,678 INFO TopRatedPost [SimpleAsyncTaskExecutor-27] running async task to recalculate top posts on thread id 105
+2019-03-10 21:55:03,680 INFO TopRatedPost [SimpleAsyncTaskExecutor-28] running async task to recalculate top posts on thread id 106
+2019-03-10 21:55:08,680 INFO TopRatedPost [SimpleAsyncTaskExecutor-29] running async task to recalculate top posts on thread id 107
+2019-03-10 21:55:13,682 INFO TopRatedPost [SimpleAsyncTaskExecutor-30] running async task to recalculate top posts on thread id 108
+2019-03-10 21:55:18,777 INFO TopRatedPost [SimpleAsyncTaskExecutor-31] running async task to recalculate top posts on thread id 109
+2019-03-10 21:55:23,681 INFO TopRatedPost [SimpleAsyncTaskExecutor-32] running async task to recalculate top posts on thread id 110
+2019-03-10 21:55:28,678 INFO TopRatedPost [SimpleAsyncTaskExecutor-33] running async task to recalculate top posts on thread id 111
+2019-03-10 21:55:33,680 INFO TopRatedPost [SimpleAsyncTaskExecutor-34] running async task to recalculate top posts on thread id 112
+2019-03-10 21:55:38,681 INFO TopRatedPost [SimpleAsyncTaskExecutor-35] running async task to recalculate top posts on thread id 113
+2019-03-10 21:55:43,681 INFO TopRatedPost [SimpleAsyncTaskExecutor-36] running async task to recalculate top posts on thread id 114
+2019-03-10 21:55:48,681 INFO TopRatedPost [SimpleAsyncTaskExecutor-37] running async task to recalculate top posts on thread id 115
+2019-03-10 21:55:53,679 INFO TopRatedPost [SimpleAsyncTaskExecutor-38] running async task to recalculate top posts on thread id 116
+2019-03-10 21:55:58,681 INFO TopRatedPost [SimpleAsyncTaskExecutor-39] running async task to recalculate top posts on thread id 117
+2019-03-10 21:56:03,679 INFO TopRatedPost [SimpleAsyncTaskExecutor-40] running async task to recalculate top posts on thread id 118
+2019-03-10 21:56:08,677 INFO TopRatedPost [SimpleAsyncTaskExecutor-41] running async task to recalculate top posts on thread id 119
+2019-03-10 21:56:13,681 INFO TopRatedPost [SimpleAsyncTaskExecutor-42] running async task to recalculate top posts on thread id 120
+2019-03-10 21:56:18,680 INFO TopRatedPost [SimpleAsyncTaskExecutor-43] running async task to recalculate top posts on thread id 121
+2019-03-10 21:56:23,712 INFO TopRatedPost [SimpleAsyncTaskExecutor-44] running async task to recalculate top posts on thread id 122
+2019-03-10 21:56:28,681 INFO TopRatedPost [SimpleAsyncTaskExecutor-45] running async task to recalculate top posts on thread id 123
+2019-03-10 21:56:33,681 INFO TopRatedPost [SimpleAsyncTaskExecutor-46] running async task to recalculate top posts on thread id 124
+2019-03-10 21:56:38,681 INFO TopRatedPost [SimpleAsyncTaskExecutor-47] running async task to recalculate top posts on thread id 125
+2019-03-10 21:56:43,680 INFO TopRatedPost [SimpleAsyncTaskExecutor-48] running async task to recalculate top posts on thread id 126
+2019-03-10 21:56:48,680 INFO TopRatedPost [SimpleAsyncTaskExecutor-49] running async task to recalculate top posts on thread id 127
+2019-03-10 21:56:53,717 INFO TopRatedPost [SimpleAsyncTaskExecutor-50] running async task to recalculate top posts on thread id 128
+2019-03-10 21:56:58,681 INFO TopRatedPost [SimpleAsyncTaskExecutor-51] running async task to recalculate top posts on thread id 129
+2019-03-10 21:57:03,679 INFO TopRatedPost [SimpleAsyncTaskExecutor-52] running async task to recalculate top posts on thread id 130
+2019-03-10 21:57:08,696 INFO TopRatedPost [SimpleAsyncTaskExecutor-53] running async task to recalculate top posts on thread id 131
+2019-03-10 21:57:13,681 INFO TopRatedPost [SimpleAsyncTaskExecutor-54] running async task to recalculate top posts on thread id 132
+2019-03-10 21:57:18,679 INFO TopRatedPost [SimpleAsyncTaskExecutor-55] running async task to recalculate top posts on thread id 133
+2019-03-10 21:57:23,681 INFO TopRatedPost [SimpleAsyncTaskExecutor-56] running async task to recalculate top posts on thread id 134
+2019-03-10 21:57:28,680 INFO TopRatedPost [SimpleAsyncTaskExecutor-57] running async task to recalculate top posts on thread id 135
+2019-03-10 21:57:33,684 INFO TopRatedPost [SimpleAsyncTaskExecutor-58] running async task to recalculate top posts on thread id 136
+2019-03-10 21:57:38,684 INFO TopRatedPost [SimpleAsyncTaskExecutor-59] running async task to recalculate top posts on thread id 137
+2019-03-10 21:57:43,680 INFO TopRatedPost [SimpleAsyncTaskExecutor-60] running async task to recalculate top posts on thread id 138
+2019-03-10 21:57:48,682 INFO TopRatedPost [SimpleAsyncTaskExecutor-61] running async task to recalculate top posts on thread id 139
+2019-03-10 21:57:53,682 INFO TopRatedPost [SimpleAsyncTaskExecutor-62] running async task to recalculate top posts on thread id 141
+2019-03-10 21:57:58,678 INFO TopRatedPost [SimpleAsyncTaskExecutor-63] running async task to recalculate top posts on thread id 142
+2019-03-10 21:58:03,681 INFO TopRatedPost [SimpleAsyncTaskExecutor-64] running async task to recalculate top posts on thread id 143
+2019-03-10 21:58:08,712 INFO TopRatedPost [SimpleAsyncTaskExecutor-65] running async task to recalculate top posts on thread id 144
+2019-03-10 21:58:13,684 INFO TopRatedPost [SimpleAsyncTaskExecutor-66] running async task to recalculate top posts on thread id 145
+2019-03-10 21:58:18,681 INFO TopRatedPost [SimpleAsyncTaskExecutor-67] running async task to recalculate top posts on thread id 146
+2019-03-10 21:58:23,681 INFO TopRatedPost [SimpleAsyncTaskExecutor-68] running async task to recalculate top posts on thread id 147
+2019-03-10 21:58:28,678 INFO TopRatedPost [SimpleAsyncTaskExecutor-69] running async task to recalculate top posts on thread id 148
+2019-03-10 21:58:33,680 INFO TopRatedPost [SimpleAsyncTaskExecutor-70] running async task to recalculate top posts on thread id 149
+2019-03-10 21:58:38,679 INFO TopRatedPost [SimpleAsyncTaskExecutor-71] running async task to recalculate top posts on thread id 150
+2019-03-10 21:58:43,678 INFO TopRatedPost [SimpleAsyncTaskExecutor-72] running async task to recalculate top posts on thread id 151
+2019-03-10 21:58:48,683 INFO TopRatedPost [SimpleAsyncTaskExecutor-73] running async task to recalculate top posts on thread id 152
+2019-03-10 21:58:53,683 INFO TopRatedPost [SimpleAsyncTaskExecutor-74] running async task to recalculate top posts on thread id 153
+2019-03-10 21:58:58,678 INFO TopRatedPost [SimpleAsyncTaskExecutor-75] running async task to recalculate top posts on thread id 154
+2019-03-10 21:59:03,679 INFO TopRatedPost [SimpleAsyncTaskExecutor-76] running async task to recalculate top posts on thread id 155
+2019-03-10 21:59:08,683 INFO TopRatedPost [SimpleAsyncTaskExecutor-77] running async task to recalculate top posts on thread id 156
+2019-03-10 21:59:13,679 INFO TopRatedPost [SimpleAsyncTaskExecutor-78] running async task to recalculate top posts on thread id 157
+2019-03-10 21:59:18,678 INFO TopRatedPost [SimpleAsyncTaskExecutor-79] running async task to recalculate top posts on thread id 158
+2019-03-10 21:59:23,682 INFO TopRatedPost [SimpleAsyncTaskExecutor-80] running async task to recalculate top posts on thread id 159
+2019-03-10 21:59:28,681 INFO TopRatedPost [SimpleAsyncTaskExecutor-81] running async task to recalculate top posts on thread id 160
+2019-03-10 21:59:33,685 INFO TopRatedPost [SimpleAsyncTaskExecutor-82] running async task to recalculate top posts on thread id 161
+2019-03-10 21:59:38,680 INFO TopRatedPost [SimpleAsyncTaskExecutor-83] running async task to recalculate top posts on thread id 162
+2019-03-10 21:59:43,681 INFO TopRatedPost [SimpleAsyncTaskExecutor-84] running async task to recalculate top posts on thread id 163
+2019-03-10 21:59:48,680 INFO TopRatedPost [SimpleAsyncTaskExecutor-85] running async task to recalculate top posts on thread id 164
+2019-03-10 21:59:53,683 INFO TopRatedPost [SimpleAsyncTaskExecutor-86] running async task to recalculate top posts on thread id 165
+2019-03-10 21:59:58,688 INFO TopRatedPost [SimpleAsyncTaskExecutor-87] running async task to recalculate top posts on thread id 166
+2019-03-10 22:00:03,679 INFO TopRatedPost [SimpleAsyncTaskExecutor-88] running async task to recalculate top posts on thread id 167
+2019-03-10 22:00:08,682 INFO TopRatedPost [SimpleAsyncTaskExecutor-89] running async task to recalculate top posts on thread id 168
+2019-03-10 22:00:13,679 INFO TopRatedPost [SimpleAsyncTaskExecutor-90] running async task to recalculate top posts on thread id 169
+2019-03-10 22:00:18,680 INFO TopRatedPost [SimpleAsyncTaskExecutor-91] running async task to recalculate top posts on thread id 170
+2019-03-10 22:00:23,678 INFO TopRatedPost [SimpleAsyncTaskExecutor-92] running async task to recalculate top posts on thread id 171
+2019-03-10 22:00:28,683 INFO TopRatedPost [SimpleAsyncTaskExecutor-93] running async task to recalculate top posts on thread id 172
+2019-03-10 22:00:33,679 INFO TopRatedPost [SimpleAsyncTaskExecutor-94] running async task to recalculate top posts on thread id 173
+2019-03-10 22:00:38,680 INFO TopRatedPost [SimpleAsyncTaskExecutor-95] running async task to recalculate top posts on thread id 174
+2019-03-10 22:00:43,681 INFO TopRatedPost [SimpleAsyncTaskExecutor-96] running async task to recalculate top posts on thread id 175
+2019-03-10 22:00:48,683 INFO TopRatedPost [SimpleAsyncTaskExecutor-97] running async task to recalculate top posts on thread id 176
+2019-03-10 22:00:53,682 INFO TopRatedPost [SimpleAsyncTaskExecutor-98] running async task to recalculate top posts on thread id 177
+2019-03-10 22:00:58,681 INFO TopRatedPost [SimpleAsyncTaskExecutor-99] running async task to recalculate top posts on thread id 178
+2019-03-10 22:01:03,680 INFO TopRatedPost [SimpleAsyncTaskExecutor-100] running async task to recalculate top posts on thread id 179
+2019-03-10 22:01:08,679 INFO TopRatedPost [SimpleAsyncTaskExecutor-101] running async task to recalculate top posts on thread id 180
+2019-03-10 22:01:13,680 INFO TopRatedPost [SimpleAsyncTaskExecutor-102] running async task to recalculate top posts on thread id 181
+2019-03-10 22:01:18,680 INFO TopRatedPost [SimpleAsyncTaskExecutor-103] running async task to recalculate top posts on thread id 182
+2019-03-10 22:01:23,680 INFO TopRatedPost [SimpleAsyncTaskExecutor-104] running async task to recalculate top posts on thread id 183
+2019-03-10 22:01:28,678 INFO TopRatedPost [SimpleAsyncTaskExecutor-105] running async task to recalculate top posts on thread id 184
+2019-03-10 22:01:33,682 INFO TopRatedPost [SimpleAsyncTaskExecutor-106] running async task to recalculate top posts on thread id 185
+2019-03-10 22:01:38,679 INFO TopRatedPost [SimpleAsyncTaskExecutor-107] running async task to recalculate top posts on thread id 186
+2019-03-10 22:01:43,679 INFO TopRatedPost [SimpleAsyncTaskExecutor-108] running async task to recalculate top posts on thread id 187
+2019-03-10 22:01:48,682 INFO TopRatedPost [SimpleAsyncTaskExecutor-109] running async task to recalculate top posts on thread id 188
+2019-03-10 22:01:53,685 INFO TopRatedPost [SimpleAsyncTaskExecutor-110] running async task to recalculate top posts on thread id 189
+2019-03-10 22:01:58,761 INFO TopRatedPost [SimpleAsyncTaskExecutor-111] running async task to recalculate top posts on thread id 190
+2019-03-10 22:02:03,697 INFO TopRatedPost [SimpleAsyncTaskExecutor-112] running async task to recalculate top posts on thread id 191
+2019-03-10 22:02:08,726 INFO TopRatedPost [SimpleAsyncTaskExecutor-113] running async task to recalculate top posts on thread id 192
+2019-03-10 22:02:13,690 INFO TopRatedPost [SimpleAsyncTaskExecutor-114] running async task to recalculate top posts on thread id 193
+2019-03-10 22:02:18,679 INFO TopRatedPost [SimpleAsyncTaskExecutor-115] running async task to recalculate top posts on thread id 194
+2019-03-10 22:02:23,683 INFO TopRatedPost [SimpleAsyncTaskExecutor-116] running async task to recalculate top posts on thread id 195
+2019-03-10 22:02:28,678 INFO TopRatedPost [SimpleAsyncTaskExecutor-117] running async task to recalculate top posts on thread id 196
+2019-03-10 22:02:33,681 INFO TopRatedPost [SimpleAsyncTaskExecutor-118] running async task to recalculate top posts on thread id 197
+2019-03-10 22:02:38,683 INFO TopRatedPost [SimpleAsyncTaskExecutor-119] running async task to recalculate top posts on thread id 198
+2019-03-10 22:02:43,679 INFO TopRatedPost [SimpleAsyncTaskExecutor-120] running async task to recalculate top posts on thread id 199
+2019-03-10 22:02:48,678 INFO TopRatedPost [SimpleAsyncTaskExecutor-121] running async task to recalculate top posts on thread id 200
 2019-03-10 22:07:47,429 INFO org.springframework.boot.StartupInfoLogger [main] Starting Application on L-TLV-00313556 with PID 169164 (C:\git\king_repo\target\classes started by ikoishman in C:\git\king_repo)
 2019-03-10 22:07:47,438 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
 2019-03-10 22:07:47,508 INFO org.springframework.context.support.AbstractApplicationContext [main] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3549bca9: startup date [Sun Mar 10 22:07:47 IST 2019]; root of context hierarchy
@@ -5335,53 +5335,53 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 2019-03-10 22:07:59,067 INFO org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor [main] No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
 2019-03-10 22:07:59,094 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
 2019-03-10 22:07:59,095 INFO org.springframework.aop.interceptor.AsyncExecutionAspectSupport [pool-1-thread-1] No task executor bean found for async processing: no bean of type TaskExecutor and no bean named 'taskExecutor' either
-2019-03-10 22:07:59,118 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-1] running async task to recalculate top posts on thread id 60
+2019-03-10 22:07:59,118 INFO TopRatedPost [SimpleAsyncTaskExecutor-1] running async task to recalculate top posts on thread id 60
 2019-03-10 22:07:59,137 INFO org.apache.juli.logging.DirectJDKLog [main] Using a shared selector for servlet write/read
 2019-03-10 22:07:59,211 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
 2019-03-10 22:07:59,224 INFO org.springframework.boot.StartupInfoLogger [main] Started Application in 12.5 seconds (JVM running for 14.957)
 2019-03-10 22:07:59,236 INFO posts.Application [main] READY TO USE
-2019-03-10 22:08:04,091 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-2] running async task to recalculate top posts on thread id 84
-2019-03-10 22:08:09,091 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-3] running async task to recalculate top posts on thread id 85
-2019-03-10 22:08:14,089 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-4] running async task to recalculate top posts on thread id 86
-2019-03-10 22:08:19,098 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-5] running async task to recalculate top posts on thread id 87
-2019-03-10 22:08:24,100 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-6] running async task to recalculate top posts on thread id 88
-2019-03-10 22:08:29,091 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-7] running async task to recalculate top posts on thread id 89
+2019-03-10 22:08:04,091 INFO TopRatedPost [SimpleAsyncTaskExecutor-2] running async task to recalculate top posts on thread id 84
+2019-03-10 22:08:09,091 INFO TopRatedPost [SimpleAsyncTaskExecutor-3] running async task to recalculate top posts on thread id 85
+2019-03-10 22:08:14,089 INFO TopRatedPost [SimpleAsyncTaskExecutor-4] running async task to recalculate top posts on thread id 86
+2019-03-10 22:08:19,098 INFO TopRatedPost [SimpleAsyncTaskExecutor-5] running async task to recalculate top posts on thread id 87
+2019-03-10 22:08:24,100 INFO TopRatedPost [SimpleAsyncTaskExecutor-6] running async task to recalculate top posts on thread id 88
+2019-03-10 22:08:29,091 INFO TopRatedPost [SimpleAsyncTaskExecutor-7] running async task to recalculate top posts on thread id 89
 2019-03-10 22:08:32,988 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring FrameworkServlet 'dispatcherServlet'
 2019-03-10 22:08:32,995 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] FrameworkServlet 'dispatcherServlet': initialization started
 2019-03-10 22:08:33,076 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] FrameworkServlet 'dispatcherServlet': initialization completed in 75 ms
-2019-03-10 22:08:48,029 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-8] running async task to recalculate top posts on thread id 90
-2019-03-10 22:08:48,823 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-10] running async task to recalculate top posts on thread id 92
-2019-03-10 22:08:48,824 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-9] running async task to recalculate top posts on thread id 91
-2019-03-10 22:08:49,215 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-11] running async task to recalculate top posts on thread id 93
-2019-03-10 22:08:54,087 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-12] running async task to recalculate top posts on thread id 94
-2019-03-10 22:08:59,094 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-13] running async task to recalculate top posts on thread id 95
-2019-03-10 22:09:04,089 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-14] running async task to recalculate top posts on thread id 96
-2019-03-10 22:09:09,089 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-15] running async task to recalculate top posts on thread id 97
-2019-03-10 22:09:14,089 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-16] running async task to recalculate top posts on thread id 98
-2019-03-10 22:09:19,089 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-17] running async task to recalculate top posts on thread id 99
-2019-03-10 22:09:24,090 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-18] running async task to recalculate top posts on thread id 100
-2019-03-10 22:09:29,088 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-19] running async task to recalculate top posts on thread id 101
-2019-03-10 22:09:34,095 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-20] running async task to recalculate top posts on thread id 102
-2019-03-10 22:09:39,090 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-21] running async task to recalculate top posts on thread id 103
-2019-03-10 22:09:44,087 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-22] running async task to recalculate top posts on thread id 104
-2019-03-10 22:09:49,091 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-23] running async task to recalculate top posts on thread id 105
-2019-03-10 22:09:54,089 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-24] running async task to recalculate top posts on thread id 106
-2019-03-10 22:09:59,089 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-25] running async task to recalculate top posts on thread id 107
-2019-03-10 22:10:04,089 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-26] running async task to recalculate top posts on thread id 108
-2019-03-10 22:10:09,088 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-27] running async task to recalculate top posts on thread id 109
-2019-03-10 22:10:14,089 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-28] running async task to recalculate top posts on thread id 110
-2019-03-10 22:10:19,089 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-29] running async task to recalculate top posts on thread id 111
-2019-03-10 22:10:33,780 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-30] running async task to recalculate top posts on thread id 112
-2019-03-10 22:10:33,785 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-31] running async task to recalculate top posts on thread id 113
-2019-03-10 22:10:36,733 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-32] running async task to recalculate top posts on thread id 114
-2019-03-10 22:10:45,670 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-33] running async task to recalculate top posts on thread id 115
-2019-03-10 22:10:45,678 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-34] running async task to recalculate top posts on thread id 116
-2019-03-10 22:10:49,088 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-35] running async task to recalculate top posts on thread id 117
-2019-03-10 22:10:54,087 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-36] running async task to recalculate top posts on thread id 118
-2019-03-10 22:10:59,091 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-37] running async task to recalculate top posts on thread id 119
-2019-03-10 22:11:04,087 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-38] running async task to recalculate top posts on thread id 120
-2019-03-10 22:11:09,089 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-39] running async task to recalculate top posts on thread id 121
-2019-03-10 22:11:14,092 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-40] running async task to recalculate top posts on thread id 122
+2019-03-10 22:08:48,029 INFO TopRatedPost [SimpleAsyncTaskExecutor-8] running async task to recalculate top posts on thread id 90
+2019-03-10 22:08:48,823 INFO TopRatedPost [SimpleAsyncTaskExecutor-10] running async task to recalculate top posts on thread id 92
+2019-03-10 22:08:48,824 INFO TopRatedPost [SimpleAsyncTaskExecutor-9] running async task to recalculate top posts on thread id 91
+2019-03-10 22:08:49,215 INFO TopRatedPost [SimpleAsyncTaskExecutor-11] running async task to recalculate top posts on thread id 93
+2019-03-10 22:08:54,087 INFO TopRatedPost [SimpleAsyncTaskExecutor-12] running async task to recalculate top posts on thread id 94
+2019-03-10 22:08:59,094 INFO TopRatedPost [SimpleAsyncTaskExecutor-13] running async task to recalculate top posts on thread id 95
+2019-03-10 22:09:04,089 INFO TopRatedPost [SimpleAsyncTaskExecutor-14] running async task to recalculate top posts on thread id 96
+2019-03-10 22:09:09,089 INFO TopRatedPost [SimpleAsyncTaskExecutor-15] running async task to recalculate top posts on thread id 97
+2019-03-10 22:09:14,089 INFO TopRatedPost [SimpleAsyncTaskExecutor-16] running async task to recalculate top posts on thread id 98
+2019-03-10 22:09:19,089 INFO TopRatedPost [SimpleAsyncTaskExecutor-17] running async task to recalculate top posts on thread id 99
+2019-03-10 22:09:24,090 INFO TopRatedPost [SimpleAsyncTaskExecutor-18] running async task to recalculate top posts on thread id 100
+2019-03-10 22:09:29,088 INFO TopRatedPost [SimpleAsyncTaskExecutor-19] running async task to recalculate top posts on thread id 101
+2019-03-10 22:09:34,095 INFO TopRatedPost [SimpleAsyncTaskExecutor-20] running async task to recalculate top posts on thread id 102
+2019-03-10 22:09:39,090 INFO TopRatedPost [SimpleAsyncTaskExecutor-21] running async task to recalculate top posts on thread id 103
+2019-03-10 22:09:44,087 INFO TopRatedPost [SimpleAsyncTaskExecutor-22] running async task to recalculate top posts on thread id 104
+2019-03-10 22:09:49,091 INFO TopRatedPost [SimpleAsyncTaskExecutor-23] running async task to recalculate top posts on thread id 105
+2019-03-10 22:09:54,089 INFO TopRatedPost [SimpleAsyncTaskExecutor-24] running async task to recalculate top posts on thread id 106
+2019-03-10 22:09:59,089 INFO TopRatedPost [SimpleAsyncTaskExecutor-25] running async task to recalculate top posts on thread id 107
+2019-03-10 22:10:04,089 INFO TopRatedPost [SimpleAsyncTaskExecutor-26] running async task to recalculate top posts on thread id 108
+2019-03-10 22:10:09,088 INFO TopRatedPost [SimpleAsyncTaskExecutor-27] running async task to recalculate top posts on thread id 109
+2019-03-10 22:10:14,089 INFO TopRatedPost [SimpleAsyncTaskExecutor-28] running async task to recalculate top posts on thread id 110
+2019-03-10 22:10:19,089 INFO TopRatedPost [SimpleAsyncTaskExecutor-29] running async task to recalculate top posts on thread id 111
+2019-03-10 22:10:33,780 INFO TopRatedPost [SimpleAsyncTaskExecutor-30] running async task to recalculate top posts on thread id 112
+2019-03-10 22:10:33,785 INFO TopRatedPost [SimpleAsyncTaskExecutor-31] running async task to recalculate top posts on thread id 113
+2019-03-10 22:10:36,733 INFO TopRatedPost [SimpleAsyncTaskExecutor-32] running async task to recalculate top posts on thread id 114
+2019-03-10 22:10:45,670 INFO TopRatedPost [SimpleAsyncTaskExecutor-33] running async task to recalculate top posts on thread id 115
+2019-03-10 22:10:45,678 INFO TopRatedPost [SimpleAsyncTaskExecutor-34] running async task to recalculate top posts on thread id 116
+2019-03-10 22:10:49,088 INFO TopRatedPost [SimpleAsyncTaskExecutor-35] running async task to recalculate top posts on thread id 117
+2019-03-10 22:10:54,087 INFO TopRatedPost [SimpleAsyncTaskExecutor-36] running async task to recalculate top posts on thread id 118
+2019-03-10 22:10:59,091 INFO TopRatedPost [SimpleAsyncTaskExecutor-37] running async task to recalculate top posts on thread id 119
+2019-03-10 22:11:04,087 INFO TopRatedPost [SimpleAsyncTaskExecutor-38] running async task to recalculate top posts on thread id 120
+2019-03-10 22:11:09,089 INFO TopRatedPost [SimpleAsyncTaskExecutor-39] running async task to recalculate top posts on thread id 121
+2019-03-10 22:11:14,092 INFO TopRatedPost [SimpleAsyncTaskExecutor-40] running async task to recalculate top posts on thread id 122
 2019-03-10 22:11:56,464 INFO org.springframework.boot.StartupInfoLogger [main] Starting Application on L-TLV-00313556 with PID 181684 (C:\git\king_repo\target\classes started by ikoishman in C:\git\king_repo)
 2019-03-10 22:11:56,475 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
 2019-03-10 22:11:56,642 INFO org.springframework.context.support.AbstractApplicationContext [main] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6436a7db: startup date [Sun Mar 10 22:11:56 IST 2019]; root of context hierarchy
@@ -5430,106 +5430,106 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 2019-03-10 22:12:08,553 INFO org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor [main] No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
 2019-03-10 22:12:08,574 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
 2019-03-10 22:12:08,576 INFO org.springframework.aop.interceptor.AsyncExecutionAspectSupport [pool-1-thread-1] No task executor bean found for async processing: no bean of type TaskExecutor and no bean named 'taskExecutor' either
-2019-03-10 22:12:08,598 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-1] running async task to recalculate top posts on thread id 62
+2019-03-10 22:12:08,598 INFO TopRatedPost [SimpleAsyncTaskExecutor-1] running async task to recalculate top posts on thread id 62
 2019-03-10 22:12:08,620 INFO org.apache.juli.logging.DirectJDKLog [main] Using a shared selector for servlet write/read
 2019-03-10 22:12:08,670 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
 2019-03-10 22:12:08,679 INFO org.springframework.boot.StartupInfoLogger [main] Started Application in 13.446 seconds (JVM running for 15.72)
 2019-03-10 22:12:08,687 INFO posts.Application [main] READY TO USE
-2019-03-10 22:12:13,574 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-2] running async task to recalculate top posts on thread id 87
-2019-03-10 22:12:18,570 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-3] running async task to recalculate top posts on thread id 88
+2019-03-10 22:12:13,574 INFO TopRatedPost [SimpleAsyncTaskExecutor-2] running async task to recalculate top posts on thread id 87
+2019-03-10 22:12:18,570 INFO TopRatedPost [SimpleAsyncTaskExecutor-3] running async task to recalculate top posts on thread id 88
 2019-03-10 22:12:21,487 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring FrameworkServlet 'dispatcherServlet'
 2019-03-10 22:12:21,489 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] FrameworkServlet 'dispatcherServlet': initialization started
 2019-03-10 22:12:21,609 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] FrameworkServlet 'dispatcherServlet': initialization completed in 118 ms
-2019-03-10 22:12:25,267 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-4] running async task to recalculate top posts on thread id 89
-2019-03-10 22:12:28,573 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-5] running async task to recalculate top posts on thread id 90
-2019-03-10 22:12:33,570 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-6] running async task to recalculate top posts on thread id 91
-2019-03-10 22:12:38,571 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-7] running async task to recalculate top posts on thread id 92
-2019-03-10 22:12:43,571 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-8] running async task to recalculate top posts on thread id 93
-2019-03-10 22:12:48,572 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-9] running async task to recalculate top posts on thread id 94
-2019-03-10 22:12:53,575 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-10] running async task to recalculate top posts on thread id 95
-2019-03-10 22:12:58,574 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-11] running async task to recalculate top posts on thread id 96
-2019-03-10 22:13:03,570 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-12] running async task to recalculate top posts on thread id 97
-2019-03-10 22:13:08,570 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-13] running async task to recalculate top posts on thread id 98
-2019-03-10 22:13:13,572 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-14] running async task to recalculate top posts on thread id 99
-2019-03-10 22:13:18,575 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-15] running async task to recalculate top posts on thread id 100
-2019-03-10 22:13:23,575 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-16] running async task to recalculate top posts on thread id 101
-2019-03-10 22:13:28,569 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-17] running async task to recalculate top posts on thread id 102
-2019-03-10 22:13:33,567 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-18] running async task to recalculate top posts on thread id 103
-2019-03-10 22:13:38,570 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-19] running async task to recalculate top posts on thread id 104
-2019-03-10 22:13:43,574 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-20] running async task to recalculate top posts on thread id 105
-2019-03-10 22:13:48,580 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-21] running async task to recalculate top posts on thread id 106
-2019-03-10 22:13:53,570 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-22] running async task to recalculate top posts on thread id 107
-2019-03-10 22:13:58,570 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-23] running async task to recalculate top posts on thread id 108
-2019-03-10 22:14:03,571 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-24] running async task to recalculate top posts on thread id 109
-2019-03-10 22:14:08,570 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-25] running async task to recalculate top posts on thread id 110
-2019-03-10 22:14:13,569 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-26] running async task to recalculate top posts on thread id 111
-2019-03-10 22:14:18,572 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-27] running async task to recalculate top posts on thread id 112
-2019-03-10 22:14:23,571 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-28] running async task to recalculate top posts on thread id 113
-2019-03-10 22:14:28,570 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-29] running async task to recalculate top posts on thread id 114
-2019-03-10 22:14:33,571 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-30] running async task to recalculate top posts on thread id 115
-2019-03-10 22:14:38,570 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-31] running async task to recalculate top posts on thread id 116
-2019-03-10 22:14:43,568 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-32] running async task to recalculate top posts on thread id 117
-2019-03-10 22:14:48,608 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-33] running async task to recalculate top posts on thread id 118
-2019-03-10 22:14:53,571 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-34] running async task to recalculate top posts on thread id 119
-2019-03-10 22:14:58,569 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-35] running async task to recalculate top posts on thread id 120
-2019-03-10 22:15:03,574 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-36] running async task to recalculate top posts on thread id 121
-2019-03-10 22:15:08,569 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-37] running async task to recalculate top posts on thread id 122
-2019-03-10 22:15:13,578 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-38] running async task to recalculate top posts on thread id 123
-2019-03-10 22:15:18,577 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-39] running async task to recalculate top posts on thread id 124
-2019-03-10 22:15:23,597 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-40] running async task to recalculate top posts on thread id 125
-2019-03-10 22:15:28,567 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-41] running async task to recalculate top posts on thread id 126
-2019-03-10 22:15:33,582 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-42] running async task to recalculate top posts on thread id 127
-2019-03-10 22:15:38,573 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-43] running async task to recalculate top posts on thread id 128
-2019-03-10 22:15:43,574 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-44] running async task to recalculate top posts on thread id 129
-2019-03-10 22:15:48,569 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-45] running async task to recalculate top posts on thread id 130
-2019-03-10 22:15:53,574 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-46] running async task to recalculate top posts on thread id 131
-2019-03-10 22:15:58,591 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-47] running async task to recalculate top posts on thread id 132
-2019-03-10 22:16:03,571 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-48] running async task to recalculate top posts on thread id 133
-2019-03-10 22:16:08,568 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-49] running async task to recalculate top posts on thread id 134
-2019-03-10 22:16:13,574 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-50] running async task to recalculate top posts on thread id 135
-2019-03-10 22:16:18,573 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-51] running async task to recalculate top posts on thread id 136
-2019-03-10 22:16:23,576 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-52] running async task to recalculate top posts on thread id 137
-2019-03-10 22:16:28,574 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-53] running async task to recalculate top posts on thread id 138
-2019-03-10 22:16:33,570 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-54] running async task to recalculate top posts on thread id 139
-2019-03-10 22:16:38,571 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-55] running async task to recalculate top posts on thread id 140
-2019-03-10 22:16:43,571 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-56] running async task to recalculate top posts on thread id 141
-2019-03-10 22:16:48,571 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-57] running async task to recalculate top posts on thread id 142
-2019-03-10 22:16:53,567 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-58] running async task to recalculate top posts on thread id 143
-2019-03-10 22:16:58,571 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-59] running async task to recalculate top posts on thread id 144
-2019-03-10 22:17:03,571 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-60] running async task to recalculate top posts on thread id 145
-2019-03-10 22:17:08,571 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-61] running async task to recalculate top posts on thread id 146
-2019-03-10 22:17:13,569 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-62] running async task to recalculate top posts on thread id 147
-2019-03-10 22:17:18,570 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-63] running async task to recalculate top posts on thread id 148
-2019-03-10 22:17:23,574 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-64] running async task to recalculate top posts on thread id 149
-2019-03-10 22:17:28,569 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-65] running async task to recalculate top posts on thread id 150
-2019-03-10 22:17:33,574 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-66] running async task to recalculate top posts on thread id 151
-2019-03-10 22:17:38,571 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-67] running async task to recalculate top posts on thread id 152
-2019-03-10 22:17:43,571 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-68] running async task to recalculate top posts on thread id 153
-2019-03-10 22:17:48,570 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-69] running async task to recalculate top posts on thread id 154
-2019-03-10 22:17:53,571 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-70] running async task to recalculate top posts on thread id 155
-2019-03-10 22:17:58,573 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-71] running async task to recalculate top posts on thread id 156
-2019-03-10 22:18:03,572 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-72] running async task to recalculate top posts on thread id 157
-2019-03-10 22:18:08,571 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-73] running async task to recalculate top posts on thread id 158
-2019-03-10 22:18:13,571 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-74] running async task to recalculate top posts on thread id 159
-2019-03-10 22:18:18,572 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-75] running async task to recalculate top posts on thread id 160
-2019-03-10 22:18:23,572 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-76] running async task to recalculate top posts on thread id 161
-2019-03-10 22:18:28,571 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-77] running async task to recalculate top posts on thread id 162
-2019-03-10 22:18:33,572 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-78] running async task to recalculate top posts on thread id 163
-2019-03-10 22:18:38,569 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-79] running async task to recalculate top posts on thread id 164
-2019-03-10 22:18:43,573 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-80] running async task to recalculate top posts on thread id 165
-2019-03-10 22:18:48,572 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-81] running async task to recalculate top posts on thread id 166
-2019-03-10 22:18:53,573 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-82] running async task to recalculate top posts on thread id 167
-2019-03-10 22:18:58,574 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-83] running async task to recalculate top posts on thread id 168
-2019-03-10 22:19:03,575 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-84] running async task to recalculate top posts on thread id 169
-2019-03-10 22:19:08,570 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-85] running async task to recalculate top posts on thread id 170
-2019-03-10 22:19:13,576 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-86] running async task to recalculate top posts on thread id 171
-2019-03-10 22:19:18,570 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-87] running async task to recalculate top posts on thread id 172
-2019-03-10 22:19:23,571 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-88] running async task to recalculate top posts on thread id 173
-2019-03-10 22:19:28,568 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-89] running async task to recalculate top posts on thread id 174
-2019-03-10 22:19:33,572 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-90] running async task to recalculate top posts on thread id 175
-2019-03-10 22:19:38,585 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-91] running async task to recalculate top posts on thread id 176
-2019-03-10 22:19:43,570 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-92] running async task to recalculate top posts on thread id 177
-2019-03-10 22:19:48,570 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-93] running async task to recalculate top posts on thread id 178
+2019-03-10 22:12:25,267 INFO TopRatedPost [SimpleAsyncTaskExecutor-4] running async task to recalculate top posts on thread id 89
+2019-03-10 22:12:28,573 INFO TopRatedPost [SimpleAsyncTaskExecutor-5] running async task to recalculate top posts on thread id 90
+2019-03-10 22:12:33,570 INFO TopRatedPost [SimpleAsyncTaskExecutor-6] running async task to recalculate top posts on thread id 91
+2019-03-10 22:12:38,571 INFO TopRatedPost [SimpleAsyncTaskExecutor-7] running async task to recalculate top posts on thread id 92
+2019-03-10 22:12:43,571 INFO TopRatedPost [SimpleAsyncTaskExecutor-8] running async task to recalculate top posts on thread id 93
+2019-03-10 22:12:48,572 INFO TopRatedPost [SimpleAsyncTaskExecutor-9] running async task to recalculate top posts on thread id 94
+2019-03-10 22:12:53,575 INFO TopRatedPost [SimpleAsyncTaskExecutor-10] running async task to recalculate top posts on thread id 95
+2019-03-10 22:12:58,574 INFO TopRatedPost [SimpleAsyncTaskExecutor-11] running async task to recalculate top posts on thread id 96
+2019-03-10 22:13:03,570 INFO TopRatedPost [SimpleAsyncTaskExecutor-12] running async task to recalculate top posts on thread id 97
+2019-03-10 22:13:08,570 INFO TopRatedPost [SimpleAsyncTaskExecutor-13] running async task to recalculate top posts on thread id 98
+2019-03-10 22:13:13,572 INFO TopRatedPost [SimpleAsyncTaskExecutor-14] running async task to recalculate top posts on thread id 99
+2019-03-10 22:13:18,575 INFO TopRatedPost [SimpleAsyncTaskExecutor-15] running async task to recalculate top posts on thread id 100
+2019-03-10 22:13:23,575 INFO TopRatedPost [SimpleAsyncTaskExecutor-16] running async task to recalculate top posts on thread id 101
+2019-03-10 22:13:28,569 INFO TopRatedPost [SimpleAsyncTaskExecutor-17] running async task to recalculate top posts on thread id 102
+2019-03-10 22:13:33,567 INFO TopRatedPost [SimpleAsyncTaskExecutor-18] running async task to recalculate top posts on thread id 103
+2019-03-10 22:13:38,570 INFO TopRatedPost [SimpleAsyncTaskExecutor-19] running async task to recalculate top posts on thread id 104
+2019-03-10 22:13:43,574 INFO TopRatedPost [SimpleAsyncTaskExecutor-20] running async task to recalculate top posts on thread id 105
+2019-03-10 22:13:48,580 INFO TopRatedPost [SimpleAsyncTaskExecutor-21] running async task to recalculate top posts on thread id 106
+2019-03-10 22:13:53,570 INFO TopRatedPost [SimpleAsyncTaskExecutor-22] running async task to recalculate top posts on thread id 107
+2019-03-10 22:13:58,570 INFO TopRatedPost [SimpleAsyncTaskExecutor-23] running async task to recalculate top posts on thread id 108
+2019-03-10 22:14:03,571 INFO TopRatedPost [SimpleAsyncTaskExecutor-24] running async task to recalculate top posts on thread id 109
+2019-03-10 22:14:08,570 INFO TopRatedPost [SimpleAsyncTaskExecutor-25] running async task to recalculate top posts on thread id 110
+2019-03-10 22:14:13,569 INFO TopRatedPost [SimpleAsyncTaskExecutor-26] running async task to recalculate top posts on thread id 111
+2019-03-10 22:14:18,572 INFO TopRatedPost [SimpleAsyncTaskExecutor-27] running async task to recalculate top posts on thread id 112
+2019-03-10 22:14:23,571 INFO TopRatedPost [SimpleAsyncTaskExecutor-28] running async task to recalculate top posts on thread id 113
+2019-03-10 22:14:28,570 INFO TopRatedPost [SimpleAsyncTaskExecutor-29] running async task to recalculate top posts on thread id 114
+2019-03-10 22:14:33,571 INFO TopRatedPost [SimpleAsyncTaskExecutor-30] running async task to recalculate top posts on thread id 115
+2019-03-10 22:14:38,570 INFO TopRatedPost [SimpleAsyncTaskExecutor-31] running async task to recalculate top posts on thread id 116
+2019-03-10 22:14:43,568 INFO TopRatedPost [SimpleAsyncTaskExecutor-32] running async task to recalculate top posts on thread id 117
+2019-03-10 22:14:48,608 INFO TopRatedPost [SimpleAsyncTaskExecutor-33] running async task to recalculate top posts on thread id 118
+2019-03-10 22:14:53,571 INFO TopRatedPost [SimpleAsyncTaskExecutor-34] running async task to recalculate top posts on thread id 119
+2019-03-10 22:14:58,569 INFO TopRatedPost [SimpleAsyncTaskExecutor-35] running async task to recalculate top posts on thread id 120
+2019-03-10 22:15:03,574 INFO TopRatedPost [SimpleAsyncTaskExecutor-36] running async task to recalculate top posts on thread id 121
+2019-03-10 22:15:08,569 INFO TopRatedPost [SimpleAsyncTaskExecutor-37] running async task to recalculate top posts on thread id 122
+2019-03-10 22:15:13,578 INFO TopRatedPost [SimpleAsyncTaskExecutor-38] running async task to recalculate top posts on thread id 123
+2019-03-10 22:15:18,577 INFO TopRatedPost [SimpleAsyncTaskExecutor-39] running async task to recalculate top posts on thread id 124
+2019-03-10 22:15:23,597 INFO TopRatedPost [SimpleAsyncTaskExecutor-40] running async task to recalculate top posts on thread id 125
+2019-03-10 22:15:28,567 INFO TopRatedPost [SimpleAsyncTaskExecutor-41] running async task to recalculate top posts on thread id 126
+2019-03-10 22:15:33,582 INFO TopRatedPost [SimpleAsyncTaskExecutor-42] running async task to recalculate top posts on thread id 127
+2019-03-10 22:15:38,573 INFO TopRatedPost [SimpleAsyncTaskExecutor-43] running async task to recalculate top posts on thread id 128
+2019-03-10 22:15:43,574 INFO TopRatedPost [SimpleAsyncTaskExecutor-44] running async task to recalculate top posts on thread id 129
+2019-03-10 22:15:48,569 INFO TopRatedPost [SimpleAsyncTaskExecutor-45] running async task to recalculate top posts on thread id 130
+2019-03-10 22:15:53,574 INFO TopRatedPost [SimpleAsyncTaskExecutor-46] running async task to recalculate top posts on thread id 131
+2019-03-10 22:15:58,591 INFO TopRatedPost [SimpleAsyncTaskExecutor-47] running async task to recalculate top posts on thread id 132
+2019-03-10 22:16:03,571 INFO TopRatedPost [SimpleAsyncTaskExecutor-48] running async task to recalculate top posts on thread id 133
+2019-03-10 22:16:08,568 INFO TopRatedPost [SimpleAsyncTaskExecutor-49] running async task to recalculate top posts on thread id 134
+2019-03-10 22:16:13,574 INFO TopRatedPost [SimpleAsyncTaskExecutor-50] running async task to recalculate top posts on thread id 135
+2019-03-10 22:16:18,573 INFO TopRatedPost [SimpleAsyncTaskExecutor-51] running async task to recalculate top posts on thread id 136
+2019-03-10 22:16:23,576 INFO TopRatedPost [SimpleAsyncTaskExecutor-52] running async task to recalculate top posts on thread id 137
+2019-03-10 22:16:28,574 INFO TopRatedPost [SimpleAsyncTaskExecutor-53] running async task to recalculate top posts on thread id 138
+2019-03-10 22:16:33,570 INFO TopRatedPost [SimpleAsyncTaskExecutor-54] running async task to recalculate top posts on thread id 139
+2019-03-10 22:16:38,571 INFO TopRatedPost [SimpleAsyncTaskExecutor-55] running async task to recalculate top posts on thread id 140
+2019-03-10 22:16:43,571 INFO TopRatedPost [SimpleAsyncTaskExecutor-56] running async task to recalculate top posts on thread id 141
+2019-03-10 22:16:48,571 INFO TopRatedPost [SimpleAsyncTaskExecutor-57] running async task to recalculate top posts on thread id 142
+2019-03-10 22:16:53,567 INFO TopRatedPost [SimpleAsyncTaskExecutor-58] running async task to recalculate top posts on thread id 143
+2019-03-10 22:16:58,571 INFO TopRatedPost [SimpleAsyncTaskExecutor-59] running async task to recalculate top posts on thread id 144
+2019-03-10 22:17:03,571 INFO TopRatedPost [SimpleAsyncTaskExecutor-60] running async task to recalculate top posts on thread id 145
+2019-03-10 22:17:08,571 INFO TopRatedPost [SimpleAsyncTaskExecutor-61] running async task to recalculate top posts on thread id 146
+2019-03-10 22:17:13,569 INFO TopRatedPost [SimpleAsyncTaskExecutor-62] running async task to recalculate top posts on thread id 147
+2019-03-10 22:17:18,570 INFO TopRatedPost [SimpleAsyncTaskExecutor-63] running async task to recalculate top posts on thread id 148
+2019-03-10 22:17:23,574 INFO TopRatedPost [SimpleAsyncTaskExecutor-64] running async task to recalculate top posts on thread id 149
+2019-03-10 22:17:28,569 INFO TopRatedPost [SimpleAsyncTaskExecutor-65] running async task to recalculate top posts on thread id 150
+2019-03-10 22:17:33,574 INFO TopRatedPost [SimpleAsyncTaskExecutor-66] running async task to recalculate top posts on thread id 151
+2019-03-10 22:17:38,571 INFO TopRatedPost [SimpleAsyncTaskExecutor-67] running async task to recalculate top posts on thread id 152
+2019-03-10 22:17:43,571 INFO TopRatedPost [SimpleAsyncTaskExecutor-68] running async task to recalculate top posts on thread id 153
+2019-03-10 22:17:48,570 INFO TopRatedPost [SimpleAsyncTaskExecutor-69] running async task to recalculate top posts on thread id 154
+2019-03-10 22:17:53,571 INFO TopRatedPost [SimpleAsyncTaskExecutor-70] running async task to recalculate top posts on thread id 155
+2019-03-10 22:17:58,573 INFO TopRatedPost [SimpleAsyncTaskExecutor-71] running async task to recalculate top posts on thread id 156
+2019-03-10 22:18:03,572 INFO TopRatedPost [SimpleAsyncTaskExecutor-72] running async task to recalculate top posts on thread id 157
+2019-03-10 22:18:08,571 INFO TopRatedPost [SimpleAsyncTaskExecutor-73] running async task to recalculate top posts on thread id 158
+2019-03-10 22:18:13,571 INFO TopRatedPost [SimpleAsyncTaskExecutor-74] running async task to recalculate top posts on thread id 159
+2019-03-10 22:18:18,572 INFO TopRatedPost [SimpleAsyncTaskExecutor-75] running async task to recalculate top posts on thread id 160
+2019-03-10 22:18:23,572 INFO TopRatedPost [SimpleAsyncTaskExecutor-76] running async task to recalculate top posts on thread id 161
+2019-03-10 22:18:28,571 INFO TopRatedPost [SimpleAsyncTaskExecutor-77] running async task to recalculate top posts on thread id 162
+2019-03-10 22:18:33,572 INFO TopRatedPost [SimpleAsyncTaskExecutor-78] running async task to recalculate top posts on thread id 163
+2019-03-10 22:18:38,569 INFO TopRatedPost [SimpleAsyncTaskExecutor-79] running async task to recalculate top posts on thread id 164
+2019-03-10 22:18:43,573 INFO TopRatedPost [SimpleAsyncTaskExecutor-80] running async task to recalculate top posts on thread id 165
+2019-03-10 22:18:48,572 INFO TopRatedPost [SimpleAsyncTaskExecutor-81] running async task to recalculate top posts on thread id 166
+2019-03-10 22:18:53,573 INFO TopRatedPost [SimpleAsyncTaskExecutor-82] running async task to recalculate top posts on thread id 167
+2019-03-10 22:18:58,574 INFO TopRatedPost [SimpleAsyncTaskExecutor-83] running async task to recalculate top posts on thread id 168
+2019-03-10 22:19:03,575 INFO TopRatedPost [SimpleAsyncTaskExecutor-84] running async task to recalculate top posts on thread id 169
+2019-03-10 22:19:08,570 INFO TopRatedPost [SimpleAsyncTaskExecutor-85] running async task to recalculate top posts on thread id 170
+2019-03-10 22:19:13,576 INFO TopRatedPost [SimpleAsyncTaskExecutor-86] running async task to recalculate top posts on thread id 171
+2019-03-10 22:19:18,570 INFO TopRatedPost [SimpleAsyncTaskExecutor-87] running async task to recalculate top posts on thread id 172
+2019-03-10 22:19:23,571 INFO TopRatedPost [SimpleAsyncTaskExecutor-88] running async task to recalculate top posts on thread id 173
+2019-03-10 22:19:28,568 INFO TopRatedPost [SimpleAsyncTaskExecutor-89] running async task to recalculate top posts on thread id 174
+2019-03-10 22:19:33,572 INFO TopRatedPost [SimpleAsyncTaskExecutor-90] running async task to recalculate top posts on thread id 175
+2019-03-10 22:19:38,585 INFO TopRatedPost [SimpleAsyncTaskExecutor-91] running async task to recalculate top posts on thread id 176
+2019-03-10 22:19:43,570 INFO TopRatedPost [SimpleAsyncTaskExecutor-92] running async task to recalculate top posts on thread id 177
+2019-03-10 22:19:48,570 INFO TopRatedPost [SimpleAsyncTaskExecutor-93] running async task to recalculate top posts on thread id 178
 2019-03-10 22:25:07,302 INFO org.springframework.boot.StartupInfoLogger [main] Starting Application on L-TLV-00313556 with PID 158540 (C:\git\king_repo\target\classes started by ikoishman in C:\git\king_repo)
 2019-03-10 22:25:07,316 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
 2019-03-10 22:25:07,465 INFO org.springframework.context.support.AbstractApplicationContext [main] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3549bca9: startup date [Sun Mar 10 22:25:07 IST 2019]; root of context hierarchy
@@ -5578,65 +5578,65 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 2019-03-10 22:25:19,678 INFO org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor [main] No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
 2019-03-10 22:25:19,694 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
 2019-03-10 22:25:19,695 INFO org.springframework.aop.interceptor.AsyncExecutionAspectSupport [pool-1-thread-1] No task executor bean found for async processing: no bean of type TaskExecutor and no bean named 'taskExecutor' either
-2019-03-10 22:25:19,706 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-1] running async task to recalculate top posts on thread id 62
+2019-03-10 22:25:19,706 INFO TopRatedPost [SimpleAsyncTaskExecutor-1] running async task to recalculate top posts on thread id 62
 2019-03-10 22:25:19,717 INFO org.apache.juli.logging.DirectJDKLog [main] Using a shared selector for servlet write/read
 2019-03-10 22:25:19,755 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
 2019-03-10 22:25:19,761 INFO org.springframework.boot.StartupInfoLogger [main] Started Application in 13.54 seconds (JVM running for 15.221)
 2019-03-10 22:25:19,766 INFO posts.Application [main] READY TO USE
-2019-03-10 22:25:24,692 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-2] running async task to recalculate top posts on thread id 86
-2019-03-10 22:25:29,693 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-3] running async task to recalculate top posts on thread id 87
-2019-03-10 22:25:34,693 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-4] running async task to recalculate top posts on thread id 88
-2019-03-10 22:25:39,694 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-5] running async task to recalculate top posts on thread id 89
+2019-03-10 22:25:24,692 INFO TopRatedPost [SimpleAsyncTaskExecutor-2] running async task to recalculate top posts on thread id 86
+2019-03-10 22:25:29,693 INFO TopRatedPost [SimpleAsyncTaskExecutor-3] running async task to recalculate top posts on thread id 87
+2019-03-10 22:25:34,693 INFO TopRatedPost [SimpleAsyncTaskExecutor-4] running async task to recalculate top posts on thread id 88
+2019-03-10 22:25:39,694 INFO TopRatedPost [SimpleAsyncTaskExecutor-5] running async task to recalculate top posts on thread id 89
 2019-03-10 22:25:40,297 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring FrameworkServlet 'dispatcherServlet'
 2019-03-10 22:25:40,297 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] FrameworkServlet 'dispatcherServlet': initialization started
 2019-03-10 22:25:40,341 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] FrameworkServlet 'dispatcherServlet': initialization completed in 44 ms
-2019-03-10 22:25:44,692 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-6] running async task to recalculate top posts on thread id 90
-2019-03-10 22:25:49,693 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-7] running async task to recalculate top posts on thread id 91
-2019-03-10 22:25:54,695 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-8] running async task to recalculate top posts on thread id 92
-2019-03-10 22:25:59,694 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-9] running async task to recalculate top posts on thread id 93
-2019-03-10 22:26:04,693 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-10] running async task to recalculate top posts on thread id 94
-2019-03-10 22:26:09,692 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-11] running async task to recalculate top posts on thread id 95
-2019-03-10 22:26:14,694 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-12] running async task to recalculate top posts on thread id 96
-2019-03-10 22:26:19,693 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-13] running async task to recalculate top posts on thread id 97
-2019-03-10 22:26:24,693 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-14] running async task to recalculate top posts on thread id 98
-2019-03-10 22:26:29,695 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-15] running async task to recalculate top posts on thread id 99
-2019-03-10 22:26:34,692 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-16] running async task to recalculate top posts on thread id 100
-2019-03-10 22:26:39,695 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-17] running async task to recalculate top posts on thread id 101
-2019-03-10 22:26:44,694 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-18] running async task to recalculate top posts on thread id 102
-2019-03-10 22:26:49,695 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-19] running async task to recalculate top posts on thread id 103
-2019-03-10 22:26:54,692 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-20] running async task to recalculate top posts on thread id 104
-2019-03-10 22:26:59,694 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-21] running async task to recalculate top posts on thread id 105
-2019-03-10 22:27:04,692 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-22] running async task to recalculate top posts on thread id 106
-2019-03-10 22:27:09,695 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-23] running async task to recalculate top posts on thread id 107
-2019-03-10 22:27:14,693 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-24] running async task to recalculate top posts on thread id 108
-2019-03-10 22:27:19,695 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-25] running async task to recalculate top posts on thread id 109
-2019-03-10 22:27:24,695 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-26] running async task to recalculate top posts on thread id 110
-2019-03-10 22:27:29,694 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-27] running async task to recalculate top posts on thread id 111
-2019-03-10 22:27:34,695 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-28] running async task to recalculate top posts on thread id 112
-2019-03-10 22:27:39,694 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-29] running async task to recalculate top posts on thread id 113
-2019-03-10 22:27:44,692 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-30] running async task to recalculate top posts on thread id 114
-2019-03-10 22:27:49,696 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-31] running async task to recalculate top posts on thread id 115
-2019-03-10 22:27:54,697 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-32] running async task to recalculate top posts on thread id 116
-2019-03-10 22:27:59,698 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-33] running async task to recalculate top posts on thread id 117
-2019-03-10 22:28:04,697 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-34] running async task to recalculate top posts on thread id 118
-2019-03-10 22:28:09,703 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-35] running async task to recalculate top posts on thread id 119
-2019-03-10 22:28:14,691 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-36] running async task to recalculate top posts on thread id 120
-2019-03-10 22:28:19,715 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-37] running async task to recalculate top posts on thread id 121
-2019-03-10 22:28:24,691 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-38] running async task to recalculate top posts on thread id 122
-2019-03-10 22:28:29,692 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-39] running async task to recalculate top posts on thread id 123
-2019-03-10 22:28:34,692 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-40] running async task to recalculate top posts on thread id 124
-2019-03-10 22:28:39,693 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-41] running async task to recalculate top posts on thread id 125
-2019-03-10 22:28:44,700 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-42] running async task to recalculate top posts on thread id 126
-2019-03-10 22:28:49,693 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-43] running async task to recalculate top posts on thread id 127
-2019-03-10 22:28:54,692 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-44] running async task to recalculate top posts on thread id 128
-2019-03-10 22:28:59,692 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-45] running async task to recalculate top posts on thread id 129
-2019-03-10 22:29:04,692 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-46] running async task to recalculate top posts on thread id 130
-2019-03-10 22:29:09,695 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-47] running async task to recalculate top posts on thread id 131
-2019-03-10 22:29:14,695 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-48] running async task to recalculate top posts on thread id 132
-2019-03-10 22:29:19,693 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-49] running async task to recalculate top posts on thread id 133
-2019-03-10 22:29:24,707 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-50] running async task to recalculate top posts on thread id 134
-2019-03-10 22:29:29,699 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-51] running async task to recalculate top posts on thread id 135
-2019-03-10 22:29:34,694 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-52] running async task to recalculate top posts on thread id 136
+2019-03-10 22:25:44,692 INFO TopRatedPost [SimpleAsyncTaskExecutor-6] running async task to recalculate top posts on thread id 90
+2019-03-10 22:25:49,693 INFO TopRatedPost [SimpleAsyncTaskExecutor-7] running async task to recalculate top posts on thread id 91
+2019-03-10 22:25:54,695 INFO TopRatedPost [SimpleAsyncTaskExecutor-8] running async task to recalculate top posts on thread id 92
+2019-03-10 22:25:59,694 INFO TopRatedPost [SimpleAsyncTaskExecutor-9] running async task to recalculate top posts on thread id 93
+2019-03-10 22:26:04,693 INFO TopRatedPost [SimpleAsyncTaskExecutor-10] running async task to recalculate top posts on thread id 94
+2019-03-10 22:26:09,692 INFO TopRatedPost [SimpleAsyncTaskExecutor-11] running async task to recalculate top posts on thread id 95
+2019-03-10 22:26:14,694 INFO TopRatedPost [SimpleAsyncTaskExecutor-12] running async task to recalculate top posts on thread id 96
+2019-03-10 22:26:19,693 INFO TopRatedPost [SimpleAsyncTaskExecutor-13] running async task to recalculate top posts on thread id 97
+2019-03-10 22:26:24,693 INFO TopRatedPost [SimpleAsyncTaskExecutor-14] running async task to recalculate top posts on thread id 98
+2019-03-10 22:26:29,695 INFO TopRatedPost [SimpleAsyncTaskExecutor-15] running async task to recalculate top posts on thread id 99
+2019-03-10 22:26:34,692 INFO TopRatedPost [SimpleAsyncTaskExecutor-16] running async task to recalculate top posts on thread id 100
+2019-03-10 22:26:39,695 INFO TopRatedPost [SimpleAsyncTaskExecutor-17] running async task to recalculate top posts on thread id 101
+2019-03-10 22:26:44,694 INFO TopRatedPost [SimpleAsyncTaskExecutor-18] running async task to recalculate top posts on thread id 102
+2019-03-10 22:26:49,695 INFO TopRatedPost [SimpleAsyncTaskExecutor-19] running async task to recalculate top posts on thread id 103
+2019-03-10 22:26:54,692 INFO TopRatedPost [SimpleAsyncTaskExecutor-20] running async task to recalculate top posts on thread id 104
+2019-03-10 22:26:59,694 INFO TopRatedPost [SimpleAsyncTaskExecutor-21] running async task to recalculate top posts on thread id 105
+2019-03-10 22:27:04,692 INFO TopRatedPost [SimpleAsyncTaskExecutor-22] running async task to recalculate top posts on thread id 106
+2019-03-10 22:27:09,695 INFO TopRatedPost [SimpleAsyncTaskExecutor-23] running async task to recalculate top posts on thread id 107
+2019-03-10 22:27:14,693 INFO TopRatedPost [SimpleAsyncTaskExecutor-24] running async task to recalculate top posts on thread id 108
+2019-03-10 22:27:19,695 INFO TopRatedPost [SimpleAsyncTaskExecutor-25] running async task to recalculate top posts on thread id 109
+2019-03-10 22:27:24,695 INFO TopRatedPost [SimpleAsyncTaskExecutor-26] running async task to recalculate top posts on thread id 110
+2019-03-10 22:27:29,694 INFO TopRatedPost [SimpleAsyncTaskExecutor-27] running async task to recalculate top posts on thread id 111
+2019-03-10 22:27:34,695 INFO TopRatedPost [SimpleAsyncTaskExecutor-28] running async task to recalculate top posts on thread id 112
+2019-03-10 22:27:39,694 INFO TopRatedPost [SimpleAsyncTaskExecutor-29] running async task to recalculate top posts on thread id 113
+2019-03-10 22:27:44,692 INFO TopRatedPost [SimpleAsyncTaskExecutor-30] running async task to recalculate top posts on thread id 114
+2019-03-10 22:27:49,696 INFO TopRatedPost [SimpleAsyncTaskExecutor-31] running async task to recalculate top posts on thread id 115
+2019-03-10 22:27:54,697 INFO TopRatedPost [SimpleAsyncTaskExecutor-32] running async task to recalculate top posts on thread id 116
+2019-03-10 22:27:59,698 INFO TopRatedPost [SimpleAsyncTaskExecutor-33] running async task to recalculate top posts on thread id 117
+2019-03-10 22:28:04,697 INFO TopRatedPost [SimpleAsyncTaskExecutor-34] running async task to recalculate top posts on thread id 118
+2019-03-10 22:28:09,703 INFO TopRatedPost [SimpleAsyncTaskExecutor-35] running async task to recalculate top posts on thread id 119
+2019-03-10 22:28:14,691 INFO TopRatedPost [SimpleAsyncTaskExecutor-36] running async task to recalculate top posts on thread id 120
+2019-03-10 22:28:19,715 INFO TopRatedPost [SimpleAsyncTaskExecutor-37] running async task to recalculate top posts on thread id 121
+2019-03-10 22:28:24,691 INFO TopRatedPost [SimpleAsyncTaskExecutor-38] running async task to recalculate top posts on thread id 122
+2019-03-10 22:28:29,692 INFO TopRatedPost [SimpleAsyncTaskExecutor-39] running async task to recalculate top posts on thread id 123
+2019-03-10 22:28:34,692 INFO TopRatedPost [SimpleAsyncTaskExecutor-40] running async task to recalculate top posts on thread id 124
+2019-03-10 22:28:39,693 INFO TopRatedPost [SimpleAsyncTaskExecutor-41] running async task to recalculate top posts on thread id 125
+2019-03-10 22:28:44,700 INFO TopRatedPost [SimpleAsyncTaskExecutor-42] running async task to recalculate top posts on thread id 126
+2019-03-10 22:28:49,693 INFO TopRatedPost [SimpleAsyncTaskExecutor-43] running async task to recalculate top posts on thread id 127
+2019-03-10 22:28:54,692 INFO TopRatedPost [SimpleAsyncTaskExecutor-44] running async task to recalculate top posts on thread id 128
+2019-03-10 22:28:59,692 INFO TopRatedPost [SimpleAsyncTaskExecutor-45] running async task to recalculate top posts on thread id 129
+2019-03-10 22:29:04,692 INFO TopRatedPost [SimpleAsyncTaskExecutor-46] running async task to recalculate top posts on thread id 130
+2019-03-10 22:29:09,695 INFO TopRatedPost [SimpleAsyncTaskExecutor-47] running async task to recalculate top posts on thread id 131
+2019-03-10 22:29:14,695 INFO TopRatedPost [SimpleAsyncTaskExecutor-48] running async task to recalculate top posts on thread id 132
+2019-03-10 22:29:19,693 INFO TopRatedPost [SimpleAsyncTaskExecutor-49] running async task to recalculate top posts on thread id 133
+2019-03-10 22:29:24,707 INFO TopRatedPost [SimpleAsyncTaskExecutor-50] running async task to recalculate top posts on thread id 134
+2019-03-10 22:29:29,699 INFO TopRatedPost [SimpleAsyncTaskExecutor-51] running async task to recalculate top posts on thread id 135
+2019-03-10 22:29:34,694 INFO TopRatedPost [SimpleAsyncTaskExecutor-52] running async task to recalculate top posts on thread id 136
 2019-03-10 23:26:04,138 INFO org.springframework.boot.StartupInfoLogger [main] Starting VoteControllerITest on L-TLV-00313556 with PID 15816 (started by ikoishman in C:\git\king_repo)
 2019-03-10 23:26:04,144 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
 2019-03-10 23:26:04,180 INFO org.springframework.context.support.AbstractApplicationContext [main] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3214ee6: startup date [Sun Mar 10 23:26:04 IST 2019]; root of context hierarchy
@@ -5681,7 +5681,7 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 2019-03-10 23:26:13,930 INFO org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor [main] No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
 2019-03-10 23:26:13,941 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-auto-1"]
 2019-03-10 23:26:13,941 INFO org.springframework.aop.interceptor.AsyncExecutionAspectSupport [pool-1-thread-1] No task executor bean found for async processing: no bean of type TaskExecutor and no bean named 'taskExecutor' either
-2019-03-10 23:26:13,953 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-1] running async task to recalculate top posts on thread id 28
+2019-03-10 23:26:13,953 INFO TopRatedPost [SimpleAsyncTaskExecutor-1] running async task to recalculate top posts on thread id 28
 2019-03-10 23:26:13,961 INFO org.apache.juli.logging.DirectJDKLog [main] Using a shared selector for servlet write/read
 2019-03-10 23:26:13,991 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 56902 (http) with context path ''
 2019-03-10 23:26:13,999 INFO org.springframework.boot.StartupInfoLogger [main] Started VoteControllerITest in 10.68 seconds (JVM running for 12.738)
@@ -5737,8 +5737,8 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 2019-03-10 23:26:17,441 INFO org.springframework.test.context.transaction.TransactionContext [main] Rolled back transaction for test: [DefaultTestContext@3a8fb023 testClass = VoterRepositoryIntegrationITest, testInstance = posts.repository.VoterRepositoryIntegrationITest@2e0652ab, testMethod = failedOnDataIntegrityUniqueViolationInsertVote@VoterRepositoryIntegrationITest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@48af5f38 testClass = VoterRepositoryIntegrationITest, locations = '{}', classes = '{class posts.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@40538370 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2f490758, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@40f08448, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@994544, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@80fa28bd, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@21a947fe], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]
 2019-03-10 23:26:17,449 INFO org.springframework.test.context.transaction.TransactionContext [main] Began transaction (1) for test context [DefaultTestContext@3a8fb023 testClass = VoterRepositoryIntegrationITest, testInstance = posts.repository.VoterRepositoryIntegrationITest@129b69b2, testMethod = getTopVotedPostsIdsNoEntityInRepoTest@VoterRepositoryIntegrationITest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@48af5f38 testClass = VoterRepositoryIntegrationITest, locations = '{}', classes = '{class posts.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@40538370 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2f490758, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@40f08448, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@994544, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@80fa28bd, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@21a947fe], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@39e3ea78]; rollback [true]
 2019-03-10 23:26:17,465 INFO org.springframework.test.context.transaction.TransactionContext [main] Rolled back transaction for test: [DefaultTestContext@3a8fb023 testClass = VoterRepositoryIntegrationITest, testInstance = posts.repository.VoterRepositoryIntegrationITest@129b69b2, testMethod = getTopVotedPostsIdsNoEntityInRepoTest@VoterRepositoryIntegrationITest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@48af5f38 testClass = VoterRepositoryIntegrationITest, locations = '{}', classes = '{class posts.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@40538370 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2f490758, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@40f08448, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@994544, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@80fa28bd, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@21a947fe], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]
-2019-03-10 23:26:18,202 INFO com.hellokoding.auth.service.TopRatedPost [main] running async task to recalculate top posts on thread id 1
-2019-03-10 23:26:18,208 INFO com.hellokoding.auth.service.TopRatedPost [main] running async task to recalculate top posts on thread id 1
+2019-03-10 23:26:18,202 INFO TopRatedPost [main] running async task to recalculate top posts on thread id 1
+2019-03-10 23:26:18,208 INFO TopRatedPost [main] running async task to recalculate top posts on thread id 1
 2019-03-10 23:26:18,225 INFO org.springframework.context.support.AbstractApplicationContext [Thread-7] Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@9c0d0bd: startup date [Sun Mar 10 23:26:15 IST 2019]; root of context hierarchy
 2019-03-10 23:26:18,225 INFO org.springframework.context.support.AbstractApplicationContext [Thread-5] Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3214ee6: startup date [Sun Mar 10 23:26:04 IST 2019]; root of context hierarchy
 2019-03-10 23:26:18,230 INFO org.springframework.cache.ehcache.EhCacheManagerFactoryBean [Thread-5] Shutting down EhCache CacheManager
@@ -5793,7 +5793,7 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 2019-03-10 23:27:03,344 INFO org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor [main] No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
 2019-03-10 23:27:03,370 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
 2019-03-10 23:27:03,373 INFO org.springframework.aop.interceptor.AsyncExecutionAspectSupport [pool-1-thread-1] No task executor bean found for async processing: no bean of type TaskExecutor and no bean named 'taskExecutor' either
-2019-03-10 23:27:03,398 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-1] running async task to recalculate top posts on thread id 52
+2019-03-10 23:27:03,398 INFO TopRatedPost [SimpleAsyncTaskExecutor-1] running async task to recalculate top posts on thread id 52
 2019-03-10 23:27:03,419 INFO org.apache.juli.logging.DirectJDKLog [main] Using a shared selector for servlet write/read
 2019-03-10 23:27:03,488 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
 2019-03-10 23:27:03,504 INFO org.springframework.boot.StartupInfoLogger [main] Started Application in 8.3 seconds (JVM running for 10.098)
@@ -5801,91 +5801,91 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 2019-03-10 23:27:05,845 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring FrameworkServlet 'dispatcherServlet'
 2019-03-10 23:27:05,847 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] FrameworkServlet 'dispatcherServlet': initialization started
 2019-03-10 23:27:05,896 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] FrameworkServlet 'dispatcherServlet': initialization completed in 48 ms
-2019-03-10 23:27:08,614 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-2] running async task to recalculate top posts on thread id 76
-2019-03-10 23:27:13,364 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-3] running async task to recalculate top posts on thread id 77
-2019-03-10 23:27:18,363 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-4] running async task to recalculate top posts on thread id 78
-2019-03-10 23:27:23,363 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-5] running async task to recalculate top posts on thread id 79
-2019-03-10 23:27:28,363 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-6] running async task to recalculate top posts on thread id 80
-2019-03-10 23:27:33,362 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-7] running async task to recalculate top posts on thread id 81
-2019-03-10 23:27:38,362 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-8] running async task to recalculate top posts on thread id 82
-2019-03-10 23:27:43,363 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-9] running async task to recalculate top posts on thread id 83
-2019-03-10 23:27:48,363 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-10] running async task to recalculate top posts on thread id 84
-2019-03-10 23:27:54,374 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-11] running async task to recalculate top posts on thread id 85
-2019-03-10 23:27:58,363 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-12] running async task to recalculate top posts on thread id 86
-2019-03-10 23:28:03,364 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-13] running async task to recalculate top posts on thread id 87
-2019-03-10 23:28:08,365 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-14] running async task to recalculate top posts on thread id 88
-2019-03-10 23:28:13,365 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-15] running async task to recalculate top posts on thread id 89
-2019-03-10 23:28:18,366 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-16] running async task to recalculate top posts on thread id 90
-2019-03-10 23:28:23,364 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-17] running async task to recalculate top posts on thread id 91
-2019-03-10 23:28:28,364 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-18] running async task to recalculate top posts on thread id 92
-2019-03-10 23:28:33,363 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-19] running async task to recalculate top posts on thread id 93
-2019-03-10 23:28:38,365 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-20] running async task to recalculate top posts on thread id 94
-2019-03-10 23:28:43,364 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-21] running async task to recalculate top posts on thread id 95
-2019-03-10 23:28:48,363 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-22] running async task to recalculate top posts on thread id 96
-2019-03-10 23:28:53,363 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-23] running async task to recalculate top posts on thread id 97
-2019-03-10 23:28:58,364 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-24] running async task to recalculate top posts on thread id 98
-2019-03-10 23:29:03,363 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-25] running async task to recalculate top posts on thread id 99
-2019-03-10 23:29:08,363 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-26] running async task to recalculate top posts on thread id 100
-2019-03-10 23:29:13,362 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-27] running async task to recalculate top posts on thread id 101
-2019-03-10 23:29:18,363 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-28] running async task to recalculate top posts on thread id 102
-2019-03-10 23:29:23,361 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-29] running async task to recalculate top posts on thread id 103
-2019-03-10 23:29:28,361 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-30] running async task to recalculate top posts on thread id 104
-2019-03-10 23:29:33,365 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-31] running async task to recalculate top posts on thread id 105
-2019-03-10 23:29:38,363 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-32] running async task to recalculate top posts on thread id 106
-2019-03-10 23:29:43,364 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-33] running async task to recalculate top posts on thread id 107
-2019-03-10 23:29:48,362 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-34] running async task to recalculate top posts on thread id 108
-2019-03-10 23:29:53,364 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-35] running async task to recalculate top posts on thread id 109
-2019-03-10 23:29:58,363 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-36] running async task to recalculate top posts on thread id 110
-2019-03-10 23:30:03,363 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-37] running async task to recalculate top posts on thread id 111
-2019-03-10 23:30:08,362 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-38] running async task to recalculate top posts on thread id 112
-2019-03-10 23:30:13,364 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-39] running async task to recalculate top posts on thread id 113
-2019-03-10 23:30:18,363 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-40] running async task to recalculate top posts on thread id 114
-2019-03-10 23:30:23,363 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-41] running async task to recalculate top posts on thread id 115
-2019-03-10 23:30:28,362 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-42] running async task to recalculate top posts on thread id 116
-2019-03-10 23:30:33,363 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-43] running async task to recalculate top posts on thread id 117
-2019-03-10 23:30:38,362 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-44] running async task to recalculate top posts on thread id 118
-2019-03-10 23:30:43,364 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-45] running async task to recalculate top posts on thread id 119
-2019-03-10 23:30:48,364 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-46] running async task to recalculate top posts on thread id 120
-2019-03-10 23:30:53,362 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-47] running async task to recalculate top posts on thread id 121
-2019-03-10 23:30:58,363 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-48] running async task to recalculate top posts on thread id 122
-2019-03-10 23:31:03,362 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-49] running async task to recalculate top posts on thread id 123
-2019-03-10 23:31:08,363 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-50] running async task to recalculate top posts on thread id 124
-2019-03-10 23:31:13,363 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-51] running async task to recalculate top posts on thread id 125
-2019-03-10 23:31:18,363 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-52] running async task to recalculate top posts on thread id 126
-2019-03-10 23:31:23,363 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-53] running async task to recalculate top posts on thread id 127
-2019-03-10 23:31:28,364 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-54] running async task to recalculate top posts on thread id 128
-2019-03-10 23:31:33,363 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-55] running async task to recalculate top posts on thread id 129
-2019-03-10 23:31:38,364 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-56] running async task to recalculate top posts on thread id 130
-2019-03-10 23:31:43,363 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-57] running async task to recalculate top posts on thread id 131
-2019-03-10 23:31:48,361 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-58] running async task to recalculate top posts on thread id 132
-2019-03-10 23:31:53,363 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-59] running async task to recalculate top posts on thread id 133
-2019-03-10 23:31:58,362 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-60] running async task to recalculate top posts on thread id 134
-2019-03-10 23:32:03,362 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-61] running async task to recalculate top posts on thread id 135
-2019-03-10 23:32:08,364 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-62] running async task to recalculate top posts on thread id 136
-2019-03-10 23:32:13,363 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-63] running async task to recalculate top posts on thread id 137
-2019-03-10 23:32:18,363 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-64] running async task to recalculate top posts on thread id 138
-2019-03-10 23:32:23,363 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-65] running async task to recalculate top posts on thread id 139
-2019-03-10 23:32:28,364 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-66] running async task to recalculate top posts on thread id 140
-2019-03-10 23:32:33,363 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-67] running async task to recalculate top posts on thread id 141
-2019-03-10 23:32:38,362 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-68] running async task to recalculate top posts on thread id 142
-2019-03-10 23:32:43,362 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-69] running async task to recalculate top posts on thread id 143
-2019-03-10 23:32:48,363 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-70] running async task to recalculate top posts on thread id 144
-2019-03-10 23:32:53,364 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-71] running async task to recalculate top posts on thread id 145
-2019-03-10 23:32:58,362 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-72] running async task to recalculate top posts on thread id 146
-2019-03-10 23:33:03,363 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-73] running async task to recalculate top posts on thread id 147
-2019-03-10 23:33:08,363 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-74] running async task to recalculate top posts on thread id 148
-2019-03-10 23:33:13,362 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-75] running async task to recalculate top posts on thread id 149
-2019-03-10 23:33:18,363 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-76] running async task to recalculate top posts on thread id 150
-2019-03-10 23:33:23,364 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-77] running async task to recalculate top posts on thread id 151
-2019-03-10 23:33:28,363 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-78] running async task to recalculate top posts on thread id 152
-2019-03-10 23:33:33,363 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-79] running async task to recalculate top posts on thread id 153
-2019-03-10 23:33:38,364 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-80] running async task to recalculate top posts on thread id 154
-2019-03-10 23:33:43,362 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-81] running async task to recalculate top posts on thread id 155
-2019-03-10 23:33:48,362 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-82] running async task to recalculate top posts on thread id 156
-2019-03-10 23:33:53,379 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-83] running async task to recalculate top posts on thread id 157
-2019-03-10 23:33:58,363 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-84] running async task to recalculate top posts on thread id 158
-2019-03-10 23:34:03,363 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-85] running async task to recalculate top posts on thread id 159
-2019-03-10 23:34:08,363 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-86] running async task to recalculate top posts on thread id 160
+2019-03-10 23:27:08,614 INFO TopRatedPost [SimpleAsyncTaskExecutor-2] running async task to recalculate top posts on thread id 76
+2019-03-10 23:27:13,364 INFO TopRatedPost [SimpleAsyncTaskExecutor-3] running async task to recalculate top posts on thread id 77
+2019-03-10 23:27:18,363 INFO TopRatedPost [SimpleAsyncTaskExecutor-4] running async task to recalculate top posts on thread id 78
+2019-03-10 23:27:23,363 INFO TopRatedPost [SimpleAsyncTaskExecutor-5] running async task to recalculate top posts on thread id 79
+2019-03-10 23:27:28,363 INFO TopRatedPost [SimpleAsyncTaskExecutor-6] running async task to recalculate top posts on thread id 80
+2019-03-10 23:27:33,362 INFO TopRatedPost [SimpleAsyncTaskExecutor-7] running async task to recalculate top posts on thread id 81
+2019-03-10 23:27:38,362 INFO TopRatedPost [SimpleAsyncTaskExecutor-8] running async task to recalculate top posts on thread id 82
+2019-03-10 23:27:43,363 INFO TopRatedPost [SimpleAsyncTaskExecutor-9] running async task to recalculate top posts on thread id 83
+2019-03-10 23:27:48,363 INFO TopRatedPost [SimpleAsyncTaskExecutor-10] running async task to recalculate top posts on thread id 84
+2019-03-10 23:27:54,374 INFO TopRatedPost [SimpleAsyncTaskExecutor-11] running async task to recalculate top posts on thread id 85
+2019-03-10 23:27:58,363 INFO TopRatedPost [SimpleAsyncTaskExecutor-12] running async task to recalculate top posts on thread id 86
+2019-03-10 23:28:03,364 INFO TopRatedPost [SimpleAsyncTaskExecutor-13] running async task to recalculate top posts on thread id 87
+2019-03-10 23:28:08,365 INFO TopRatedPost [SimpleAsyncTaskExecutor-14] running async task to recalculate top posts on thread id 88
+2019-03-10 23:28:13,365 INFO TopRatedPost [SimpleAsyncTaskExecutor-15] running async task to recalculate top posts on thread id 89
+2019-03-10 23:28:18,366 INFO TopRatedPost [SimpleAsyncTaskExecutor-16] running async task to recalculate top posts on thread id 90
+2019-03-10 23:28:23,364 INFO TopRatedPost [SimpleAsyncTaskExecutor-17] running async task to recalculate top posts on thread id 91
+2019-03-10 23:28:28,364 INFO TopRatedPost [SimpleAsyncTaskExecutor-18] running async task to recalculate top posts on thread id 92
+2019-03-10 23:28:33,363 INFO TopRatedPost [SimpleAsyncTaskExecutor-19] running async task to recalculate top posts on thread id 93
+2019-03-10 23:28:38,365 INFO TopRatedPost [SimpleAsyncTaskExecutor-20] running async task to recalculate top posts on thread id 94
+2019-03-10 23:28:43,364 INFO TopRatedPost [SimpleAsyncTaskExecutor-21] running async task to recalculate top posts on thread id 95
+2019-03-10 23:28:48,363 INFO TopRatedPost [SimpleAsyncTaskExecutor-22] running async task to recalculate top posts on thread id 96
+2019-03-10 23:28:53,363 INFO TopRatedPost [SimpleAsyncTaskExecutor-23] running async task to recalculate top posts on thread id 97
+2019-03-10 23:28:58,364 INFO TopRatedPost [SimpleAsyncTaskExecutor-24] running async task to recalculate top posts on thread id 98
+2019-03-10 23:29:03,363 INFO TopRatedPost [SimpleAsyncTaskExecutor-25] running async task to recalculate top posts on thread id 99
+2019-03-10 23:29:08,363 INFO TopRatedPost [SimpleAsyncTaskExecutor-26] running async task to recalculate top posts on thread id 100
+2019-03-10 23:29:13,362 INFO TopRatedPost [SimpleAsyncTaskExecutor-27] running async task to recalculate top posts on thread id 101
+2019-03-10 23:29:18,363 INFO TopRatedPost [SimpleAsyncTaskExecutor-28] running async task to recalculate top posts on thread id 102
+2019-03-10 23:29:23,361 INFO TopRatedPost [SimpleAsyncTaskExecutor-29] running async task to recalculate top posts on thread id 103
+2019-03-10 23:29:28,361 INFO TopRatedPost [SimpleAsyncTaskExecutor-30] running async task to recalculate top posts on thread id 104
+2019-03-10 23:29:33,365 INFO TopRatedPost [SimpleAsyncTaskExecutor-31] running async task to recalculate top posts on thread id 105
+2019-03-10 23:29:38,363 INFO TopRatedPost [SimpleAsyncTaskExecutor-32] running async task to recalculate top posts on thread id 106
+2019-03-10 23:29:43,364 INFO TopRatedPost [SimpleAsyncTaskExecutor-33] running async task to recalculate top posts on thread id 107
+2019-03-10 23:29:48,362 INFO TopRatedPost [SimpleAsyncTaskExecutor-34] running async task to recalculate top posts on thread id 108
+2019-03-10 23:29:53,364 INFO TopRatedPost [SimpleAsyncTaskExecutor-35] running async task to recalculate top posts on thread id 109
+2019-03-10 23:29:58,363 INFO TopRatedPost [SimpleAsyncTaskExecutor-36] running async task to recalculate top posts on thread id 110
+2019-03-10 23:30:03,363 INFO TopRatedPost [SimpleAsyncTaskExecutor-37] running async task to recalculate top posts on thread id 111
+2019-03-10 23:30:08,362 INFO TopRatedPost [SimpleAsyncTaskExecutor-38] running async task to recalculate top posts on thread id 112
+2019-03-10 23:30:13,364 INFO TopRatedPost [SimpleAsyncTaskExecutor-39] running async task to recalculate top posts on thread id 113
+2019-03-10 23:30:18,363 INFO TopRatedPost [SimpleAsyncTaskExecutor-40] running async task to recalculate top posts on thread id 114
+2019-03-10 23:30:23,363 INFO TopRatedPost [SimpleAsyncTaskExecutor-41] running async task to recalculate top posts on thread id 115
+2019-03-10 23:30:28,362 INFO TopRatedPost [SimpleAsyncTaskExecutor-42] running async task to recalculate top posts on thread id 116
+2019-03-10 23:30:33,363 INFO TopRatedPost [SimpleAsyncTaskExecutor-43] running async task to recalculate top posts on thread id 117
+2019-03-10 23:30:38,362 INFO TopRatedPost [SimpleAsyncTaskExecutor-44] running async task to recalculate top posts on thread id 118
+2019-03-10 23:30:43,364 INFO TopRatedPost [SimpleAsyncTaskExecutor-45] running async task to recalculate top posts on thread id 119
+2019-03-10 23:30:48,364 INFO TopRatedPost [SimpleAsyncTaskExecutor-46] running async task to recalculate top posts on thread id 120
+2019-03-10 23:30:53,362 INFO TopRatedPost [SimpleAsyncTaskExecutor-47] running async task to recalculate top posts on thread id 121
+2019-03-10 23:30:58,363 INFO TopRatedPost [SimpleAsyncTaskExecutor-48] running async task to recalculate top posts on thread id 122
+2019-03-10 23:31:03,362 INFO TopRatedPost [SimpleAsyncTaskExecutor-49] running async task to recalculate top posts on thread id 123
+2019-03-10 23:31:08,363 INFO TopRatedPost [SimpleAsyncTaskExecutor-50] running async task to recalculate top posts on thread id 124
+2019-03-10 23:31:13,363 INFO TopRatedPost [SimpleAsyncTaskExecutor-51] running async task to recalculate top posts on thread id 125
+2019-03-10 23:31:18,363 INFO TopRatedPost [SimpleAsyncTaskExecutor-52] running async task to recalculate top posts on thread id 126
+2019-03-10 23:31:23,363 INFO TopRatedPost [SimpleAsyncTaskExecutor-53] running async task to recalculate top posts on thread id 127
+2019-03-10 23:31:28,364 INFO TopRatedPost [SimpleAsyncTaskExecutor-54] running async task to recalculate top posts on thread id 128
+2019-03-10 23:31:33,363 INFO TopRatedPost [SimpleAsyncTaskExecutor-55] running async task to recalculate top posts on thread id 129
+2019-03-10 23:31:38,364 INFO TopRatedPost [SimpleAsyncTaskExecutor-56] running async task to recalculate top posts on thread id 130
+2019-03-10 23:31:43,363 INFO TopRatedPost [SimpleAsyncTaskExecutor-57] running async task to recalculate top posts on thread id 131
+2019-03-10 23:31:48,361 INFO TopRatedPost [SimpleAsyncTaskExecutor-58] running async task to recalculate top posts on thread id 132
+2019-03-10 23:31:53,363 INFO TopRatedPost [SimpleAsyncTaskExecutor-59] running async task to recalculate top posts on thread id 133
+2019-03-10 23:31:58,362 INFO TopRatedPost [SimpleAsyncTaskExecutor-60] running async task to recalculate top posts on thread id 134
+2019-03-10 23:32:03,362 INFO TopRatedPost [SimpleAsyncTaskExecutor-61] running async task to recalculate top posts on thread id 135
+2019-03-10 23:32:08,364 INFO TopRatedPost [SimpleAsyncTaskExecutor-62] running async task to recalculate top posts on thread id 136
+2019-03-10 23:32:13,363 INFO TopRatedPost [SimpleAsyncTaskExecutor-63] running async task to recalculate top posts on thread id 137
+2019-03-10 23:32:18,363 INFO TopRatedPost [SimpleAsyncTaskExecutor-64] running async task to recalculate top posts on thread id 138
+2019-03-10 23:32:23,363 INFO TopRatedPost [SimpleAsyncTaskExecutor-65] running async task to recalculate top posts on thread id 139
+2019-03-10 23:32:28,364 INFO TopRatedPost [SimpleAsyncTaskExecutor-66] running async task to recalculate top posts on thread id 140
+2019-03-10 23:32:33,363 INFO TopRatedPost [SimpleAsyncTaskExecutor-67] running async task to recalculate top posts on thread id 141
+2019-03-10 23:32:38,362 INFO TopRatedPost [SimpleAsyncTaskExecutor-68] running async task to recalculate top posts on thread id 142
+2019-03-10 23:32:43,362 INFO TopRatedPost [SimpleAsyncTaskExecutor-69] running async task to recalculate top posts on thread id 143
+2019-03-10 23:32:48,363 INFO TopRatedPost [SimpleAsyncTaskExecutor-70] running async task to recalculate top posts on thread id 144
+2019-03-10 23:32:53,364 INFO TopRatedPost [SimpleAsyncTaskExecutor-71] running async task to recalculate top posts on thread id 145
+2019-03-10 23:32:58,362 INFO TopRatedPost [SimpleAsyncTaskExecutor-72] running async task to recalculate top posts on thread id 146
+2019-03-10 23:33:03,363 INFO TopRatedPost [SimpleAsyncTaskExecutor-73] running async task to recalculate top posts on thread id 147
+2019-03-10 23:33:08,363 INFO TopRatedPost [SimpleAsyncTaskExecutor-74] running async task to recalculate top posts on thread id 148
+2019-03-10 23:33:13,362 INFO TopRatedPost [SimpleAsyncTaskExecutor-75] running async task to recalculate top posts on thread id 149
+2019-03-10 23:33:18,363 INFO TopRatedPost [SimpleAsyncTaskExecutor-76] running async task to recalculate top posts on thread id 150
+2019-03-10 23:33:23,364 INFO TopRatedPost [SimpleAsyncTaskExecutor-77] running async task to recalculate top posts on thread id 151
+2019-03-10 23:33:28,363 INFO TopRatedPost [SimpleAsyncTaskExecutor-78] running async task to recalculate top posts on thread id 152
+2019-03-10 23:33:33,363 INFO TopRatedPost [SimpleAsyncTaskExecutor-79] running async task to recalculate top posts on thread id 153
+2019-03-10 23:33:38,364 INFO TopRatedPost [SimpleAsyncTaskExecutor-80] running async task to recalculate top posts on thread id 154
+2019-03-10 23:33:43,362 INFO TopRatedPost [SimpleAsyncTaskExecutor-81] running async task to recalculate top posts on thread id 155
+2019-03-10 23:33:48,362 INFO TopRatedPost [SimpleAsyncTaskExecutor-82] running async task to recalculate top posts on thread id 156
+2019-03-10 23:33:53,379 INFO TopRatedPost [SimpleAsyncTaskExecutor-83] running async task to recalculate top posts on thread id 157
+2019-03-10 23:33:58,363 INFO TopRatedPost [SimpleAsyncTaskExecutor-84] running async task to recalculate top posts on thread id 158
+2019-03-10 23:34:03,363 INFO TopRatedPost [SimpleAsyncTaskExecutor-85] running async task to recalculate top posts on thread id 159
+2019-03-10 23:34:08,363 INFO TopRatedPost [SimpleAsyncTaskExecutor-86] running async task to recalculate top posts on thread id 160
 2019-03-10 23:34:24,301 INFO org.springframework.boot.StartupInfoLogger [main] Starting Application on L-TLV-00313556 with PID 12356 (C:\git\king_repo\target\classes started by ikoishman in C:\git\king_repo)
 2019-03-10 23:34:24,310 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
 2019-03-10 23:34:25,510 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
@@ -8161,7 +8161,7 @@ Caused by: com.mysql.cj.exceptions.InvalidConnectionAttributeException: The serv
 2019-03-10 23:38:24,300 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-auto-1"]
 2019-03-10 23:38:24,305 INFO org.springframework.aop.interceptor.AsyncExecutionAspectSupport [pool-1-thread-1] No task executor bean found for async processing: no bean of type TaskExecutor and no bean named 'taskExecutor' either
 2019-03-10 23:38:24,346 INFO org.apache.juli.logging.DirectJDKLog [main] Using a shared selector for servlet write/read
-2019-03-10 23:38:24,346 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-1] running async task to recalculate top posts on thread id 28
+2019-03-10 23:38:24,346 INFO TopRatedPost [SimpleAsyncTaskExecutor-1] running async task to recalculate top posts on thread id 28
 2019-03-10 23:38:24,401 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 58737 (http) with context path ''
 2019-03-10 23:38:24,409 INFO org.springframework.boot.StartupInfoLogger [main] Started VoteControllerITest in 12.872 seconds (JVM running for 15.059)
 2019-03-10 23:38:25,410 INFO org.apache.juli.logging.DirectJDKLog [http-nio-auto-1-exec-7] Initializing Spring FrameworkServlet 'dispatcherServlet'
@@ -8219,9 +8219,9 @@ Caused by: com.mysql.cj.exceptions.InvalidConnectionAttributeException: The serv
 2019-03-10 23:38:28,705 INFO org.springframework.test.context.transaction.TransactionContext [main] Rolled back transaction for test: [DefaultTestContext@2e159116 testClass = VoterRepositoryIntegrationITest, testInstance = posts.repository.VoterRepositoryIntegrationITest@4e5d5ac1, testMethod = failedOnDataIntegrityUniqueViolationInsertVote@VoterRepositoryIntegrationITest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@2976ca51 testClass = VoterRepositoryIntegrationITest, locations = '{}', classes = '{class posts.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@6b091a92 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@101df177, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@276438c9, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@340c5fb6, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@1f1e8f6f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@5606c0b], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]
 2019-03-10 23:38:28,710 INFO org.springframework.test.context.transaction.TransactionContext [main] Began transaction (1) for test context [DefaultTestContext@2e159116 testClass = VoterRepositoryIntegrationITest, testInstance = posts.repository.VoterRepositoryIntegrationITest@236fd411, testMethod = getTopVotedPostsIdsNoEntityInRepoTest@VoterRepositoryIntegrationITest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@2976ca51 testClass = VoterRepositoryIntegrationITest, locations = '{}', classes = '{class posts.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@6b091a92 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@101df177, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@276438c9, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@340c5fb6, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@1f1e8f6f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@5606c0b], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@7ab1ad9]; rollback [true]
 2019-03-10 23:38:28,726 INFO org.springframework.test.context.transaction.TransactionContext [main] Rolled back transaction for test: [DefaultTestContext@2e159116 testClass = VoterRepositoryIntegrationITest, testInstance = posts.repository.VoterRepositoryIntegrationITest@236fd411, testMethod = getTopVotedPostsIdsNoEntityInRepoTest@VoterRepositoryIntegrationITest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@2976ca51 testClass = VoterRepositoryIntegrationITest, locations = '{}', classes = '{class posts.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@6b091a92 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@101df177, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@276438c9, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@340c5fb6, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@1f1e8f6f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@5606c0b], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]
-2019-03-10 23:38:29,296 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-2] running async task to recalculate top posts on thread id 48
-2019-03-10 23:38:29,593 INFO com.hellokoding.auth.service.TopRatedPost [main] running async task to recalculate top posts on thread id 1
-2019-03-10 23:38:29,603 INFO com.hellokoding.auth.service.TopRatedPost [main] running async task to recalculate top posts on thread id 1
+2019-03-10 23:38:29,296 INFO TopRatedPost [SimpleAsyncTaskExecutor-2] running async task to recalculate top posts on thread id 48
+2019-03-10 23:38:29,593 INFO TopRatedPost [main] running async task to recalculate top posts on thread id 1
+2019-03-10 23:38:29,603 INFO TopRatedPost [main] running async task to recalculate top posts on thread id 1
 2019-03-10 23:38:29,632 INFO org.springframework.context.support.AbstractApplicationContext [Thread-5] Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4a07d605: startup date [Sun Mar 10 23:38:12 IST 2019]; root of context hierarchy
 2019-03-10 23:38:29,633 INFO org.springframework.context.support.AbstractApplicationContext [Thread-7] Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@579846cc: startup date [Sun Mar 10 23:38:26 IST 2019]; root of context hierarchy
 2019-03-10 23:38:29,641 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-7] Closing JPA EntityManagerFactory for persistence unit 'default'
@@ -8257,7 +8257,7 @@ Caused by: com.mysql.cj.exceptions.InvalidConnectionAttributeException: The serv
 2019-03-10 23:40:03,377 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
 2019-03-10 23:40:03,494 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-auto-1"]
 2019-03-10 23:40:03,495 INFO org.springframework.aop.interceptor.AsyncExecutionAspectSupport [scheduling-1] More than one TaskExecutor bean found within the context, and none is named 'taskExecutor'. Mark one of them as primary or name it 'taskExecutor' (possibly as an alias) in order to use it for async processing: [applicationTaskExecutor, taskScheduler]
-2019-03-10 23:40:03,510 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-1] running async task to recalculate top posts on thread id 26
+2019-03-10 23:40:03,510 INFO TopRatedPost [SimpleAsyncTaskExecutor-1] running async task to recalculate top posts on thread id 26
 2019-03-10 23:40:03,512 INFO org.apache.juli.logging.DirectJDKLog [main] Using a shared selector for servlet write/read
 2019-03-10 23:40:03,548 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 58912 (http) with context path ''
 2019-03-10 23:40:03,552 INFO org.springframework.boot.StartupInfoLogger [main] Started VoteControllerITest in 10.624 seconds (JVM running for 12.103)
@@ -8315,8 +8315,8 @@ Caused by: com.mysql.cj.exceptions.InvalidConnectionAttributeException: The serv
 2019-03-10 23:40:06,301 INFO org.springframework.test.context.transaction.TransactionContext [main] Rolled back transaction for test: [DefaultTestContext@7323c38c testClass = VoterRepositoryIntegrationITest, testInstance = posts.repository.VoterRepositoryIntegrationITest@511de4dd, testMethod = failedOnDataIntegrityUniqueViolationInsertVote@VoterRepositoryIntegrationITest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@63a72cc6 testClass = VoterRepositoryIntegrationITest, locations = '{}', classes = '{class posts.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@61bd0845 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@679b62af, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@45afc369, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@261a66b8, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@fe34054, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6e38921c], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]
 2019-03-10 23:40:06,305 INFO org.springframework.test.context.transaction.TransactionContext [main] Began transaction (1) for test context [DefaultTestContext@7323c38c testClass = VoterRepositoryIntegrationITest, testInstance = posts.repository.VoterRepositoryIntegrationITest@31204303, testMethod = getTopVotedPostsIdsNoEntityInRepoTest@VoterRepositoryIntegrationITest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@63a72cc6 testClass = VoterRepositoryIntegrationITest, locations = '{}', classes = '{class posts.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@61bd0845 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@679b62af, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@45afc369, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@261a66b8, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@fe34054, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6e38921c], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@1124dd79]; rollback [true]
 2019-03-10 23:40:06,318 INFO org.springframework.test.context.transaction.TransactionContext [main] Rolled back transaction for test: [DefaultTestContext@7323c38c testClass = VoterRepositoryIntegrationITest, testInstance = posts.repository.VoterRepositoryIntegrationITest@31204303, testMethod = getTopVotedPostsIdsNoEntityInRepoTest@VoterRepositoryIntegrationITest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@63a72cc6 testClass = VoterRepositoryIntegrationITest, locations = '{}', classes = '{class posts.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@61bd0845 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@679b62af, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@45afc369, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@261a66b8, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@fe34054, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6e38921c], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]
-2019-03-10 23:40:06,570 INFO com.hellokoding.auth.service.TopRatedPost [main] running async task to recalculate top posts on thread id 1
-2019-03-10 23:40:06,585 INFO com.hellokoding.auth.service.TopRatedPost [main] running async task to recalculate top posts on thread id 1
+2019-03-10 23:40:06,570 INFO TopRatedPost [main] running async task to recalculate top posts on thread id 1
+2019-03-10 23:40:06,585 INFO TopRatedPost [main] running async task to recalculate top posts on thread id 1
 2019-03-10 23:40:06,630 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-5] Shutting down ExecutorService 'taskScheduler'
 2019-03-10 23:40:06,631 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-7] Closing JPA EntityManagerFactory for persistence unit 'default'
 2019-03-10 23:40:06,633 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-5] Shutting down ExecutorService 'applicationTaskExecutor'
@@ -8352,26 +8352,26 @@ Caused by: com.mysql.cj.exceptions.InvalidConnectionAttributeException: The serv
 2019-03-10 23:40:30,263 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
 2019-03-10 23:40:30,353 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
 2019-03-10 23:40:30,355 INFO org.springframework.aop.interceptor.AsyncExecutionAspectSupport [scheduling-1] More than one TaskExecutor bean found within the context, and none is named 'taskExecutor'. Mark one of them as primary or name it 'taskExecutor' (possibly as an alias) in order to use it for async processing: [applicationTaskExecutor, taskScheduler]
-2019-03-10 23:40:30,368 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-1] running async task to recalculate top posts on thread id 53
+2019-03-10 23:40:30,368 INFO TopRatedPost [SimpleAsyncTaskExecutor-1] running async task to recalculate top posts on thread id 53
 2019-03-10 23:40:30,376 INFO org.apache.juli.logging.DirectJDKLog [main] Using a shared selector for servlet write/read
 2019-03-10 23:40:30,421 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
 2019-03-10 23:40:30,425 INFO org.springframework.boot.StartupInfoLogger [main] Started Application in 9.509 seconds (JVM running for 11.234)
 2019-03-10 23:40:30,430 INFO posts.Application [main] READY TO USE
-2019-03-10 23:40:35,350 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-2] running async task to recalculate top posts on thread id 77
+2019-03-10 23:40:35,350 INFO TopRatedPost [SimpleAsyncTaskExecutor-2] running async task to recalculate top posts on thread id 77
 2019-03-10 23:40:35,551 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-03-10 23:40:35,551 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
 2019-03-10 23:40:35,574 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 22 ms
 2019-03-10 23:40:35,690 WARN org.springframework.web.servlet.resource.ResourceHttpRequestHandler [http-nio-8080-exec-1] Path with "WEB-INF" or "META-INF": [WEB-INF/jsphello.jsp]
-2019-03-10 23:40:40,349 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-3] running async task to recalculate top posts on thread id 78
-2019-03-10 23:40:45,350 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-4] running async task to recalculate top posts on thread id 79
-2019-03-10 23:40:50,348 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-5] running async task to recalculate top posts on thread id 80
-2019-03-10 23:40:55,350 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-6] running async task to recalculate top posts on thread id 81
-2019-03-10 23:41:00,349 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-7] running async task to recalculate top posts on thread id 82
-2019-03-10 23:41:05,350 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-8] running async task to recalculate top posts on thread id 83
-2019-03-10 23:41:10,349 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-9] running async task to recalculate top posts on thread id 84
-2019-03-10 23:41:15,351 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-10] running async task to recalculate top posts on thread id 85
-2019-03-10 23:41:20,351 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-11] running async task to recalculate top posts on thread id 86
-2019-03-10 23:41:25,350 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-12] running async task to recalculate top posts on thread id 87
+2019-03-10 23:40:40,349 INFO TopRatedPost [SimpleAsyncTaskExecutor-3] running async task to recalculate top posts on thread id 78
+2019-03-10 23:40:45,350 INFO TopRatedPost [SimpleAsyncTaskExecutor-4] running async task to recalculate top posts on thread id 79
+2019-03-10 23:40:50,348 INFO TopRatedPost [SimpleAsyncTaskExecutor-5] running async task to recalculate top posts on thread id 80
+2019-03-10 23:40:55,350 INFO TopRatedPost [SimpleAsyncTaskExecutor-6] running async task to recalculate top posts on thread id 81
+2019-03-10 23:41:00,349 INFO TopRatedPost [SimpleAsyncTaskExecutor-7] running async task to recalculate top posts on thread id 82
+2019-03-10 23:41:05,350 INFO TopRatedPost [SimpleAsyncTaskExecutor-8] running async task to recalculate top posts on thread id 83
+2019-03-10 23:41:10,349 INFO TopRatedPost [SimpleAsyncTaskExecutor-9] running async task to recalculate top posts on thread id 84
+2019-03-10 23:41:15,351 INFO TopRatedPost [SimpleAsyncTaskExecutor-10] running async task to recalculate top posts on thread id 85
+2019-03-10 23:41:20,351 INFO TopRatedPost [SimpleAsyncTaskExecutor-11] running async task to recalculate top posts on thread id 86
+2019-03-10 23:41:25,350 INFO TopRatedPost [SimpleAsyncTaskExecutor-12] running async task to recalculate top posts on thread id 87
 2019-03-10 23:41:44,934 INFO org.springframework.boot.StartupInfoLogger [main] Starting Application on L-TLV-00313556 with PID 15696 (C:\git\king_repo\target\classes started by ikoishman in C:\git\king_repo)
 2019-03-10 23:41:44,939 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
 2019-03-10 23:41:46,327 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
@@ -8400,7 +8400,7 @@ Caused by: com.mysql.cj.exceptions.InvalidConnectionAttributeException: The serv
 2019-03-10 23:41:52,391 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
 2019-03-10 23:41:52,500 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
 2019-03-10 23:41:52,502 INFO org.springframework.aop.interceptor.AsyncExecutionAspectSupport [scheduling-1] More than one TaskExecutor bean found within the context, and none is named 'taskExecutor'. Mark one of them as primary or name it 'taskExecutor' (possibly as an alias) in order to use it for async processing: [applicationTaskExecutor, taskScheduler]
-2019-03-10 23:41:52,518 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-1] running async task to recalculate top posts on thread id 51
+2019-03-10 23:41:52,518 INFO TopRatedPost [SimpleAsyncTaskExecutor-1] running async task to recalculate top posts on thread id 51
 2019-03-10 23:41:52,528 INFO org.apache.juli.logging.DirectJDKLog [main] Using a shared selector for servlet write/read
 2019-03-10 23:41:52,573 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
 2019-03-10 23:41:52,579 INFO org.springframework.boot.StartupInfoLogger [main] Started Application in 8.45 seconds (JVM running for 10.111)
@@ -8409,22 +8409,22 @@ Caused by: com.mysql.cj.exceptions.InvalidConnectionAttributeException: The serv
 2019-03-10 23:41:54,169 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
 2019-03-10 23:41:54,188 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 18 ms
 2019-03-10 23:41:54,308 WARN org.springframework.web.servlet.resource.ResourceHttpRequestHandler [http-nio-8080-exec-1] Path with "WEB-INF" or "META-INF": [WEB-INF/jsp/hello.jsp]
-2019-03-10 23:41:57,496 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-2] running async task to recalculate top posts on thread id 75
-2019-03-10 23:42:02,494 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-3] running async task to recalculate top posts on thread id 76
-2019-03-10 23:42:07,495 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-4] running async task to recalculate top posts on thread id 77
-2019-03-10 23:42:12,495 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-5] running async task to recalculate top posts on thread id 78
-2019-03-10 23:42:17,495 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-6] running async task to recalculate top posts on thread id 79
-2019-03-10 23:42:22,496 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-7] running async task to recalculate top posts on thread id 80
-2019-03-10 23:42:27,497 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-8] running async task to recalculate top posts on thread id 81
-2019-03-10 23:42:32,494 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-9] running async task to recalculate top posts on thread id 82
-2019-03-10 23:42:37,496 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-10] running async task to recalculate top posts on thread id 83
-2019-03-10 23:42:42,494 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-11] running async task to recalculate top posts on thread id 84
-2019-03-10 23:42:47,497 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-12] running async task to recalculate top posts on thread id 85
-2019-03-10 23:42:52,495 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-13] running async task to recalculate top posts on thread id 86
-2019-03-10 23:42:57,495 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-14] running async task to recalculate top posts on thread id 87
-2019-03-10 23:43:02,495 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-15] running async task to recalculate top posts on thread id 88
-2019-03-10 23:43:07,497 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-16] running async task to recalculate top posts on thread id 89
-2019-03-10 23:43:12,496 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-17] running async task to recalculate top posts on thread id 90
+2019-03-10 23:41:57,496 INFO TopRatedPost [SimpleAsyncTaskExecutor-2] running async task to recalculate top posts on thread id 75
+2019-03-10 23:42:02,494 INFO TopRatedPost [SimpleAsyncTaskExecutor-3] running async task to recalculate top posts on thread id 76
+2019-03-10 23:42:07,495 INFO TopRatedPost [SimpleAsyncTaskExecutor-4] running async task to recalculate top posts on thread id 77
+2019-03-10 23:42:12,495 INFO TopRatedPost [SimpleAsyncTaskExecutor-5] running async task to recalculate top posts on thread id 78
+2019-03-10 23:42:17,495 INFO TopRatedPost [SimpleAsyncTaskExecutor-6] running async task to recalculate top posts on thread id 79
+2019-03-10 23:42:22,496 INFO TopRatedPost [SimpleAsyncTaskExecutor-7] running async task to recalculate top posts on thread id 80
+2019-03-10 23:42:27,497 INFO TopRatedPost [SimpleAsyncTaskExecutor-8] running async task to recalculate top posts on thread id 81
+2019-03-10 23:42:32,494 INFO TopRatedPost [SimpleAsyncTaskExecutor-9] running async task to recalculate top posts on thread id 82
+2019-03-10 23:42:37,496 INFO TopRatedPost [SimpleAsyncTaskExecutor-10] running async task to recalculate top posts on thread id 83
+2019-03-10 23:42:42,494 INFO TopRatedPost [SimpleAsyncTaskExecutor-11] running async task to recalculate top posts on thread id 84
+2019-03-10 23:42:47,497 INFO TopRatedPost [SimpleAsyncTaskExecutor-12] running async task to recalculate top posts on thread id 85
+2019-03-10 23:42:52,495 INFO TopRatedPost [SimpleAsyncTaskExecutor-13] running async task to recalculate top posts on thread id 86
+2019-03-10 23:42:57,495 INFO TopRatedPost [SimpleAsyncTaskExecutor-14] running async task to recalculate top posts on thread id 87
+2019-03-10 23:43:02,495 INFO TopRatedPost [SimpleAsyncTaskExecutor-15] running async task to recalculate top posts on thread id 88
+2019-03-10 23:43:07,497 INFO TopRatedPost [SimpleAsyncTaskExecutor-16] running async task to recalculate top posts on thread id 89
+2019-03-10 23:43:12,496 INFO TopRatedPost [SimpleAsyncTaskExecutor-17] running async task to recalculate top posts on thread id 90
 2019-03-10 23:44:21,041 INFO org.springframework.boot.StartupInfoLogger [main] Starting VoteControllerITest on L-TLV-00313556 with PID 6992 (started by ikoishman in C:\git\king_repo)
 2019-03-10 23:44:21,049 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
 2019-03-10 23:44:22,767 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
@@ -8454,7 +8454,7 @@ Caused by: com.mysql.cj.exceptions.InvalidConnectionAttributeException: The serv
 2019-03-10 23:44:35,635 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
 2019-03-10 23:44:35,778 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-auto-1"]
 2019-03-10 23:44:35,781 INFO org.springframework.aop.interceptor.AsyncExecutionAspectSupport [scheduling-1] More than one TaskExecutor bean found within the context, and none is named 'taskExecutor'. Mark one of them as primary or name it 'taskExecutor' (possibly as an alias) in order to use it for async processing: [applicationTaskExecutor, taskScheduler]
-2019-03-10 23:44:35,797 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-1] running async task to recalculate top posts on thread id 26
+2019-03-10 23:44:35,797 INFO TopRatedPost [SimpleAsyncTaskExecutor-1] running async task to recalculate top posts on thread id 26
 2019-03-10 23:44:35,799 INFO org.apache.juli.logging.DirectJDKLog [main] Using a shared selector for servlet write/read
 2019-03-10 23:44:35,862 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 59428 (http) with context path ''
 2019-03-10 23:44:35,867 INFO org.springframework.boot.StartupInfoLogger [main] Started VoteControllerITest in 15.857 seconds (JVM running for 18.14)
@@ -8512,8 +8512,8 @@ Caused by: com.mysql.cj.exceptions.InvalidConnectionAttributeException: The serv
 2019-03-10 23:44:38,626 INFO org.springframework.test.context.transaction.TransactionContext [main] Rolled back transaction for test: [DefaultTestContext@43ee1cf7 testClass = VoterRepositoryIntegrationITest, testInstance = posts.repository.VoterRepositoryIntegrationITest@40b01718, testMethod = failedOnDataIntegrityUniqueViolationInsertVote@VoterRepositoryIntegrationITest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@5b1f5fcc testClass = VoterRepositoryIntegrationITest, locations = '{}', classes = '{class posts.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@4a29fe2e key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@17776a8, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2bbaf4f0, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@45dc7be, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@10ae2a9c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@146044d7], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]
 2019-03-10 23:44:38,630 INFO org.springframework.test.context.transaction.TransactionContext [main] Began transaction (1) for test context [DefaultTestContext@43ee1cf7 testClass = VoterRepositoryIntegrationITest, testInstance = posts.repository.VoterRepositoryIntegrationITest@663622b1, testMethod = getTopVotedPostsIdsNoEntityInRepoTest@VoterRepositoryIntegrationITest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@5b1f5fcc testClass = VoterRepositoryIntegrationITest, locations = '{}', classes = '{class posts.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@4a29fe2e key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@17776a8, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2bbaf4f0, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@45dc7be, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@10ae2a9c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@146044d7], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@57920d6c]; rollback [true]
 2019-03-10 23:44:38,641 INFO org.springframework.test.context.transaction.TransactionContext [main] Rolled back transaction for test: [DefaultTestContext@43ee1cf7 testClass = VoterRepositoryIntegrationITest, testInstance = posts.repository.VoterRepositoryIntegrationITest@663622b1, testMethod = getTopVotedPostsIdsNoEntityInRepoTest@VoterRepositoryIntegrationITest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@5b1f5fcc testClass = VoterRepositoryIntegrationITest, locations = '{}', classes = '{class posts.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@4a29fe2e key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@17776a8, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2bbaf4f0, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@45dc7be, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@10ae2a9c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@146044d7], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]
-2019-03-10 23:44:38,955 INFO com.hellokoding.auth.service.TopRatedPost [main] running async task to recalculate top posts on thread id 1
-2019-03-10 23:44:38,965 INFO com.hellokoding.auth.service.TopRatedPost [main] running async task to recalculate top posts on thread id 1
+2019-03-10 23:44:38,955 INFO TopRatedPost [main] running async task to recalculate top posts on thread id 1
+2019-03-10 23:44:38,965 INFO TopRatedPost [main] running async task to recalculate top posts on thread id 1
 2019-03-10 23:44:38,998 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-5] Shutting down ExecutorService 'taskScheduler'
 2019-03-10 23:44:38,999 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-7] Closing JPA EntityManagerFactory for persistence unit 'default'
 2019-03-10 23:44:39,001 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-5] Shutting down ExecutorService 'applicationTaskExecutor'
@@ -8550,7 +8550,7 @@ Caused by: com.mysql.cj.exceptions.InvalidConnectionAttributeException: The serv
 2019-03-10 23:45:09,773 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
 2019-03-10 23:45:09,884 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
 2019-03-10 23:45:09,887 INFO org.springframework.aop.interceptor.AsyncExecutionAspectSupport [scheduling-1] More than one TaskExecutor bean found within the context, and none is named 'taskExecutor'. Mark one of them as primary or name it 'taskExecutor' (possibly as an alias) in order to use it for async processing: [applicationTaskExecutor, taskScheduler]
-2019-03-10 23:45:09,901 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-1] running async task to recalculate top posts on thread id 55
+2019-03-10 23:45:09,901 INFO TopRatedPost [SimpleAsyncTaskExecutor-1] running async task to recalculate top posts on thread id 55
 2019-03-10 23:45:09,908 INFO org.apache.juli.logging.DirectJDKLog [main] Using a shared selector for servlet write/read
 2019-03-10 23:45:09,968 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
 2019-03-10 23:45:09,975 INFO org.springframework.boot.StartupInfoLogger [main] Started Application in 10.909 seconds (JVM running for 13.1)
@@ -8558,22 +8558,22 @@ Caused by: com.mysql.cj.exceptions.InvalidConnectionAttributeException: The serv
 2019-03-10 23:45:13,375 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-03-10 23:45:13,377 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
 2019-03-10 23:45:13,394 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 15 ms
-2019-03-10 23:45:14,880 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-2] running async task to recalculate top posts on thread id 79
-2019-03-10 23:45:19,881 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-3] running async task to recalculate top posts on thread id 80
-2019-03-10 23:45:24,879 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-4] running async task to recalculate top posts on thread id 81
-2019-03-10 23:45:29,878 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-5] running async task to recalculate top posts on thread id 82
-2019-03-10 23:45:34,881 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-6] running async task to recalculate top posts on thread id 83
-2019-03-10 23:45:39,880 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-7] running async task to recalculate top posts on thread id 84
-2019-03-10 23:45:44,877 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-8] running async task to recalculate top posts on thread id 85
-2019-03-10 23:45:49,881 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-9] running async task to recalculate top posts on thread id 86
-2019-03-10 23:45:54,880 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-10] running async task to recalculate top posts on thread id 87
-2019-03-10 23:45:59,878 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-11] running async task to recalculate top posts on thread id 88
-2019-03-10 23:46:04,881 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-12] running async task to recalculate top posts on thread id 89
-2019-03-10 23:46:09,880 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-13] running async task to recalculate top posts on thread id 90
-2019-03-10 23:46:14,880 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-14] running async task to recalculate top posts on thread id 91
-2019-03-10 23:46:19,879 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-15] running async task to recalculate top posts on thread id 92
-2019-03-10 23:46:24,883 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-16] running async task to recalculate top posts on thread id 93
-2019-03-10 23:46:29,879 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-17] running async task to recalculate top posts on thread id 94
-2019-03-10 23:46:34,906 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-18] running async task to recalculate top posts on thread id 95
-2019-03-10 23:46:39,879 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-19] running async task to recalculate top posts on thread id 96
-2019-03-10 23:46:44,879 INFO com.hellokoding.auth.service.TopRatedPost [SimpleAsyncTaskExecutor-20] running async task to recalculate top posts on thread id 97
+2019-03-10 23:45:14,880 INFO TopRatedPost [SimpleAsyncTaskExecutor-2] running async task to recalculate top posts on thread id 79
+2019-03-10 23:45:19,881 INFO TopRatedPost [SimpleAsyncTaskExecutor-3] running async task to recalculate top posts on thread id 80
+2019-03-10 23:45:24,879 INFO TopRatedPost [SimpleAsyncTaskExecutor-4] running async task to recalculate top posts on thread id 81
+2019-03-10 23:45:29,878 INFO TopRatedPost [SimpleAsyncTaskExecutor-5] running async task to recalculate top posts on thread id 82
+2019-03-10 23:45:34,881 INFO TopRatedPost [SimpleAsyncTaskExecutor-6] running async task to recalculate top posts on thread id 83
+2019-03-10 23:45:39,880 INFO TopRatedPost [SimpleAsyncTaskExecutor-7] running async task to recalculate top posts on thread id 84
+2019-03-10 23:45:44,877 INFO TopRatedPost [SimpleAsyncTaskExecutor-8] running async task to recalculate top posts on thread id 85
+2019-03-10 23:45:49,881 INFO TopRatedPost [SimpleAsyncTaskExecutor-9] running async task to recalculate top posts on thread id 86
+2019-03-10 23:45:54,880 INFO TopRatedPost [SimpleAsyncTaskExecutor-10] running async task to recalculate top posts on thread id 87
+2019-03-10 23:45:59,878 INFO TopRatedPost [SimpleAsyncTaskExecutor-11] running async task to recalculate top posts on thread id 88
+2019-03-10 23:46:04,881 INFO TopRatedPost [SimpleAsyncTaskExecutor-12] running async task to recalculate top posts on thread id 89
+2019-03-10 23:46:09,880 INFO TopRatedPost [SimpleAsyncTaskExecutor-13] running async task to recalculate top posts on thread id 90
+2019-03-10 23:46:14,880 INFO TopRatedPost [SimpleAsyncTaskExecutor-14] running async task to recalculate top posts on thread id 91
+2019-03-10 23:46:19,879 INFO TopRatedPost [SimpleAsyncTaskExecutor-15] running async task to recalculate top posts on thread id 92
+2019-03-10 23:46:24,883 INFO TopRatedPost [SimpleAsyncTaskExecutor-16] running async task to recalculate top posts on thread id 93
+2019-03-10 23:46:29,879 INFO TopRatedPost [SimpleAsyncTaskExecutor-17] running async task to recalculate top posts on thread id 94
+2019-03-10 23:46:34,906 INFO TopRatedPost [SimpleAsyncTaskExecutor-18] running async task to recalculate top posts on thread id 95
+2019-03-10 23:46:39,879 INFO TopRatedPost [SimpleAsyncTaskExecutor-19] running async task to recalculate top posts on thread id 96
+2019-03-10 23:46:44,879 INFO TopRatedPost [SimpleAsyncTaskExecutor-20] running async task to recalculate top posts on thread id 97

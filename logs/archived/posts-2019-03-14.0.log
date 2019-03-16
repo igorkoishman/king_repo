@@ -886,7 +886,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\com\sun\xml\bin
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 15:07:47,856 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-api-2.3.1.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-api-2.3.1.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -940,7 +940,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 15:07:47,869 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/txw2-2.3.1.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\txw2-2.3.1.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -994,7 +994,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 15:07:47,881 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/istack-commons-runtime-3.0.7.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\istack-commons-runtime-3.0.7.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -1048,7 +1048,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 15:07:47,896 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/stax-ex-1.8.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\stax-ex-1.8.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -1102,7 +1102,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 15:07:47,905 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/FastInfoset-1.2.15.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\FastInfoset-1.2.15.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -1156,7 +1156,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 15:07:47,916 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/javax.activation-api-1.2.0.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\javax.activation-api-1.2.0.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -1210,7 +1210,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 15:07:47,931 INFO org.apache.juli.logging.DirectJDKLog [main] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
 2019-03-14 15:07:47,948 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
 2019-03-14 15:07:47,948 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 4631 ms
@@ -1262,7 +1262,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "a
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 Caused by: java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: PUBLIC.USER_ROLES
 	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
 	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
@@ -1320,7 +1320,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "a
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 Caused by: java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: PUBLIC.USER_ROLES
 	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
 	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
@@ -1414,7 +1414,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\com\sun\xml\bin
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 15:13:34,145 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-api-2.3.1.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-api-2.3.1.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -1468,7 +1468,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 15:13:34,159 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/txw2-2.3.1.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\txw2-2.3.1.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -1522,7 +1522,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 15:13:34,168 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/istack-commons-runtime-3.0.7.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\istack-commons-runtime-3.0.7.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -1576,7 +1576,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 15:13:34,179 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/stax-ex-1.8.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\stax-ex-1.8.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -1630,7 +1630,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 15:13:34,204 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/FastInfoset-1.2.15.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\FastInfoset-1.2.15.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -1684,7 +1684,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 15:13:34,217 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/javax.activation-api-1.2.0.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\javax.activation-api-1.2.0.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -1738,7 +1738,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 15:13:34,231 INFO org.apache.juli.logging.DirectJDKLog [main] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
 2019-03-14 15:13:34,243 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
 2019-03-14 15:13:34,244 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3657 ms
@@ -1827,7 +1827,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\com\sun\xml\bin
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 15:25:34,524 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-api-2.3.1.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-api-2.3.1.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -1881,7 +1881,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 15:25:34,528 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/txw2-2.3.1.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\txw2-2.3.1.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -1935,7 +1935,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 15:25:34,533 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/istack-commons-runtime-3.0.7.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\istack-commons-runtime-3.0.7.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -1989,7 +1989,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 15:25:34,541 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/stax-ex-1.8.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\stax-ex-1.8.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -2043,7 +2043,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 15:25:34,546 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/FastInfoset-1.2.15.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\FastInfoset-1.2.15.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -2097,7 +2097,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 15:25:34,552 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/javax.activation-api-1.2.0.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\javax.activation-api-1.2.0.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -2151,7 +2151,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 15:25:34,557 INFO org.apache.juli.logging.DirectJDKLog [main] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
 2019-03-14 15:25:34,565 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
 2019-03-14 15:25:34,565 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3728 ms
@@ -2239,7 +2239,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\com\sun\xml\bin
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 15:53:01,923 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-api-2.3.1.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-api-2.3.1.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -2293,7 +2293,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 15:53:01,927 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/txw2-2.3.1.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\txw2-2.3.1.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -2347,7 +2347,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 15:53:01,932 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/istack-commons-runtime-3.0.7.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\istack-commons-runtime-3.0.7.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -2401,7 +2401,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 15:53:01,944 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/stax-ex-1.8.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\stax-ex-1.8.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -2455,7 +2455,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 15:53:01,948 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/FastInfoset-1.2.15.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\FastInfoset-1.2.15.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -2509,7 +2509,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 15:53:01,959 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/javax.activation-api-1.2.0.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\javax.activation-api-1.2.0.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -2563,7 +2563,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 15:53:01,967 INFO org.apache.juli.logging.DirectJDKLog [main] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
 2019-03-14 15:53:01,978 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
 2019-03-14 15:53:01,981 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 4198 ms
@@ -2651,7 +2651,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\com\sun\xml\bin
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 16:06:00,183 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-api-2.3.1.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-api-2.3.1.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -2705,7 +2705,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 16:06:00,189 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/txw2-2.3.1.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\txw2-2.3.1.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -2759,7 +2759,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 16:06:00,192 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/istack-commons-runtime-3.0.7.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\istack-commons-runtime-3.0.7.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -2813,7 +2813,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 16:06:00,196 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/stax-ex-1.8.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\stax-ex-1.8.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -2867,7 +2867,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 16:06:00,205 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/FastInfoset-1.2.15.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\FastInfoset-1.2.15.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -2921,7 +2921,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 16:06:00,212 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/javax.activation-api-1.2.0.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\javax.activation-api-1.2.0.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -2975,7 +2975,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 16:06:00,219 INFO org.apache.juli.logging.DirectJDKLog [main] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
 2019-03-14 16:06:00,230 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
 2019-03-14 16:06:00,231 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 4326 ms
@@ -3066,7 +3066,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\com\sun\xml\bin
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 16:14:54,164 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-api-2.3.1.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-api-2.3.1.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -3122,7 +3122,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 16:14:54,174 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/txw2-2.3.1.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\txw2-2.3.1.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -3178,7 +3178,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 16:14:54,184 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/istack-commons-runtime-3.0.7.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\istack-commons-runtime-3.0.7.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -3234,7 +3234,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 16:14:54,189 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/stax-ex-1.8.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\stax-ex-1.8.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -3290,7 +3290,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 16:14:54,194 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/FastInfoset-1.2.15.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\FastInfoset-1.2.15.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -3346,7 +3346,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 16:14:54,209 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/javax.activation-api-1.2.0.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\javax.activation-api-1.2.0.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -3402,7 +3402,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 16:14:54,219 INFO org.apache.juli.logging.DirectJDKLog [main] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
 2019-03-14 16:14:54,232 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
 2019-03-14 16:14:54,233 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 5268 ms
@@ -3493,7 +3493,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\com\sun\xml\bin
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:03:09,518 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-api-2.3.1.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-api-2.3.1.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -3549,7 +3549,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:03:09,522 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/txw2-2.3.1.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\txw2-2.3.1.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -3605,7 +3605,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:03:09,526 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/istack-commons-runtime-3.0.7.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\istack-commons-runtime-3.0.7.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -3661,7 +3661,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:03:09,531 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/stax-ex-1.8.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\stax-ex-1.8.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -3717,7 +3717,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:03:09,535 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/FastInfoset-1.2.15.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\FastInfoset-1.2.15.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -3773,7 +3773,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:03:09,538 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/javax.activation-api-1.2.0.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\javax.activation-api-1.2.0.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -3829,7 +3829,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:03:09,547 INFO org.apache.juli.logging.DirectJDKLog [main] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
 2019-03-14 17:03:09,562 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
 2019-03-14 17:03:09,563 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 5782 ms
@@ -3920,7 +3920,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\com\sun\xml\bin
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:11:52,073 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-api-2.3.1.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-api-2.3.1.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -3976,7 +3976,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:11:52,079 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/txw2-2.3.1.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\txw2-2.3.1.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -4032,7 +4032,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:11:52,085 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/istack-commons-runtime-3.0.7.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\istack-commons-runtime-3.0.7.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -4088,7 +4088,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:11:52,089 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/stax-ex-1.8.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\stax-ex-1.8.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -4144,7 +4144,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:11:52,094 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/FastInfoset-1.2.15.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\FastInfoset-1.2.15.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -4200,7 +4200,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:11:52,099 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/javax.activation-api-1.2.0.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\javax.activation-api-1.2.0.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -4256,7 +4256,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:11:52,116 INFO org.apache.juli.logging.DirectJDKLog [main] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
 2019-03-14 17:11:52,130 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
 2019-03-14 17:11:52,134 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3829 ms
@@ -4348,7 +4348,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\com\sun\xml\bin
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:14:31,015 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-api-2.3.1.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-api-2.3.1.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -4404,7 +4404,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:14:31,020 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/txw2-2.3.1.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\txw2-2.3.1.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -4460,7 +4460,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:14:31,024 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/istack-commons-runtime-3.0.7.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\istack-commons-runtime-3.0.7.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -4516,7 +4516,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:14:31,029 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/stax-ex-1.8.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\stax-ex-1.8.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -4572,7 +4572,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:14:31,033 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/FastInfoset-1.2.15.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\FastInfoset-1.2.15.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -4628,7 +4628,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:14:31,036 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/javax.activation-api-1.2.0.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\javax.activation-api-1.2.0.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -4684,7 +4684,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:14:31,045 INFO org.apache.juli.logging.DirectJDKLog [main] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
 2019-03-14 17:14:31,056 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
 2019-03-14 17:14:31,057 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 5043 ms
@@ -4986,7 +4986,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\com\sun\xml\bin
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:21:55,558 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-api-2.3.1.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-api-2.3.1.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -5040,7 +5040,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:21:55,569 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/txw2-2.3.1.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\txw2-2.3.1.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -5094,7 +5094,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:21:55,573 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/istack-commons-runtime-3.0.7.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\istack-commons-runtime-3.0.7.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -5148,7 +5148,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:21:55,577 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/stax-ex-1.8.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\stax-ex-1.8.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -5202,7 +5202,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:21:55,581 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/FastInfoset-1.2.15.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\FastInfoset-1.2.15.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -5256,7 +5256,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:21:55,585 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/javax.activation-api-1.2.0.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\javax.activation-api-1.2.0.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -5310,7 +5310,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:21:55,595 INFO org.apache.juli.logging.DirectJDKLog [main] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
 2019-03-14 17:21:55,606 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
 2019-03-14 17:21:55,608 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3019 ms
@@ -7093,7 +7093,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\com\sun\xml\bin
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:29:07,481 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-api-2.3.1.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-api-2.3.1.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -7149,7 +7149,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:29:07,485 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/txw2-2.3.1.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\txw2-2.3.1.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -7205,7 +7205,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:29:07,486 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/istack-commons-runtime-3.0.7.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\istack-commons-runtime-3.0.7.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -7261,7 +7261,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:29:07,490 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/stax-ex-1.8.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\stax-ex-1.8.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -7317,7 +7317,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:29:07,495 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/FastInfoset-1.2.15.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\FastInfoset-1.2.15.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -7373,7 +7373,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:29:07,501 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/javax.activation-api-1.2.0.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\javax.activation-api-1.2.0.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -7429,7 +7429,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:29:07,509 INFO org.apache.juli.logging.DirectJDKLog [main] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
 2019-03-14 17:29:07,520 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
 2019-03-14 17:29:07,521 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 4856 ms
@@ -7520,7 +7520,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\com\sun\xml\bin
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:42:06,099 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-api-2.3.1.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-api-2.3.1.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -7576,7 +7576,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:42:06,104 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/txw2-2.3.1.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\txw2-2.3.1.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -7632,7 +7632,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:42:06,114 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/istack-commons-runtime-3.0.7.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\istack-commons-runtime-3.0.7.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -7688,7 +7688,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:42:06,116 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/stax-ex-1.8.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\stax-ex-1.8.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -7744,7 +7744,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:42:06,130 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/FastInfoset-1.2.15.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\FastInfoset-1.2.15.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -7800,7 +7800,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:42:06,135 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/javax.activation-api-1.2.0.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\javax.activation-api-1.2.0.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -7856,7 +7856,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:42:06,144 INFO org.apache.juli.logging.DirectJDKLog [main] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
 2019-03-14 17:42:06,170 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
 2019-03-14 17:42:06,171 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3805 ms
@@ -7947,7 +7947,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\com\sun\xml\bin
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:56:35,190 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-api-2.3.1.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-api-2.3.1.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -8003,7 +8003,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:56:35,194 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/txw2-2.3.1.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\txw2-2.3.1.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -8059,7 +8059,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:56:35,198 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/istack-commons-runtime-3.0.7.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\istack-commons-runtime-3.0.7.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -8115,7 +8115,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:56:35,206 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/stax-ex-1.8.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\stax-ex-1.8.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -8171,7 +8171,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:56:35,210 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/FastInfoset-1.2.15.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\FastInfoset-1.2.15.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -8227,7 +8227,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:56:35,218 WARN org.apache.juli.logging.DirectJDKLog [main] Failed to scan [file:/C:/Users/ikoishman/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/javax.activation-api-1.2.0.jar] from classloader hierarchy
 java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\javax.activation-api-1.2.0.jar (The system cannot find the file specified)
 	at java.util.zip.ZipFile.open(Native Method)
@@ -8283,7 +8283,7 @@ java.io.FileNotFoundException: C:\Users\ikoishman\.m2\repository\org\glassfish\j
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.hellokoding.auth.WebApplication.main(WebApplication.java:16)
+	at WebApplication.main(WebApplication.java:16)
 2019-03-14 17:56:35,225 INFO org.apache.juli.logging.DirectJDKLog [main] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
 2019-03-14 17:56:35,234 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
 2019-03-14 17:56:35,235 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2828 ms
