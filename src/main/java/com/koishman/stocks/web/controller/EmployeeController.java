@@ -88,8 +88,4 @@ public class EmployeeController {
 		return departments;
 	}
 
-	@RequestMapping(value = "/success", method = RequestMethod.GET)
-	public String success(Model model) {
-		return "addSuccess";
-	}
 }
