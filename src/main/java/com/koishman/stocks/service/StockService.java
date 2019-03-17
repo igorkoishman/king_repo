@@ -34,9 +34,10 @@ public class StockService {
 				Stock stock = new Stock();
 				stock.setTime(chart.getMinute());
 				stock.setValue(String.valueOf(chart.getAverage()));
+				stock.setCompanyName(companyName);
+				stock.setSymbol(symbol);
 				stocks.add(stock);
 			}
-
 			stocksMap.put(entry.getKey(), stocks);
 		}
 		return stocksMap;

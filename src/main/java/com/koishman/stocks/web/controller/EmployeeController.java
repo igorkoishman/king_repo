@@ -20,10 +20,8 @@ import javax.validation.ConstraintViolation;
 import javax.validation.Validation;
 import javax.validation.Validator;
 import javax.validation.ValidatorFactory;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
+import java.util.stream.Collectors;
 
 @Controller
 @RequestMapping("/addNew")
@@ -60,9 +58,10 @@ public class EmployeeController {
 		if (result.hasErrors()) {
 			return "stocks2";
 		}
+		Map<String, List<Stock>> dayHistory = new HashMap<>();
 		if (employeeVO.getDepartmentVO().getName().equals("today")) {
 			for (int i = 0; i < 5; i++) {
-				Map<String, List<Stock>> dayHistory = stockService.getDayHistory(Lists.newArrayList(StringUtils.split(employeeVO.getSymbols(), ",")));
+				dayHistory = stockService.getDayHistory(Lists.newArrayList(StringUtils.split(employeeVO.getSymbols(), ",")));
 				System.out.println(dayHistory);
 			}
 		}
@@ -70,7 +69,9 @@ public class EmployeeController {
 		System.out.println(employeeVO);
 
 		// Mark Session Complete
+		List<Stock> collect = dayHistory.values().stream().flatMap(stocks -> stocks.stream()).collect(Collectors.toList());
 		model.addAttribute("msg", "schedualer started");
+		model.addAttribute("list", collect);
 		return "stocks2";
 	}
 
