@@ -12,6 +12,8 @@ public class Stock {
 
 	private String time;
 
+	private String calculatedPrice;
+
 	public Stock() {
 	}
 
@@ -20,6 +22,14 @@ public class Stock {
 		this.companyName = companyName;
 		this.value = value;
 		this.time = time;
+	}
+
+	public String getCalculatedPrice() {
+		return calculatedPrice;
+	}
+
+	public void setCalculatedPrice(String calculatedPrice) {
+		this.calculatedPrice = calculatedPrice;
 	}
 
 	public String getSymbol() {

@@ -1,13 +1,13 @@
 package com.koishman.stocks.web.model;
 
-public class DepartmentVO
+public class TimeLine
 {
 
 
 	private Integer id;
 	private String name;
 
-	public DepartmentVO(Integer id, String name) {
+	public TimeLine(Integer id, String name) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -33,6 +33,6 @@ public class DepartmentVO
 
 	@Override
 	public String toString() {
-		return "DepartmentVO [id=" + id + ", name=" + name + "]";
+		return "TimeLine [id=" + id + ", name=" + name + "]";
 	}
 }

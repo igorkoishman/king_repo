@@ -13,4 +13,6 @@ public interface StockClientV1 {
 
 	Map<String, BatchStock> getStockHistoryAndCurrent(List<String> symbols);
 
+	Map<String, BatchStock> getQuotes(List<String> symbol);
+
 }

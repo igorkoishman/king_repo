@@ -3,9 +3,9 @@ package com.koishman.stocks.web.controller;
 import com.google.common.collect.Lists;
 import com.koishman.stocks.model.sotck.Stock;
 import com.koishman.stocks.service.StockService;
-import com.koishman.stocks.web.model.DepartmentEditor;
-import com.koishman.stocks.web.model.DepartmentVO;
-import com.koishman.stocks.web.model.EmployeeVO;
+import com.koishman.stocks.web.model.StockResponse;
+import com.koishman.stocks.web.model.TimeLineEditor;
+import com.koishman.stocks.web.model.TimeLine;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -25,7 +25,7 @@ import java.util.stream.Collectors;
 
 @Controller
 @RequestMapping("/addNew")
-@SessionAttributes("employee")
+@SessionAttributes("stock")
 public class EmployeeController {
 
 	private Validator validator;
@@ -40,16 +40,16 @@ public class EmployeeController {
 
 	@RequestMapping(method = RequestMethod.GET)
 	public String setupForm(Model model) {
-		EmployeeVO employeeVO = new EmployeeVO();
+		StockResponse employeeVO = new StockResponse();
 		model.addAttribute("employee", employeeVO);
 		return "stocks2";
 	}
 
 	@RequestMapping(method = RequestMethod.POST)
-	public String submitForm(@ModelAttribute("employee") EmployeeVO employeeVO, BindingResult result, SessionStatus status, Model model) {
-		Set<ConstraintViolation<EmployeeVO>> violations = validator.validate(employeeVO);
+	public String submitForm(@ModelAttribute("stock") StockResponse stockResponse, BindingResult result, SessionStatus status, Model model) {
+		Set<ConstraintViolation<StockResponse>> violations = validator.validate(stockResponse);
 
-		for (ConstraintViolation<EmployeeVO> violation : violations) {
+		for (ConstraintViolation<StockResponse> violation : violations) {
 			String propertyPath = violation.getPropertyPath().toString();
 			String message = violation.getMessage();
 			result.addError(new FieldError("employee", propertyPath, "Invalid " + propertyPath + "(" + message + ")"));
@@ -59,14 +59,14 @@ public class EmployeeController {
 			return "stocks2";
 		}
 		Map<String, List<Stock>> dayHistory = new HashMap<>();
-		if (employeeVO.getDepartmentVO().getName().equals("today")) {
+		if (stockResponse.getTimeLine().getName().equals("today")) {
 			for (int i = 0; i < 5; i++) {
-				dayHistory = stockService.getDayHistory(Lists.newArrayList(StringUtils.split(employeeVO.getSymbols(), ",")));
+				dayHistory = stockService.getDayHistory(Lists.newArrayList(StringUtils.split(stockResponse.getSymbols(), ",")));
 				System.out.println(dayHistory);
 			}
 		}
 
-		System.out.println(employeeVO);
+		System.out.println(stockResponse);
 
 		// Mark Session Complete
 		List<Stock> collect = dayHistory.values().stream().flatMap(stocks -> stocks.stream()).collect(Collectors.toList());
@@ -77,15 +77,15 @@ public class EmployeeController {
 
 	@InitBinder
 	public void initBinder(WebDataBinder binder) {
-		binder.registerCustomEditor(DepartmentVO.class, new DepartmentEditor());
+		binder.registerCustomEditor(TimeLine.class, new TimeLineEditor());
 	}
 
-	@ModelAttribute("allDepartments")
-	public List<DepartmentVO> populateDepartments() {
-		ArrayList<DepartmentVO> departments = new ArrayList<DepartmentVO>();
-		departments.add(new DepartmentVO(-1, "Select period"));
-		departments.add(new DepartmentVO(1, "today"));
-		departments.add(new DepartmentVO(2, "schedualed"));
+	@ModelAttribute("allTimelines")
+	public List<TimeLine> populateDepartments() {
+		ArrayList<TimeLine> departments = new ArrayList<TimeLine>();
+		departments.add(new TimeLine(-1, "Select period"));
+		departments.add(new TimeLine(1, "today"));
+		departments.add(new TimeLine(2, "schedualed"));
 		return departments;
 	}
 

@@ -7,16 +7,12 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Create an account</title>
+    <title>Stocks reports</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
-    <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
-    <script src="/js/datatable.js"></script>
     <link href="${contextPath}/resources/css/bootstrap.min.css" rel="stylesheet">
     <link href="${contextPath}/resources/css/common.css" rel="stylesheet">
     <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+
     <style>
         table {
             font-family: arial, sans-serif;
@@ -36,13 +32,14 @@
             background-color: #dddddd;
         }
     </style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-    <form:form method="POST" modelAttribute="employee" class="form-signin">
+    <form:form method="POST" modelAttribute="stock" class="form-signin">
         <h2 class="form-signin-heading">Create your account</h2>
         <spring:bind path="symbols">
             <div class="form-group ${status.error ? 'has-error' : ''}">
@@ -52,12 +49,13 @@
             </div>
         </spring:bind>
 
-        <spring:bind path="departmentVO">
+        <spring:bind path="timeLine">
             <div class="form-group ">
-                <form:select path="departmentVO" items="${allDepartments}" itemValue="id" itemLabel="name"></form:select>
-                <form:errors path="departmentVO" cssClass="error"/>
+                <form:select path="timeLine" items="${allTimelines}" itemValue="id" itemLabel="name"></form:select>
+                <form:errors path="timeLine" cssClass="error"/>
             </div>
         </spring:bind>
+
 
         <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
     </form:form>
@@ -77,7 +75,7 @@
 <h2 align="center" class="form-heading">${msg}</h2>
 <c:choose>
     <c:when test="${!empty list}">
-        <h1 align="center" class="form-heading">Employees Table</h1>
+        <h1 align="center" class="form-heading">Stocks Table</h1>
         <table align="center">
             <c:forEach items="${list}" var="item">
                 <tr>

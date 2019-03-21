@@ -1,62 +1,76 @@
 package com.koishman.stocks.auth.model;
 
+import com.koishman.stocks.auth.repository.Symbol;
+
 import javax.persistence.*;
 import java.util.Set;
 
 @Entity
 @Table(name = "user")
 public class User {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
 
-    private String username;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
 
-    private String password;
+	private String username;
 
-    @Transient
-    private String passwordConfirm;
+	private String password;
 
-    @ManyToMany
-    private Set<Role> roles;
+	@Transient
+	private String passwordConfirm;
 
-    public Long getId() {
-        return id;
-    }
+	@ManyToMany
+	private Set<Role> roles;
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+	@ManyToMany
+	private Set<Symbol> symbols;
 
-    public String getUsername() {
-        return username;
-    }
+	public Set<Symbol> getSymbols() {
+		return symbols;
+	}
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
+	public void setSymbols(Set<Symbol> symbols) {
+		this.symbols = symbols;
+	}
 
-    public String getPassword() {
-        return password;
-    }
+	public Long getId() {
+		return id;
+	}
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
+	public void setId(Long id) {
+		this.id = id;
+	}
 
-    public String getPasswordConfirm() {
-        return passwordConfirm;
-    }
+	public String getUsername() {
+		return username;
+	}
 
-    public void setPasswordConfirm(String passwordConfirm) {
-        this.passwordConfirm = passwordConfirm;
-    }
+	public void setUsername(String username) {
+		this.username = username;
+	}
 
-    public Set<Role> getRoles() {
-        return roles;
-    }
+	public String getPassword() {
+		return password;
+	}
 
-    public void setRoles(Set<Role> roles) {
-        this.roles = roles;
-    }
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public String getPasswordConfirm() {
+		return passwordConfirm;
+	}
+
+	public void setPasswordConfirm(String passwordConfirm) {
+		this.passwordConfirm = passwordConfirm;
+	}
+
+	public Set<Role> getRoles() {
+		return roles;
+	}
+
+	public void setRoles(Set<Role> roles) {
+		this.roles = roles;
+	}
 }

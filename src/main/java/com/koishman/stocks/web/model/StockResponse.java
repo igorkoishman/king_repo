@@ -4,7 +4,7 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
-public class EmployeeVO implements Serializable {
+public class StockResponse implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
@@ -12,7 +12,7 @@ public class EmployeeVO implements Serializable {
 	@NotEmpty
 	private String symbols;
 	@NotNull
-	private DepartmentVO departmentVO;
+	private TimeLine timeLine;
 
 	public static long getSerialVersionUID() {
 		return serialVersionUID;
@@ -34,11 +34,11 @@ public class EmployeeVO implements Serializable {
 		this.symbols = symbols;
 	}
 
-	public DepartmentVO getDepartmentVO() {
-		return departmentVO;
+	public TimeLine getTimeLine() {
+		return timeLine;
 	}
 
-	public void setDepartmentVO(DepartmentVO departmentVO) {
-		this.departmentVO = departmentVO;
+	public void setTimeLine(TimeLine timeLine) {
+		this.timeLine = timeLine;
 	}
 }

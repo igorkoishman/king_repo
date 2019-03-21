@@ -30,22 +30,29 @@ public class StockClientV1Impl extends BaseClient implements StockClientV1 {
 	@Override
 	public Map<String, BatchStock> getStockHistoryAndCurrent(List<String> symbols) {
 		List<String> filters = Lists.newArrayList("latestPrice,minute,average,symbol,companyName,calculationPrice,latestUpdate");
-		return execute(symbols, filters).getBody();
+		return execute(symbols, filters, "1d", Lists.newArrayList("quote,chart")).getBody();
 	}
+
 	@Override
 	public Map<String, BatchStock> getStockHistory(List<String> symbols) {
 		List<String> filters = Lists.newArrayList("minute,average,symbol,companyName");
-		return execute(symbols, filters).getBody();
+		return execute(symbols, filters, "1d", Lists.newArrayList("quote,chart")).getBody();
 	}
 
 	@Override
 	public Map<String, BatchStock> getCurrentValue(List<String> symbols) {
-		List<String> filters = Lists.newArrayList("latestPrice,symbol,companyName,latestUpdate,calculationPrice");
-		return execute(symbols, filters).getBody();
+		List<String> filters = Lists.newArrayList("latestPrice,symbol,companyName,latestUpdate");
+		return execute(symbols, filters, "1d", Lists.newArrayList("quote")).getBody();
 	}
 
-	private ResponseEntity<Map<String, BatchStock>> execute(List<String> symbols, List<String> filters) {
-		URI uri = generateBaseURI(this::generateUri, defaultBaseUrl, defaultBaseVersion, batchStockPath, symbols, filters);
+	@Override
+	public Map<String, BatchStock> getQuotes(List<String> symbols) {
+		List<String> filters = Lists.newArrayList("calculationPrice");
+		return execute(symbols, filters, "1d", Lists.newArrayList("quote,chart")).getBody();
+	}
+
+	private ResponseEntity<Map<String, BatchStock>> execute(List<String> symbols, List<String> filters, String range, List<String> types) {
+		URI uri = generateBaseURI(this::generateUri, defaultBaseUrl, defaultBaseVersion, batchStockPath, symbols, filters, range, types);
 		return super.execute(uri, HttpMethod.GET, getHttpHeader(), BATCH_STOCK_RESPONSE);
 	}
 
@@ -56,19 +63,19 @@ public class StockClientV1Impl extends BaseClient implements StockClientV1 {
 	}
 
 	private URI generateBaseURI(URIGenerator uriGenerator, String url, String version, String relativePatch, List<String> symbols,
-			List<String> filters) {
+			List<String> filters, String range, List<String> types) {
 		String path = new StringBuilder().append(url).append(version).append(relativePatch).toString();
 		Map<String, String> queryParams = new HashMap<>();
 		queryParams.put("symbols", StringUtils.join(symbols, ','));
 		queryParams.put("filter", StringUtils.join(filters, ','));
+		queryParams.put("range", range);
+		queryParams.put("types", StringUtils.join(types, ','));
 		URI uri = uriGenerator.generateUri(path, queryParams);
 		return uri;
 	}
 
 	private URI generateUri(String path, Map<String, String> queryParams) {
-		UriComponentsBuilder uriComponentsBuilder = UriComponentsBuilder.fromHttpUrl(path)
-				.queryParam("range", "1d")
-				.queryParam("types", "quote,chart");
+		UriComponentsBuilder uriComponentsBuilder = UriComponentsBuilder.fromHttpUrl(path);
 		for (Map.Entry<String, String> entry : queryParams.entrySet()) {
 			uriComponentsBuilder.queryParam(entry.getKey(), entry.getValue());
 		}
