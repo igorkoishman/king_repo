@@ -1,4 +1,4 @@
-package com.koishman.stocks.service;
+package com.koishman.stocks.client;
 
 import com.koishman.stocks.model.sotck.BatchStock;
 import org.slf4j.Logger;
@@ -30,7 +30,7 @@ public abstract class BaseClient {
 
 	protected ResponseEntity execute(URI uri, HttpMethod httpMethod, HttpHeaders httpHeaders, ParameterizedTypeReference parameterizedTypeReference) {
 		HttpEntity<?> entity = new HttpEntity<>(httpHeaders);
-		ResponseEntity<Map<String, BatchStock>> response = restTemplate.exchange(uri, HttpMethod.GET, entity, parameterizedTypeReference);
+		ResponseEntity<Map<String, BatchStock>> response = restTemplate.exchange(uri, httpMethod, entity, parameterizedTypeReference);
 		return response;
 	}
 

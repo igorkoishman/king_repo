@@ -8,20 +8,32 @@ public class Stock {
 
 	private String companyName;
 
-	private String value;
+	private double value;
 
 	private String time;
 
 	private String calculatedPrice;
 
+	private int volume;
+
 	public Stock() {
 	}
 
-	public Stock(String symbol, String companyName, String value, String time) {
+	public Stock(String symbol, String companyName, double value, String time, String calculatedPrice, int volume) {
 		this.symbol = symbol;
 		this.companyName = companyName;
 		this.value = value;
 		this.time = time;
+		this.calculatedPrice = calculatedPrice;
+		this.volume = volume;
+	}
+
+	public int getVolume() {
+		return volume;
+	}
+
+	public void setVolume(int volume) {
+		this.volume = volume;
 	}
 
 	public String getCalculatedPrice() {
@@ -48,11 +60,11 @@ public class Stock {
 		this.companyName = companyName;
 	}
 
-	public String getValue() {
+	public double getValue() {
 		return value;
 	}
 
-	public void setValue(String value) {
+	public void setValue(double value) {
 		this.value = value;
 	}
 

@@ -1,8 +1,8 @@
 package com.koishman.stocks.client.BatchClient;
 
 import com.google.common.collect.Lists;
+import com.koishman.stocks.client.BaseClient;
 import com.koishman.stocks.model.sotck.BatchStock;
-import com.koishman.stocks.service.BaseClient;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpHeaders;
@@ -35,13 +35,13 @@ public class StockClientV1Impl extends BaseClient implements StockClientV1 {
 
 	@Override
 	public Map<String, BatchStock> getStockHistory(List<String> symbols) {
-		List<String> filters = Lists.newArrayList("minute,average,symbol,companyName");
+		List<String> filters = Lists.newArrayList("minute,marketAverage,symbol,companyName,marketVolume");
 		return execute(symbols, filters, "1d", Lists.newArrayList("quote,chart")).getBody();
 	}
 
 	@Override
 	public Map<String, BatchStock> getCurrentValue(List<String> symbols) {
-		List<String> filters = Lists.newArrayList("latestPrice,symbol,companyName,latestUpdate");
+		List<String> filters = Lists.newArrayList("latestPrice,symbol,companyName,latestUpdate,calculationPrice,latestVolume");
 		return execute(symbols, filters, "1d", Lists.newArrayList("quote")).getBody();
 	}
 

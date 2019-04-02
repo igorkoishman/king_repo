@@ -1,6 +1,7 @@
 package com.koishman.stocks.auth.repository;
 
 import com.koishman.stocks.auth.model.User;
+import org.apache.commons.lang3.builder.ToStringBuilder;
 
 import javax.persistence.*;
 import java.util.Set;
@@ -60,5 +61,15 @@ public class Symbol {
 
 	public void setUsers(Set<User> users) {
 		this.users = users;
+	}
+
+	@Override
+	public String toString() {
+		return new ToStringBuilder(this).append("id", id)
+				.append("symbol", symbol)
+				.append("companyName", companyName)
+				.append("shouldRun", shouldRun)
+				.append("users", users)
+				.toString();
 	}
 }

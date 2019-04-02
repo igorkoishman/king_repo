@@ -3,10 +3,7 @@ package com.koishman.stocks.service;
 import com.google.common.collect.Lists;
 import com.koishman.stocks.model.sotck.Stock;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -20,8 +17,8 @@ import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
-import java.util.Map;
-import java.util.concurrent.ConcurrentLinkedQueue;
+import java.util.Set;
+import java.util.concurrent.BlockingDeque;
 
 @Component
 public class StockWriterService {
@@ -30,28 +27,32 @@ public class StockWriterService {
 	@Autowired
 	private StockContext stockContext;
 
-	private static final List<String> headerColumns = Lists.newArrayList("Symbol", "Company Name", "Price", "Time");
+	private static final List<String> headerColumns = Lists.newArrayList("Symbol", "Company Name", "Price", "Volume", "Time");
 
 	@PostConstruct
 	public void init() {
 		this.excelWriter = new ExcelWriter<>(headerColumns);
 	}
 
-	@Scheduled(initialDelay = 10000, fixedDelay = 600000)
+	@Scheduled(initialDelay = 10000, fixedDelay = 30000)
 	public void run() {
-		System.out.println("write to file");
-		Map<String, ConcurrentLinkedQueue<Stock>> queue = stockContext.getQueue();
-		for (Map.Entry<String, ConcurrentLinkedQueue<Stock>> entry : queue.entrySet()) {
-			List<Stock> stocks = Lists.newArrayList();
-			while (entry.getValue().size() > 0) {
-				stocks.add(entry.getValue().poll());
-			}
-			try {
-				write(stocks, entry.getKey());
-			} catch (IOException e) {
-				e.printStackTrace();
-			} catch (InvalidFormatException e) {
-				e.printStackTrace();
+		Set<String> symbols = stockContext.getSymbols();
+		if (!symbols.isEmpty()) {
+			System.out.println("write to file");
+			for (String symbol : symbols) {
+				List<Stock> stocks = Lists.newArrayList();
+				BlockingDeque<Stock> symbolStockData = stockContext.getSymbolStockData(symbol);
+				while (!symbolStockData.isEmpty()) {
+					stocks.add(symbolStockData.poll());
+				}
+				try {
+					write(stocks, symbol);
+				} catch (IOException e) {
+					e.printStackTrace();
+				} catch (InvalidFormatException e) {
+					e.printStackTrace();
+				}
+
 			}
 
 		}
@@ -69,7 +70,7 @@ public class StockWriterService {
 		}
 		DateTimeFormatter formatterDate = DateTimeFormatter.ofPattern("dd");
 		String day = localDate.format(formatterDate);
-		File file = new File(directoryName + "/" + date + ".xlsx");
+		File file = new File(directoryName + "/" + symbol + "_" + date + ".xlsx");
 		FileOutputStream outs = createFile(file);
 		Sheet sheet;
 		Workbook workbook;
@@ -77,7 +78,7 @@ public class StockWriterService {
 			workbook = WorkbookFactory.create(file);
 			sheet = workbook.getSheet(day);
 			if (sheet == null) {
-				excelWriter.createSheet(workbook, day);
+				sheet = excelWriter.createSheet(workbook, day);
 			}
 		} else {
 			workbook = new XSSFWorkbook();
@@ -93,13 +94,15 @@ public class StockWriterService {
 		int lastRowNum = sheet.getLastRowNum() + 1;
 		for (Stock batchStock : batchStocks) {
 			Row row = sheet.createRow(lastRowNum++);
-
 			row.createCell(0).setCellValue(batchStock.getSymbol());
-
 			row.createCell(1).setCellValue(batchStock.getCompanyName());
-
-			row.createCell(2).setCellValue(batchStock.getValue());
-			row.createCell(3).setCellValue(batchStock.getTime());
+			Cell cell = row.createCell(2);
+			cell.setCellType(CellType.NUMERIC);
+			cell.setCellValue(batchStock.getValue());
+			Cell cellVolume = row.createCell(3);
+			cellVolume.setCellType(CellType.NUMERIC);
+			cellVolume.setCellValue(batchStock.getVolume());
+			row.createCell(4).setCellValue(batchStock.getTime());
 		}
 	}
 

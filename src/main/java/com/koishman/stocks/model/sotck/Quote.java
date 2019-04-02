@@ -19,6 +19,8 @@ public class Quote {
 	private String companyName;
 	@JsonProperty("latestUpdate")
 	private String latestUpdate;
+	@JsonProperty("latestVolume")
+	private int latestVolume;
 
 	@JsonIgnore
 	private Map<String, Object> additionalProperties = new HashMap<String, Object>();
@@ -35,6 +37,21 @@ public class Quote {
 
 	public Quote withLatestPrice(Double latestPrice) {
 		this.latestPrice = latestPrice;
+		return this;
+	}
+
+	@JsonProperty("latestVolume")
+	public int getLatestVolume() {
+		return latestVolume;
+	}
+
+	@JsonProperty("latestVolume")
+	public void setLatestVolume(int latestVolume) {
+		this.latestVolume = latestVolume;
+	}
+
+	public Quote withLatestVolume(int latestVolume) {
+		this.latestVolume = latestVolume;
 		return this;
 	}
 

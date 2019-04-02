@@ -1,74 +1,88 @@
 package com.koishman.stocks.model.sotck;
 
+import com.fasterxml.jackson.annotation.*;
+import org.apache.commons.lang3.builder.ToStringBuilder;
+
 import java.util.HashMap;
 import java.util.Map;
-import com.fasterxml.jackson.annotation.JsonAnyGetter;
-import com.fasterxml.jackson.annotation.JsonAnySetter;
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import org.apache.commons.lang3.builder.ToStringBuilder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class Chart {
 
-    @JsonProperty("minute")
-    private String minute;
-    @JsonProperty("average")
-    private Double average;
-    @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+	@JsonProperty("minute")
+	private String minute;
+	@JsonProperty("marketAverage")
+	private Double average;
+	@JsonProperty("marketVolume")
+	private int volume;
+	@JsonIgnore
+	private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
-    @JsonProperty("minute")
-    public String getMinute() {
-        return minute;
-    }
+	@JsonProperty("minute")
+	public String getMinute() {
+		return minute;
+	}
 
-    @JsonProperty("minute")
-    public void setMinute(String minute) {
-        this.minute = minute;
-    }
+	@JsonProperty("minute")
+	public void setMinute(String minute) {
+		this.minute = minute;
+	}
 
-    public Chart withMinute(String minute) {
-        this.minute = minute;
-        return this;
-    }
+	public Chart withMinute(String minute) {
+		this.minute = minute;
+		return this;
+	}
 
-    @JsonProperty("average")
-    public Double getAverage() {
-        return average;
-    }
+	@JsonProperty("marketAverage")
+	public Double getAverage() {
+		return average;
+	}
 
-    @JsonProperty("average")
-    public void setAverage(Double average) {
-        this.average = average;
-    }
+	@JsonProperty("marketAverage")
+	public void setAverage(Double average) {
+		this.average = average;
+	}
 
-    public Chart withAverage(Double average) {
-        this.average = average;
-        return this;
-    }
+	public Chart withAverage(Double average) {
+		this.average = average;
+		return this;
+	}
 
-    @JsonAnyGetter
-    public Map<String, Object> getAdditionalProperties() {
-        return this.additionalProperties;
-    }
+	@JsonProperty("marketVolume")
+	public int getVolume() {
+		return volume;
+	}
 
-    @JsonAnySetter
-    public void setAdditionalProperty(String name, Object value) {
-        this.additionalProperties.put(name, value);
-    }
+	@JsonProperty("marketVolume")
+	public void setVolume(int volume) {
+		this.volume = volume;
+	}
 
-    public Chart withAdditionalProperty(String name, Object value) {
-        this.additionalProperties.put(name, value);
-        return this;
-    }
+	public Chart withVolume(int volume) {
+		this.volume = volume;
+		return this;
+	}
 
-    @Override
-    public String toString() {
-        return new ToStringBuilder(this).append("minute", minute)
-                .append("average", average)
-                .append("additionalProperties", additionalProperties)
-                .toString();
-    }
+	@JsonAnyGetter
+	public Map<String, Object> getAdditionalProperties() {
+		return this.additionalProperties;
+	}
+
+	@JsonAnySetter
+	public void setAdditionalProperty(String name, Object value) {
+		this.additionalProperties.put(name, value);
+	}
+
+	public Chart withAdditionalProperty(String name, Object value) {
+		this.additionalProperties.put(name, value);
+		return this;
+	}
+
+	@Override
+	public String toString() {
+		return new ToStringBuilder(this).append("minute", minute)
+				.append("average", average)
+				.append("additionalProperties", additionalProperties)
+				.toString();
+	}
 }

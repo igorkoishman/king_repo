@@ -20,10 +20,11 @@ public class StockTask extends TimerTask {
 	}
 
 	public void run() {
-		Map<String, List<Stock>> currentValue = stockService.getCurrentValue(symbolsList);
+		System.out.println("running method");
+		Map<String, Stock> currentValue = stockService.getCurrentValue(symbolsList);
 		for (String symbol : currentValue.keySet()) {
-			if (!currentValue.get(symbol).isEmpty()) {
-				stockContext.addToContext(symbol, currentValue.get(symbol));
+			if (currentValue.get(symbol) != null) {
+				stockContext.addStockToContext(symbol, currentValue.get(symbol));
 			}
 		}
 	}

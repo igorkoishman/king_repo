@@ -8,4 +8,6 @@ public interface SymbolRepository extends JpaRepository<Symbol, Long> {
 
 	List<Symbol> findAllByShouldRunTrue();
 
+	List<Symbol> findSymbolsByCompanyNameIn(List<String> names);
+
 }
